@@ -30,10 +30,10 @@ gulp.task('lint', function() {
 //task to erase components
 
 //task to compile script component
-gulp.task('compile_script_component', function() {
-  return gulp.src('config/scripts/components/' + process.argv[0] + '/*.js')
-  .pipe(concat(process.argv[0] + '.js'))
-  .pipe(gulp.dest('assets/scripts/components/' + process.argv[0]))
+gulp.task('compile_script_component', function(name) {
+  return gulp.src('config/scripts/components/' + name + '/*.js')
+  .pipe(concat(name + '.js'))
+  .pipe(gulp.dest('assets/scripts/components/' + name))
 });
 
 //task to compile style component
@@ -62,4 +62,4 @@ gulp.task('scripts', function() {
   .pipe(gulp.dest('public/scripts'));
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default');
