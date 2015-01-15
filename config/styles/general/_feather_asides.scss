@@ -1,0 +1,27 @@
+aside#languages {
+  margin-top: 10px;
+  margin-bottom: -30px;
+  text-align: center;
+  padding: 5px;
+}
+
+aside#languages > h4 {
+  display: inline-block;
+  margin-left: 3px;
+}
+
+aside#languages > a {
+  display: inline-block;
+  color: white;
+  cursor: pointer;
+}
+
+aside#languages > a:hover {
+  color: $mai-blue;
+}
+
+@media screen and (max-width: 600px) {
+  aside#languages {
+    margin-top: -70px;
+  }
+}

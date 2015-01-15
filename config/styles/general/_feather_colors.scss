@@ -1,0 +1,102 @@
+/*BASIC COLORS*/
+$blue: #52B3D9;
+$green: #66CC99;
+$red: #F62459;
+$pink-dark: #CE0A31;
+$yellow: #F5D76E;
+
+/*purple*/
+$indigo: #6600FF;
+$violet-light: #7b5dbc;
+$violet-medium: #4b3d80;
+$violet-dark: #302263;
+
+/*green*/
+$green-dark: #5CA18E;
+$green-light: #9AC6B7;
+$green-blueish: #A2DAD1;
+$brown-light: #CCDFC1;
+$brown-dark: #BDC2A2;
+$green-medium: #CCEACA;
+
+/*orange*/
+$orange-dark: #993D00;
+$orange-light: #FF8533;
+$orange-medium: #FF6600;
+
+/*red*/
+$red-light: #DB4D4D;
+$red-dark: #520000;
+$red-medium: #CC0000;
+
+/*marine*/
+$marine-dark: #000F2E;
+$marine-medium: #001F5C;
+$marine-light: #00297A;
+
+
+$dark-gray: #1A1A1A;
+$granate: #990000;
+
+/* MAI theme*/
+$mai-blue:  #339194;
+$mai-red:   #F10C49;
+$mai-violet:#A70267;
+$mai-orange:#FB6B41;
+$mai-yellow:#efb70a;
+
+/* MAIN COLORS */
+$main-light: $mai-blue;
+$main-medium: $mai-violet;
+$main-dark: $mai-orange;
+
+/*BODY COLORS*/
+$BODY-BACKGROUND-COLOR: white;
+
+/*LINK COLORS*/
+$LINK-COLOR: $orange-light;
+$LINK-HOVER-COLOR: $green-medium;
+
+$MAIN-HEADER-LINK-COLOR: #FFFFFF;
+$MAIN-HEADER-LINK-HOVER-COLOR: #858585;
+$MAIN-CONTAINER-BACKGROUND-COLOR: $indigo;
+
+/*NAV COLORS*/
+$HEADER-NAV-BACKGROUND-COLOR: $orange-medium;
+
+@mixin background-gradient($colorFrom, $colorTo) {
+background-image: -ms-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+background-image: -moz-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+background-image: -o-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, $colorFrom), color-stop(1, $colorTo));
+background-image: -webkit-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+background-image: linear-gradient(to top left, $colorFrom 0%, $colorTo 100%);
+}
+
+@mixin box-shadow($colorShadow, $colorBackground) {
+  -webkit-box-shadow: 8px -8px 0px 3px $colorShadow;
+  -moz-box-shadow: 8px -8px 0px 3px $colorShadow;
+  box-shadow: 8px -8px 0px 3px $colorShadow;
+  background-color: $colorBackground;
+}
+
+
+.mai-violet {
+  background-color: $mai-violet;
+}
+
+.mai-red {
+  background-color: $mai-red;
+}
+
+.mai-orange {
+  background-color: $mai-orange;
+}
+
+.mai-yellow {
+  background-color: $mai-yellow;
+}
+
+.mai-blue {
+  background-color: $mai-blue;
+}

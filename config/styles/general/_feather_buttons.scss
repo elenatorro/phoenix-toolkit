@@ -1,0 +1,111 @@
+
+button:focus {
+  outline-style:none;
+}
+
+.btn-rounded {
+  background-color: $mai-violet;
+  border: none;
+  max-width: 160px;
+  min-width: 160px;
+  color: white;
+  border-radius: 160px;
+  padding: 15px;
+  display: inline-block;
+  margin: 10px;
+}
+
+.btn-small {
+  border: none;
+  max-width: 100px;
+  min-width: 100px;
+  color: white;
+  border-radius: 100px;
+  padding: 5px;
+  display: inline-block;
+  text-align: center;
+  margin: 10px;
+}
+
+.btn-rounded > a {
+  color: white;
+}
+
+.btn {
+  @include transition(0.15s);
+  background-color: $main-light;
+  border: none;
+  border-bottom: 8px solid $main-dark;
+  color: white;
+  display: inline-block;
+  margin: 10px 5px;
+  max-width: 160px;
+  min-width: 160px;
+  padding: 15px;
+}
+
+.btn:hover {
+  border-bottom: 3px solid $main-dark;
+  cursor: pointer;
+  @include translateY(3px);
+}
+
+.btn-group {
+  text-align: center;
+  margin: 0 auto 0 auto;
+  padding: 0px;
+  display: table;
+}
+
+
+button:focus {
+  outline-style:none;
+}
+
+.btn-color {
+  border: 5px solid;
+  color: black;
+  display: inline-block;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  width: 130px;
+}
+
+.btn-neutral {
+  border: 3px solid;
+  color: $main-medium;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.btn-neutral .popup {
+  display: none;
+}
+
+.btn-neutral:hover .popup {
+  display: block;
+  position: absolute;
+  padding: 3px;
+  margin-top: -30px;
+  margin-left: -15px;
+  background-color: black;
+  color: white;
+}
+
+.btn-color:hover {
+  cursor: pointer;
+  @include hoverborder();
+}
+
+.btn-neutral:hover {
+  cursor: pointer;
+  @include hoverborder();
+}
+
+.btn-card {
+  margin-top: 10px;
+}
