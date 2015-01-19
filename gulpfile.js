@@ -48,7 +48,7 @@ gulp.task('compile_style_component', function() {
 gulp.task('style', function() {
   return gulp.src('config/styles/*.scss')
   .pipe(sass())
-  .pipe(concat('main.css'))
+  .pipe(concat('style.css'))
   .pipe(gulp.dest('assets/styles/general'));
 });
 
