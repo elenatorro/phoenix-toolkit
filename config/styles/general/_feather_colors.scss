@@ -61,7 +61,6 @@ $MAIN-HEADER-LINK-COLOR: #FFFFFF;
 $MAIN-HEADER-LINK-HOVER-COLOR: #858585;
 $MAIN-CONTAINER-BACKGROUND-COLOR: $indigo;
 
-/*NAV COLORS*/
 $HEADER-NAV-BACKGROUND-COLOR: $orange-medium;
 
 @mixin background-gradient($colorFrom, $colorTo) {
@@ -99,4 +98,36 @@ background-image: linear-gradient(to top left, $colorFrom 0%, $colorTo 100%);
 
 .mai-blue {
   background-color: $mai-blue;
+}
+
+.yellow {
+  background-color: $yellow;
+  border-color: $yellow;
+}
+
+.blue {
+  background-color: $blue;
+  border-color: $blue;
+}
+
+.red {
+  background-color: $red;
+  border-color: $red;
+}
+
+.green {
+  background-color: $green;
+  border-color: $green;
+}
+
+.black {
+  background-color: $dark-gray;
+  border-color: $dark-gray;
+  color: white;
+}
+
+.white {
+  background-color: white;
+  border-color: white;
+  color: black;
 }

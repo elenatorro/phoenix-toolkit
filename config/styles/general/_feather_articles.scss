@@ -1,152 +1,18 @@
 article.main-content {
-  width: 100%;
+  background-color: transparent;
   margin: 0 auto 0 auto;
   text-align: center;
-  background-color: transparent;
+  width: 100%;
 }
 
-article#main-article {
-  text-align: center;
-  padding-top: 15%;
+article.main-article {
   background-color: rgba(51,145,148,0.75);
   min-height: 100%;
+  padding-top: 15%;
+  text-align: center;
 }
 
-article.resources-container {
-  margin-top: 100px;
-}
-
-article#cards-container {
-  width: 100%;
-  min-height: 700px;
-  min-height: 500px;
+article.main-title {
   display: block;
   text-align: center;
-  margin: 0 auto 0 auto;
-  margin-top: 10px;
-}
-
-article.cards-container {
-  text-align: center;
-}
-
-article.text-container {
-  width: 80%;
-  margin: 0 auto 0 auto;
-}
-
-#main-container-cards {
-  display: block;
-  background-color: transparent;
-}
-
-@mixin card-style {
-  color: white;
-  height: 80px;
-  padding: 10px;
-  width: 250px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 150px;
-}
-
-@mixin card-text-style {
-  background-color: transparent;
-  border-color: Transparent;
-  border-style: none;
-  border: none;
-  box-sizing: border-box;
-  font-size: 32px;
-  overflow: auto;
-  resize: none;
-  text-align: center;
-  width: 90%;
-  color: white;
-}
-
-@mixin card-text-focus-style {
-  outline: none !important;
-  border: none;
-}
-
-div.main-box {
-  @include card-style;
-  margin: 0 auto 0 auto;
-}
-
-div.box {
-  @include card-style;
-  display: inline-block;
-  margin: 10px;
-}
-
-.box:hover {
-  cursor: cell;
-}
-
-.yellow {
-  background-color: $yellow;
-  border-color: $yellow;
-}
-
-.blue {
-  background-color: $blue;
-  border-color: $blue;
-}
-
-.red {
-  background-color: $red;
-  border-color: $red;
-}
-
-.green {
-  background-color: $green;
-  border-color: $green;
-}
-
-.black {
-  background-color: $dark-gray;
-  border-color: $dark-gray;
-  color: white;
-}
-
-.white {
-  background-color: white;
-  border-color: white;
-  color: black;
-}
-
-.white > textarea.inputText {
-  color: black;
-}
-
-div.box.white {
-  border: 1px solid silver;
-}
-
-.neutral {
-  background-color: $violet-medium;
-  border-color: $violet-medium;
-  color: $violet-light;
-}
-
-.neutral:hover {
-  cursor: pointer;
-  color: black;
-}
-
-div.box > textarea {
-  @include card-text-style;
-}
-
-div.box > textarea:focus {
-  @include card-text-focus-style;
-}
-
-div.main-box > textarea {
-  @include card-text-style;
-}
-
-div.main-box > textarea:focus {
-  @include card-text-focus-style;
 }

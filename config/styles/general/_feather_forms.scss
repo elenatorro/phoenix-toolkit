@@ -14,7 +14,6 @@ div.input-search {
   width: 100%;
 }
 
-
 input[type=search] {
   -webkit-appearance:none;
   margin: 0;
@@ -27,15 +26,6 @@ input[type=search] {
   border: 2px solid $violet-dark;
   height: 40px;
   padding: 5px;
-  line-height: 35px;
-}
-
-div.create-card {
-  margin: 0 auto 0 auto;
-  margin-top: 10px;
-  display: table;
-  margin-bottom: 30px;
-  width: 300px;
   line-height: 35px;
 }
 

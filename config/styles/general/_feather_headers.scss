@@ -1,8 +1,8 @@
 header.main-header {
-  color: $dark-gray;
-  background-image: url('../images/routine.JPG');
   background-attachment: fixed;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('../images/routine.JPG');
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: $dark-gray;
 }
