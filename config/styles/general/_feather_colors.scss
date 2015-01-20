@@ -47,7 +47,7 @@ $mai-yellow:#efb70a;
 
 /* MAIN COLORS */
 $main-light: $mai-blue;
-$main-medium: $mai-violet;
+$main-medium: $blue;
 $main-dark: $mai-orange;
 
 /*BODY COLORS*/
@@ -130,4 +130,16 @@ background-image: linear-gradient(to top left, $colorFrom 0%, $colorTo 100%);
   background-color: white;
   border-color: white;
   color: black;
+}
+
+.orange-dark {
+  background-color: $orange-dark;
+}
+
+.orange-medium {
+  background-color: $orange-medium;
+}
+
+.orange-light {
+  background-color: $orange-light;
 }

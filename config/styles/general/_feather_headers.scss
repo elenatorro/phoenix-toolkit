@@ -1,8 +1,4 @@
 header.main-header {
-  background-attachment: fixed;
-  background-image: url('../images/routine.JPG');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  @include parallax('../../../images/bg.jpg');
   color: $dark-gray;
 }

@@ -1,5 +1,5 @@
 header.main-header nav {
-	background-color: $mai-orange;
+	background-color: #333333;
 	display: table;
 	height: 10px;
 	margin-bottom: 100px;
@@ -18,7 +18,8 @@ header.main-header nav > a {
 }
 
 header.main-header nav > a:hover {
-	background-color: $mai-red;
+	background-color: $orange-light;
+	color: white;
 }
 
 #main-link {
