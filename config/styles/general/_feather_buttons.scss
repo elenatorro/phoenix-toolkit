@@ -2,56 +2,71 @@ button:focus {
   outline-style:none;
 }
 
-.btn-squared {
-  @include transition(0.15s);
-  background-color: $main-light;
+@mixin btn {
+  margin:    10px;
   border: none;
-  border-bottom: 8px solid $main-dark;
-  color: white;
   display: inline-block;
-  margin: 10px 5px;
-  max-width: 160px;
-  min-width: 160px;
-  padding: 15px;
-}
-
-.btn-squared:hover {
-  border-bottom: 3px solid $main-dark;
-  cursor: pointer;
-  @include translateY(3px);
-}
-
-.btn-rounded {
-  background-color: $blue;
-  border-radius: 160px;
-  border: none;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  max-width: 160px;
-  min-width: 160px;
-  padding: 15px;
-}
-
-.btn-rounded > a {
-  color: white;
-}
-
-.btn-small {
-  border-radius: 100px;
-  border: none;
-  color: white;
-  display: inline-block;
-  margin: 10px;
-  max-width: 100px;
-  min-width: 100px;
-  padding: 5px;
   text-align: center;
 }
 
+button {
+  @include btn;
+}
+/* SIZES */
+.s-small {
+  max-width: 100px;
+  min-width: 100px;
+  padding:   5px;
+}
+
+.s-medium {
+  max-width: 150px;
+  min-width: 150px;
+  padding: 10px;
+}
+
+.s-big {
+  max-width: 200px;
+  min-width: 200px;
+  padding: 15px;
+}
+
+.rounded {
+  border-radius: 100px;
+}
+
+.squared {
+
+}
+
+.b-bottom {
+  border-bottom: 5px solid $main-light;
+}
+.b-top {
+  border-top: 5px solid $main-light;
+}
+.b-left {
+  border-left: 5px solid $main-light;
+}
+.b-right {
+  border-right: 5px solid $main-light;
+}
+
+.filled {
+  color: white;
+}
+
+.empty {
+  border: 3px solid $main-light;
+  background-color: transparent;
+  color: $main-light;
+}
+
+
+/* TYPES*/
 .btn-group {
   text-align: center;
   margin: 0 auto 0 auto;
   padding: 0px;
-  display: table;
+  display: inline-block;
 }

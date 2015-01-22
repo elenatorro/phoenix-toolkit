@@ -1,13 +1,4 @@
 /*Feather Sections*/
-section.container {
-	width: 80%;
-	background-color: transparent;
-	text-align: left;
-	margin: 0 auto 0 auto;
-	padding-top: 50px;
-	overflow: hidden;
-}
-
 section.resources > header {
 	left: 0;
 	top: 0;
@@ -21,16 +12,6 @@ section.resources > header {
 
 section.resources > header > h3 {
 	position: absolute;
-}
-
-div.three {
-	width: 30%;
-	min-width: 300px;
-	display: inline-block;
-	margin-left: 10px;
-	margin-right: 10px;
-	overflow: hidden;
-	vertical-align: top;
 }
 
 section.resources {
@@ -86,11 +67,4 @@ section.help {
 	top: 0;
 	width: 200px;
 	margin: 0 auto 0 auto;
-}
-
-@media screen and (max-width: 600px) {
-	div.three {
-		width: 90%;
-		min-width: 0px;
-	}
 }
