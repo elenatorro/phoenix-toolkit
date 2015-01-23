@@ -1,8 +1,6 @@
 /*GENERAL LINKS*/
 a {
 	text-decoration: none;
-	color: $mai-violet;
-	font-weight: bold;
 }
 
 a:active {
@@ -50,7 +48,6 @@ div.box > p.removeCard {
 	width: 10px;
 	height: 10px;
 	line-height: 0;
-	color: $dark-gray;
 }
 
 
@@ -64,7 +61,7 @@ div.box > p.removeCard:hover {
 }
 
 div.social > a {
-	color: $dark-gray;
+	color: $mai-violet;
 }
 
 
