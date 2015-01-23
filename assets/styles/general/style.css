@@ -1,5 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Quicksand|Nova+Flat|Open+Sans);
 /*Import from general*/
+/* ---- Colors ---- */
+/* Gray */
+/*Yellow*/
+/* Pastel */
+/*Amber*/
+/*Orange*/
+/* Red */
+/* Pink */
+/* Violet */
+/* Purple */
+/* Indigo */
+/* Blue */
+/* Cyan */
+/* Sea */
+/* Green */
+/* Lime */
+/* Brown */
 /*BASIC COLORS*/
 /*purple*/
 /*green*/
@@ -60,19 +77,44 @@
 .orange-light {
   background-color: #FF8533; }
 
+.bg-gray1 {
+  background-color: #FCFCFC; }
+
+.border-gray1 {
+  background-color: #FCFCFC; }
+
+.font-gray1 {
+  background-color: #FCFCFC; }
+
+.bg-gray2 {
+  background-color: #F8F8F8; }
+
+.border-gray2 {
+  background-color: #F8F8F8; }
+
+.font-gray2 {
+  background-color: #F8F8F8; }
+
+.bg-gray3 {
+  background-color: #FCFCFC; }
+
+.border-gray3 {
+  background-color: #FCFCFC; }
+
+.font-gray3 {
+  background-color: #FCFCFC; }
+
 /*NAV SIZES*/
 /*SECTION SIZES*/
 h1 {
   font-family: 'Quicksand';
   font-size: 5em;
-  margin: 0;
-  color: white; }
+  margin: 0; }
 
 h2 {
   font-family: 'Quicksand';
   font-size: 2em;
-  margin: 0;
-  color: white; }
+  margin: 0; }
 
 h3 {
   font-family: 'Quicksand';
@@ -125,7 +167,12 @@ hr {
 
 /*  SECTIONS  */
 .container {
-  padding: 10px; }
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 50px; }
+
+.centered {
+  text-align: center; }
 
 .grid {
   clear: both;
@@ -136,8 +183,7 @@ hr {
 .col {
   display: block;
   float: left;
-  margin: 1% 0 1% 1.6%;
-  background-color: blue; }
+  margin: 1% 0 1% 1.6%; }
 
 .col:first-child {
   margin-left: 0; }
@@ -155,29 +201,29 @@ hr {
   /* For IE 6/7 */ }
 
 /*  GRID OF SIX  */
-.span_6_of_6 {
+.six {
   width: 100%; }
 
-.span_5_of_6 {
+.five {
   width: 83.06%; }
 
-.span_4_of_6 {
+.four {
   width: 66.13%; }
 
-.span_3_of_6 {
+.three {
   width: 49.2%; }
 
-.span_2_of_6 {
+.two {
   width: 32.26%; }
 
-.span_1_of_6 {
+.one {
   width: 15.33%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   .col {
     margin: 1% 0 1% 0%; }
-  .span_1_of_6, .span_2_of_6, .span_3_of_6, .span_4_of_6, .span_5_of_6, .span_6_of_6 {
+  .one, .two, .three, .four, .five, .six {
     width: 100%; } }
 
 /*HTML5 tags*/
