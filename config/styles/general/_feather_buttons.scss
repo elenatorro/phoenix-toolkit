@@ -1,16 +1,12 @@
-button:focus {
-  outline-style:none;
-}
-
-@mixin btn {
+button {
   margin:    10px;
   border: none;
   display: inline-block;
   text-align: center;
 }
 
-button {
-  @include btn;
+button:focus {
+  outline-style:none;
 }
 
 button:hover {
@@ -20,6 +16,7 @@ button:hover {
   filter: brightness(75%);
   cursor: pointer;
 }
+
 /* SIZES */
 .s-small {
   max-width: 100px;
@@ -39,14 +36,7 @@ button:hover {
   padding: 15px;
 }
 
-.rounded {
-  border-radius: 100px;
-}
-
-.squared {
-
-}
-
+/* Button Borders */
 .b-bottom {
   border-bottom: 5px solid $main-light;
 }
@@ -60,6 +50,7 @@ button:hover {
   border-right: 5px solid $main-light;
 }
 
+/* Button Types */
 .filled {
   color: white;
 }
@@ -70,9 +61,6 @@ button:hover {
   color: $main-light;
 }
 
-.btn-group {
-  text-align: center;
-  margin: 0 auto 0 auto;
-  padding: 0px;
-  display: inline-block;
+.rounded {
+  border-radius: 100px;
 }
