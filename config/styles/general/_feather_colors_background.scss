@@ -17,6 +17,7 @@
 @mixin color-generator() {
 
   @each $color in $colors {
+    $i: index($colors, $color);
     $key: nth($color,1);
     $bg: nth($color, 2);
 
