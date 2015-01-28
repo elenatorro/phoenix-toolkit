@@ -1,0 +1,26 @@
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  background-color: transparent;
+  overflow-x: scroll;
+  table-layout:fixed;
+  padding:none;
+}
+
+// table * {
+//   padding: 10px;
+// }
+
+td, th, tr {
+  padding: 10px;
+}
+
+thead {
+  text-align: left;
+}
+
+table > tbody, thead, tfoot {
+  padding: 0px;
+  margin: 0px;
+}
