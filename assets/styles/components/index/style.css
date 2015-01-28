@@ -1278,7 +1278,9 @@ hr {
   padding-top: 50px; }
 
 .centered {
-  text-align: center; }
+  text-align: center;
+  margin: 0 auto;
+  float: inherit; }
 
 .grid {
   clear: both;
@@ -1670,3 +1672,29 @@ code > xmp {
   padding: 0;
   margin: 0;
   overflow-x: scroll; }
+
+.blurry {
+  -webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px); }
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+  background-color: transparent;
+  overflow-x: scroll;
+  table-layout: fixed;
+  padding: none; }
+
+td, th, tr {
+  padding: 10px; }
+
+thead {
+  text-align: left; }
+
+table > tbody, thead, tfoot {
+  padding: 0px;
+  margin: 0px; }
