@@ -4,6 +4,7 @@
   <title>LookFW</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
   <link rel="stylesheet" href="assets/styles/components/index/style.css">
+  <link rel="stylesheet" href="assets/styles/general/prism.css">
   <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
 </head>
 <body id="page-body">
@@ -18,12 +19,13 @@
         </nav>
       </header>
     </article>
-    <div class="main-article container" id="components">
+    <div class="main-container">
       <section class="grid group">
         <div class="col six">
-        <a href="/"><img src="assets/images/phoenix_light.png" class="normal-logo"/></a>
-        <h1>Phoenix Framework</h1>
-        <h2 id="text-title">CSS & JS modularized frontend toolkit for beautiful websites.</h2>
+          <a href="/"><img src="assets/images/phoenix_light.png" class="normal-logo"/></a>
+          <h1>Phoenix Framework</h1>
+          <h2 id="text-title">CSS & JS modularized frontend toolkit for beautiful websites.</h2>
+        </div>
       </section>
       <section class="grid group">
         <div class="col six">
@@ -34,7 +36,7 @@
       </section>
     </div>
   </header>
-  <div class="main-container">
+  <div>
     <div class="container" id="components">
       <h2>The Grid</h2>
       <section class="grid group">
@@ -117,7 +119,7 @@
       <section class="grid group">
         <div class="col six">
           <h4>Code Example:</h4>
-<pre><code><xmp>
+<pre class="language-markup"><code class="language-markup"><xmp>
   <section class="grid group">
     <div class="col one">
       <article class="content-area">One</article>
@@ -188,7 +190,7 @@
     <section class="grid group">
       <div class="col six">
         <h4>Code Example:</h4>
-<pre><code><xmp>
+<pre class="language-markup"><code class="language-markup"><xmp>
   <button class="s-big filled bg-red9">Button</button>
   <button class="s-medium filled b-bottom bg-red6 border-red10">Button</button>
   <button class="s-big empty rounded border-green7 font-green7">Button</button>
@@ -350,8 +352,7 @@
     <section class="grid group">
       <div class="col six">
         <h4>Code Example:</h4>
-<pre><code><xmp>
-  <section class="grid group">
+<pre class="language-markup"><code class="language-markup"><xmp>  <section class="grid group">
     <div class="col one">
       <article class="content-area bg-blue9">pink9</article>
       <article class="content-area bg-pink10">pink10</article>
@@ -446,67 +447,56 @@
             </tbody>
           </table>
         </div>
+    </section>
+    <section class="grid group">
+      <div class="col six">
+        <h4>Code Example:</h4>
+        <pre class="language-markup"><code class="language-markup"><xmp>
+<table>
+  <thead class="font-blue7">
+    <tr>
+      <th>Month</th>
+      <th>Savings</th>
+    </tr>
+  </thead>
+  <tfoot class="font-blue10">
+    <tr>
+      <td>Sum</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+  <tbody class="empty border-blue7 font-blue7">
+    <tr>
+      <td>January</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>February</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+</table>
+        </xmp></code></pre>
       </div>
     </section>
-    <!-- <section class="grid group">
-      <div class="col two">
-        <table>
-          <thead>
-            <tr>
-              <th class="b-left bg-orange2 border-orange6">Month</th>
-              <th class="b-left bg-green2 border-green6">Savings</th>
-            </tr>
-          </thead>
-          <tfoot class="bg-gray6">
-            <tr>
-              <td class="b-left border-orange9">Sum</td>
-              <td class="b-left border-green9">$180</td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <td class="bg-gray3 b-left border-orange6">January</td>
-              <td class="bg-gray3 b-left border-green6">$100</td>
-            </tr>
-            <tr>
-              <td class="bg-gray3 b-left border-orange6">February</td>
-              <td class="bg-gray3 b-left border-green6">$80</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col two">
-        <table>
-          <thead>
-            <tr>
-              <th class="b-left bg-orange2 border-orange6">Month</th>
-              <th class="b-left bg-green2 border-green6">Savings</th>
-            </tr>
-          </thead>
-          <tfoot class="bg-gray6">
-            <tr>
-              <td class="b-left border-orange9">Sum</td>
-              <td class="b-left border-green9">$180</td>
-            </tr>
-          </tfoot>
-          <tbody>
-            <tr>
-              <td class="bg-gray3 b-left border-orange6">January</td>
-              <td class="bg-gray3 b-left border-green6">$100</td>
-            </tr>
-            <tr>
-              <td class="bg-gray3 b-left border-orange6">February</td>
-              <td class="bg-gray3 b-left border-green6">$80</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section> -->
+    </div>
+  </div>
+  <div class="container" id="components-tables">
+    <h2>Sliders</h2>
+  </div>
+  <button id="arrow-show">Show</button>
+  <button id="arrow-hide">Hide</button>
+  <div class="main-container slider" id="components">
+    <img src="assets/images/bg.jpg" class="slider-hide blurry" id="img1" />
+    <img src="assets/images/bg.jpg" id="img2" />
+        <h1>Slider</h1>
   </div>
 </div>
   <footer>
     <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
   </footer>
-  <script src="scripts/main.js"></script>
+  <script src="assets/scripts/general/prism.js"></script>
+  <script src="assets/scripts/general/prueba.js"></script>
+
 </body>
 </html>
