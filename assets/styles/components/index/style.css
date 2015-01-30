@@ -1583,7 +1583,7 @@ article.main-content {
   text-align: center;
   width: 100%; }
 
-.main-article {
+.main-container {
   background-color: rgba(51, 145, 148, 0.6);
   text-align: center;
   color: white; }
@@ -1599,6 +1599,31 @@ article.main-title {
   padding: 3px;
   padding: 5px;
   vertical-align: middle; }
+
+.slider {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden; }
+
+.slider > img {
+  width: 100%;
+  height: auto; }
+
+.slider > img.slider-hide {
+  left: -100%;
+  transition: 1s;
+  position: absolute; }
+
+.slider > h1 {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%; }
+
+.slider > img.slider-show {
+  transition: 1s;
+  left: 0; }
 
 /*Feather Sections*/
 section.resources > header {
@@ -1669,7 +1694,6 @@ code > xmp {
   padding: 10px;
   border-left: 5px solid #333333;
   font-size: 1.2em;
-  padding: 0;
   margin: 0;
   overflow-x: scroll; }
 
@@ -1685,9 +1709,7 @@ table {
   border: none;
   border-collapse: collapse;
   background-color: transparent;
-  overflow-x: scroll;
-  table-layout: fixed;
-  padding: none; }
+  overflow-x: scroll; }
 
 td, th, tr {
   padding: 10px; }
