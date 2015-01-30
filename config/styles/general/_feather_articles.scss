@@ -5,7 +5,7 @@ article.main-content {
   width: 100%;
 }
 
-.main-article {
+.main-container {
   background-color: rgba($mai-blue,0.6);
   text-align: center;
   color: white;
@@ -23,4 +23,36 @@ article.main-title {
   padding: 3px;
   padding: 5px;
   vertical-align: middle;
+}
+
+.slider {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  }
+
+.slider > img {
+  width: 100%;
+  height: auto;
+}
+
+.slider > img.slider-hide {
+  left: -100%;
+  transition: 1s;
+  position: absolute;
+}
+
+.slider > h1 {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+}
+
+
+
+.slider > img.slider-show {
+  transition: 1s;
+  left: 0;
 }
