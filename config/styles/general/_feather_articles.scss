@@ -39,8 +39,9 @@ article.main-title {
 
 .slider > img.slider-hide {
   left: -100%;
-  transition: 1s;
-  position: absolute;
+  @include transition-property(left);
+  @include transition-duration(1s);
+  @include transition-timing-function(ease);
 }
 
 .slider > h1 {
@@ -50,9 +51,12 @@ article.main-title {
   width: 100%;
 }
 
-
+//TODO
+//import CSS library for safary transitions.
 
 .slider > img.slider-show {
-  transition: 1s;
   left: 0;
+  @include transition-property(left);
+  @include transition-duration(1s);
+  @include transition-timing-function(ease);
 }
