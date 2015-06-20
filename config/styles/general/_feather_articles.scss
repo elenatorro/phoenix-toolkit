@@ -1,0 +1,56 @@
+article.main-content {
+  background-color: transparent;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 100%;
+}
+
+.main-container {
+  background-color: rgba($mai-blue,0.6);
+  text-align: center;
+  color: white;
+}
+
+article.main-title {
+  display: block;
+  text-align: center;
+}
+
+.content-area {
+  background-color: #E6E6E6;
+  height: 50px;
+  line-height: 50px;
+  padding: 3px;
+  padding: 5px;
+  vertical-align: middle;
+}
+
+.slider {
+  height: 400px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  }
+
+.slider > img {
+  width: 100%;
+  height: auto;
+}
+
+.slider > img.slider-hide {
+  left: -100%;
+}
+
+.slider > h1 {
+  position: absolute;
+  top: 150px;
+  left: 0;
+  width: 100%;
+}
+
+//TODO
+//import CSS library for safary transitions.
+
+.slider > img.slider-show {
+  left: 0;
+}

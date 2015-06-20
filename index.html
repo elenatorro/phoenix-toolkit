@@ -1,0 +1,515 @@
+<!DOCTYPE html5>
+<html5>
+<head>
+  <title>LookFW</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="assets/styles/components/index/style.css">
+  <link rel="stylesheet" href="assets/styles/general/prism.css">
+  <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
+</head>
+<body id="page-body">
+  <header class="main-header">
+    <article class="main-title">
+      <header class="main-title">
+        <nav id="top-bar">
+          <a href="/" id="main-link" class="nav-link">Main</a>
+          <a href="#components" class="nav-link">Components</a>
+          <a href="#cd-timeline" class="nav-link">Themes</a>
+          <a href="#portfolio" class="nav-link">Downloads</a>
+        </nav>
+      </header>
+    </article>
+    <div class="main-container">
+      <section class="grid group">
+        <div class="col six">
+          <a href="/"><img src="assets/images/phoenix_light.png" class="normal-logo"/></a>
+          <h1>Phoenix Framework</h1>
+          <h2 id="text-title">CSS & JS modularized frontend toolkit for beautiful websites.</h2>
+        </div>
+      </section>
+      <section class="grid group">
+        <div class="col six">
+          <button class="s-big rounded empty border-gray1" id="companies"><a class="font-gray1" href="https://twitter.com/Elenarcolepsia">I want to know more about it!</a></button>
+          <button class="s-big rounded empty border-gray1" id="blogs"><a class="font-gray1" href="https://github.com/elenatorro">Do you have any tutorial?</a></button>
+          <button class="s-big rounded empty border-gray1" id="tools"><a class="font-gray1" href="https://es.linkedin.com/in/elenatorro/">Cool! Let me download it!</a></button>
+        </div>
+      </section>
+    </div>
+  </header>
+  <div class="container" id="components">
+    <h2>The Grid</h2>
+    <section class="grid group">
+      <div class="col one">
+        <article class="content-area">One</article>
+      </div>
+      <div class="col five">
+        <article class="content-area">Five</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+      <div class="col four">
+        <article class="content-area">Four</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col three">
+        <article class="content-area">Three</article>
+      </div>
+      <div class="col three">
+        <article class="content-area">Three</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col four">
+        <article class="content-area">Four</article>
+      </div>
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col five">
+        <article class="content-area">Five</article>
+      </div>
+      <div class="col one">
+        <article class="content-area">One</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col six">
+        <article class="content-area">Six</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+      <div class="col one">
+        <article class="content-area">One</article>
+      </div>
+      <div class="col one">
+        <article class="content-area">One</article>
+      </div>
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+      <div class="col two">
+        <article class="content-area">Two</article>
+      </div>
+    </section>
+    <section class="grid group">
+      <div class="col six">
+        <h4>Code Example:</h4>
+<pre class="language-markup"><code class="language-markup"><xmp>
+<section class="grid group">
+  <div class="col one">
+    <article class="content-area">One</article>
+  </div>
+  <div class="col five">
+    <article class="content-area">Five</article>
+  </div>
+</section>
+</xmp></code></pre>
+      </div>
+    </section>
+  </div>
+
+  <div class="container" id="components-buttons">
+    <h2>Buttons</h2>
+    <section class="grid group">
+      <div class="col one">
+        <article>Rounded Buttons</article>
+      </div>
+      <div class="col five">
+        <button class="s-small rounded bg-blue7">Button</button>
+        <button class="s-medium rounded bg-blue7">Button</button>
+        <button class="s-big rounded bg-blue7">Button</button>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col one">
+        <article>Squared Buttons</article>
+      </div>
+      <div class="col five">
+        <button class="s-small filled bg-red9">Button</button>
+        <button class="s-medium filled bg-red9">Button</button>
+        <button class="s-big filled bg-red9">Button</button>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col one">
+        <article>Empty Buttons</article>
+      </div>
+      <div class="col five">
+        <button class="s-small empty border-green7 font-green7">Button</button>
+        <button class="s-medium empty border-green7 font-green7">Button</button>
+        <button class="s-big empty border-green7 font-green7">Button</button>
+        <button class="s-small empty rounded border-green7 font-green7">Button</button>
+        <button class="s-medium empty rounded border-green7 font-green7">Button</button>
+        <button class="s-big empty rounded border-green7 font-green7">Button</button>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col one">
+        <article>Bordered Buttons</article>
+      </div>
+      <div class="col five">
+        <button class="s-medium filled b-bottom bg-red6 border-red10">Button</button>
+        <button class="s-medium filled b-left bg-blue7 border-blue10">Button</button>
+        <button class="s-medium filled b-right bg-green6 border-green10">Button</button>
+        <button class="s-medium filled b-top bg-yellow6 border-yellow7">Button</button>
+        <button class="s-medium filled b-top b-bottom bg-red6 border-red10">Button</button>
+        <button class="s-medium filled b-right b-left bg-blue7 border-blue10">Button</button>
+        <button class="s-medium filled b-right b-left rounded bg-green6 border-green10">Button</button>
+        <button class="s-medium filled b-top b-bottom rounded bg-green6 border-green10">Button</button>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col six">
+        <h4>Code Example:</h4>
+<pre class="language-markup"><code class="language-markup"><xmp>
+  <button class="s-big filled bg-red9">Button</button>
+  <button class="s-medium filled b-bottom bg-red6 border-red10">Button</button>
+  <button class="s-big empty rounded border-green7 font-green7">Button</button>
+</xmp></code></pre>
+      </div>
+    </section>
+</div>
+
+  <div class="container" id="components-colors">
+    <h2>Colors</h2>
+    <section class="grid group">
+      <div class="col one">
+        <article class="content-area bg-gray1">gray1</article>
+        <article class="content-area bg-gray2">gray2</article>
+        <article class="content-area bg-gray3">gray3</article>
+        <article class="content-area bg-gray4">gray4</article>
+        <article class="content-area bg-gray5">gray5</article>
+        <article class="content-area bg-gray6">gray6</article>
+        <article class="content-area bg-gray7">gray7</article>
+        <article class="content-area bg-gray8">gray8</article>
+        <article class="content-area bg-gray9">gray9</article>
+        <article class="content-area bg-gray10">gray10</article>
+        <article class="content-area bg-gray11">gray11</article>
+        <article class="content-area bg-gray12">gray12</article>
+        <article class="content-area bg-gray13">gray13</article>
+        <article class="content-area bg-gray14">gray14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-yellow1">yellow1</article>
+        <article class="content-area bg-yellow2">yellow2</article>
+        <article class="content-area bg-yellow3">yellow3</article>
+        <article class="content-area bg-yellow4">yellow4</article>
+        <article class="content-area bg-yellow5">yellow5</article>
+        <article class="content-area bg-yellow6">yellow6</article>
+        <article class="content-area bg-yellow7">yellow7</article>
+        <article class="content-area bg-pastel1">pastel1</article>
+        <article class="content-area bg-pastel2">pastel2</article>
+        <article class="content-area bg-pastel3">pastel3</article>
+        <article class="content-area bg-pastel4">pastel4</article>
+        <article class="content-area bg-pastel5">pastel5</article>
+        <article class="content-area bg-pastel6">pastel6</article>
+        <article class="content-area bg-pastel7">pastel7</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-orange1">orange1</article>
+        <article class="content-area bg-orange2">orange2</article>
+        <article class="content-area bg-orange3">orange3</article>
+        <article class="content-area bg-orange4">orange4</article>
+        <article class="content-area bg-orange5">orange5</article>
+        <article class="content-area bg-orange6">orange6</article>
+        <article class="content-area bg-orange7">orange7</article>
+        <article class="content-area bg-orange8">orange8</article>
+        <article class="content-area bg-orange9">orange9</article>
+        <article class="content-area bg-orange10">orange10</article>
+        <article class="content-area bg-orange11">orange11</article>
+        <article class="content-area bg-orange12">orange12</article>
+        <article class="content-area bg-orange13">orange13</article>
+        <article class="content-area bg-orange14">orange14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-red1">red1</article>
+        <article class="content-area bg-red2">red2</article>
+        <article class="content-area bg-red3">red3</article>
+        <article class="content-area bg-red4">red4</article>
+        <article class="content-area bg-red5">red5</article>
+        <article class="content-area bg-red6">red6</article>
+        <article class="content-area bg-red7">red7</article>
+        <article class="content-area bg-red8">red8</article>
+        <article class="content-area bg-red9">red9</article>
+        <article class="content-area bg-red10">red10</article>
+        <article class="content-area bg-red11">red11</article>
+        <article class="content-area bg-red12">red12</article>
+        <article class="content-area bg-red13">red13</article>
+        <article class="content-area bg-red14">red14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-lime1">lime1</article>
+        <article class="content-area bg-lime2">lime2</article>
+        <article class="content-area bg-lime3">lime3</article>
+        <article class="content-area bg-lime4">lime4</article>
+        <article class="content-area bg-lime5">lime5</article>
+        <article class="content-area bg-lime6">lime6</article>
+        <article class="content-area bg-lime7">lime7</article>
+        <article class="content-area bg-lime8">lime8</article>
+        <article class="content-area bg-lime9">lime9</article>
+        <article class="content-area bg-lime10">lime10</article>
+        <article class="content-area bg-lime11">lime11</article>
+        <article class="content-area bg-lime12">lime12</article>
+        <article class="content-area bg-lime13">lime13</article>
+        <article class="content-area bg-lime14">lime14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-green1">green1</article>
+        <article class="content-area bg-green2">green2</article>
+        <article class="content-area bg-green3">green3</article>
+        <article class="content-area bg-green4">green4</article>
+        <article class="content-area bg-green5">green5</article>
+        <article class="content-area bg-green6">green6</article>
+        <article class="content-area bg-green7">green7</article>
+        <article class="content-area bg-green8">green8</article>
+        <article class="content-area bg-green9">green9</article>
+        <article class="content-area bg-green10">green10</article>
+        <article class="content-area bg-green11">green11</article>
+        <article class="content-area bg-green12">green12</article>
+        <article class="content-area bg-green13">green13</article>
+        <article class="content-area bg-green14">green14</article>
+      </div>
+    </section>
+    <section class="grid group">
+      <div class="col one">
+        <article class="content-area bg-sea1">sea1</article>
+        <article class="content-area bg-sea2">sea2</article>
+        <article class="content-area bg-sea3">sea3</article>
+        <article class="content-area bg-sea4">sea4</article>
+        <article class="content-area bg-sea5">sea5</article>
+        <article class="content-area bg-sea6">sea6</article>
+        <article class="content-area bg-sea7">sea7</article>
+        <article class="content-area bg-sea8">sea8</article>
+        <article class="content-area bg-sea9">sea9</article>
+        <article class="content-area bg-sea10">sea10</article>
+        <article class="content-area bg-sea11">sea11</article>
+        <article class="content-area bg-sea12">sea12</article>
+        <article class="content-area bg-sea13">sea13</article>
+        <article class="content-area bg-sea14">sea14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-blue1">blue1</article>
+        <article class="content-area bg-blue2">blue2</article>
+        <article class="content-area bg-blue3">blue3</article>
+        <article class="content-area bg-blue4">blue4</article>
+        <article class="content-area bg-blue5">blue5</article>
+        <article class="content-area bg-blue6">blue6</article>
+        <article class="content-area bg-blue7">blue7</article>
+        <article class="content-area bg-blue8">blue8</article>
+        <article class="content-area bg-blue9">blue9</article>
+        <article class="content-area bg-blue10">blue10</article>
+        <article class="content-area bg-blue11">blue11</article>
+        <article class="content-area bg-blue12">blue12</article>
+        <article class="content-area bg-blue13">blue13</article>
+        <article class="content-area bg-blue14">blue14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-purple1">purple1</article>
+        <article class="content-area bg-purple2">purple2</article>
+        <article class="content-area bg-purple3">purple3</article>
+        <article class="content-area bg-purple4">purple4</article>
+        <article class="content-area bg-purple5">purple5</article>
+        <article class="content-area bg-purple6">purple6</article>
+        <article class="content-area bg-purple7">purple7</article>
+        <article class="content-area bg-purple8">purple8</article>
+        <article class="content-area bg-purple9">purple9</article>
+        <article class="content-area bg-purple10">purple10</article>
+        <article class="content-area bg-purple11">purple11</article>
+        <article class="content-area bg-purple12">purple12</article>
+        <article class="content-area bg-purple13">purple13</article>
+        <article class="content-area bg-purple14">purple14</article>
+      </div>
+      <div class="col one">
+        <article class="content-area bg-pink1">pink1</article>
+        <article class="content-area bg-pink2">pink2</article>
+        <article class="content-area bg-pink3">pink3</article>
+        <article class="content-area bg-pink4">pink4</article>
+        <article class="content-area bg-pink5">pink5</article>
+        <article class="content-area bg-pink6">pink6</article>
+        <article class="content-area bg-pink7">pink7</article>
+        <article class="content-area bg-pink8">pink8</article>
+        <article class="content-area bg-pink9">pink9</article>
+        <article class="content-area bg-pink10">pink10</article>
+        <article class="content-area bg-pink11">pink11</article>
+        <article class="content-area bg-pink12">pink12</article>
+        <article class="content-area bg-pink13">pink13</article>
+        <article class="content-area bg-pink14">pink14</article>
+      </div>
+    </section>
+    <section class="grid group">
+      <div class="col six">
+        <h4>Code Example:</h4>
+<pre class="language-markup"><code class="language-markup"><xmp>  <section class="grid group">
+    <div class="col one">
+      <article class="content-area bg-blue9">pink9</article>
+      <article class="content-area bg-pink10">pink10</article>
+      <article class="content-area bg-red11">pink11</article>
+      <article class="content-area bg-yellow12">pink12</article>
+      <article class="content-area bg-lime13">pink13</article>
+      <article class="content-area bg-gray14">pink14</article>
+    </div>
+  </section>
+</xmp></code></pre>
+      </div>
+    </section>
+  </div>
+    <div class="container" id="components-tables">
+      <h2>Tables</h2>
+      <section class="grid group">
+        <div class="col two col-table">
+          <table>
+            <thead class="b-bottom bg-orange2 border-orange6">
+              <tr>
+                <th>Month</th>
+                <th>Savings</th>
+              </tr>
+            </thead>
+            <tfoot class="bg-gray6">
+              <tr>
+                <td>Sum</td>
+                <td>$180</td>
+              </tr>
+            </tfoot>
+            <tbody class="bg-gray3">
+              <tr>
+                <td>January</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>$80</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col two col-table">
+          <table>
+            <thead>
+              <tr>
+                <th class="b-left bg-orange2 border-orange6">Month</th>
+                <th class="b-left bg-green2 border-green6">Savings</th>
+              </tr>
+            </thead>
+            <tfoot class="bg-gray6">
+              <tr>
+                <td class="b-left border-orange9">Sum</td>
+                <td class="b-left border-green9">$180</td>
+              </tr>
+            </tfoot>
+            <tbody>
+              <tr>
+                <td class="bg-gray3 b-left border-orange6">January</td>
+                <td class="bg-gray3 b-left border-green6">$100</td>
+              </tr>
+              <tr>
+                <td class="bg-gray3 b-left border-orange6">February</td>
+                <td class="bg-gray3 b-left border-green6">$80</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col two col-table">
+          <table>
+            <thead class="font-blue7">
+              <tr>
+                <th>Month</th>
+                <th>Savings</th>
+              </tr>
+            </thead>
+            <tfoot class="font-blue10">
+              <tr>
+                <td>Sum</td>
+                <td>$180</td>
+              </tr>
+            </tfoot>
+            <tbody class="empty border-blue7 font-blue7">
+              <tr>
+                <td>January</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>February</td>
+                <td>$80</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </section>
+
+    <section class="grid group">
+      <div class="col six">
+        <h4>Code Example:</h4>
+        <h5>Don't forget to add the class <strong>col-table</strong> to the div column.</h5>
+        <pre class="language-markup"><code class="language-markup"><xmp>
+<div class="col two col-table">
+  <table>
+    <thead class="font-blue7">
+      <tr>
+        <th>Month</th>
+        <th>Savings</th>
+      </tr>
+    </thead>
+    <tfoot class="font-blue10">
+      <tr>
+        <td>Sum</td>
+        <td>$180</td>
+      </tr>
+    </tfoot>
+    <tbody class="empty border-blue7 font-blue7">
+      <tr>
+        <td>January</td>
+        <td>$100</td>
+      </tr>
+      <tr>
+        <td>February</td>
+        <td>$80</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+        </xmp></code></pre>
+      </div>
+    </section>
+  </div>
+</div>
+  <footer class="bg-gray5">
+    <section class="grid group">
+      <div class="col six">
+        <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
+      </div>
+      <div class="col six text-left">
+        Code Highlight: <a href="http://prismjs.com/" target="_blank">PrismJS</a></li>
+      </div>
+    </section>
+  </footer>
+  <script src="assets/scripts/general/prism.js"></script>
+</body>
+</html5>

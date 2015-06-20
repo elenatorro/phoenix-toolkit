@@ -1,0 +1,49 @@
+@mixin background-gradient($colorFrom, $colorTo) {
+  background-image: -ms-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+  background-image: -moz-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+  background-image: -o-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+  background-image: -webkit-gradient(linear, right bottom, left top, color-stop(0, $colorFrom), color-stop(1, $colorTo));
+  background-image: -webkit-linear-gradient(bottom right, $colorFrom 0%, $colorTo 100%);
+  background-image: linear-gradient(to top left, $colorFrom 0%, $colorTo 100%);
+}
+
+@mixin box-shadow($colorShadow, $colorBackground) {
+  -webkit-box-shadow: 8px -8px 0px 3px $colorShadow;
+  -moz-box-shadow: 8px -8px 0px 3px $colorShadow;
+  box-shadow: 8px -8px 0px 3px $colorShadow;
+  background-color: $colorBackground;
+}
+
+@mixin color-generator() {
+  @each $color in $colors {
+    $i: index($colors, $color);
+    $key: nth($color,1);
+    $bg: nth($color, 2);
+
+    .bg-#{$key} {
+      background-color: $bg !important;
+    }
+
+    .border-#{$key} {
+      border-color: $bg !important;
+    }
+
+    .font-#{$key} {
+      color: $bg !important;
+    }
+
+    .bg-hover-#{$key}:hover {
+      background-color: $bg !important;
+    }
+
+    .border-hover-#{$key}:hover {
+      border-color: $bg !important;
+    }
+
+    .font-hover-#{$key}:hover {
+      color: $bg !important;
+    }
+  }
+}
+
+@include color-generator();

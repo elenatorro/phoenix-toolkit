@@ -1,0 +1,45 @@
+div.search {
+  margin: 0 auto 0 auto;
+  margin-top: 10px;
+  display: table;
+  position: static;
+  overflow: hidden;
+  margin-bottom: 30px;
+  width: 40%;
+}
+
+div.input-search {
+  display: table-cell;
+  line-height: 35px;
+  width: 100%;
+}
+
+input[type=search] {
+  -webkit-appearance:none;
+  margin: 0;
+  font-size: 1em;
+  background-color: white;
+
+  outline: none;
+  text-align: left;
+
+  border: 2px solid $violet-dark;
+  height: 40px;
+  padding: 5px;
+  line-height: 35px;
+}
+
+select {
+  border: none;
+  border-radius: 0;
+  background-color: green;
+  padding: 5px;
+  color: white;
+  height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  div.search {
+    width: 80%;
+  }
+}

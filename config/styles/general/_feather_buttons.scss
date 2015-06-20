@@ -1,0 +1,71 @@
+$s-small-width: 100px;
+$s-medium-width: 150px;
+$s-big-width: 200px;
+
+button {
+  margin: 10px;
+  border: none;
+  display: inline-block;
+  text-align: center;
+}
+
+button:focus {
+  outline-style:none;
+}
+
+button:hover {
+  -webkit-filter: brightness(75%);
+  -moz-filter: brightness(75%);
+  -o-filter: brightness(75%);
+  filter: brightness(75%);
+  cursor: pointer;
+}
+
+/* SIZES */
+.s-small {
+  max-width: $s-small-width;
+  min-width: $s-small-width;
+  padding:   5px;
+}
+
+.s-medium {
+  max-width: $s-medium-width;
+  min-width: $s-medium-width;
+  padding: 10px;
+}
+
+.s-big {
+  max-width: $s-big-width;
+  min-width: $s-big-width;
+  padding: 15px;
+}
+
+/* Button Borders */
+.b-bottom {
+  border-bottom: 5px solid $main-light;
+}
+.b-top {
+  border-top: 5px solid $main-light;
+}
+.b-left {
+  border-left: 5px solid $main-light;
+
+}
+.b-right {
+  border-right: 5px solid $main-light;
+}
+
+/* Button Types */
+.filled {
+  color: white;
+}
+
+.empty {
+  border: 3px solid $main-light;
+  background-color: transparent;
+  color: $main-light;
+}
+
+.rounded {
+  border-radius: 100px;
+}

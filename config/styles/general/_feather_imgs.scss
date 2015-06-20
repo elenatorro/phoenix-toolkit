@@ -1,0 +1,41 @@
+img.border-logo {
+  border-bottom: 10px solid $mai-orange;
+  border-left: 10px solid $mai-violet;
+  border-radius: 50%;
+  border-right: 10px solid $mai-yellow;
+  border-top: 10px solid $mai-red;
+  margin-top: 35px;
+  min-width: 150px;
+  width: 10%;
+}
+
+img.normal-logo {
+  border-radius: 50%;
+  margin-top: 35px;
+  min-width: 150px;
+  width: 10%;
+}
+
+img.mini-logo {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+}
+
+img.img-resource {
+  vertical-align: middle;
+  width: 150px;
+}
+
+img.mini-circular {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: 5px solid $violet-light;
+  display: inline-block;
+  float: left;
+  height: 50px;
+  margin: 0 5px;
+  overflow: hidden;
+  width: 50px;
+}

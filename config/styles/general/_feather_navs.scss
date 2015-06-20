@@ -1,0 +1,51 @@
+header.main-header nav {
+	background-color: #333333;
+	display: table;
+	height: 10px;
+	margin-bottom: 100px;
+	opacity: 0.9;
+	position: fixed;
+	text-align: right;
+	width: 100%;
+	z-index: 100;
+}
+
+header.main-header nav > a {
+	color: white;
+	display: inline-block;
+	margin: 0px;
+	padding: 15px;
+}
+
+header.main-header nav > a {
+	 @extend .bg-hover-red9;
+	 @extend .font-hover-gray1;
+}
+
+#main-link {
+	float: left;
+}
+
+
+@media screen and (max-width: 600px) {
+	header.main-header nav {
+		display: block;
+		height: 156px;
+		position: relative;
+		text-align: center;
+		width: 100%;
+	}
+
+	header.main-header nav > a {
+		display: inline-block;
+		padding: 10px 0;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	header.main-header nav {
+		height: 168px;
+		margin-bottom: 0px;
+	}
+}

@@ -1,0 +1,15 @@
+{
+  "name": "lookfw",
+  "version": "0.0.0",
+  "description": "HTML, CSS and JS framework for frontend applications",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ElenaTorro",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-inject": "^1.1.1",
+    "yargs": "^1.3.3"
+  }
+}

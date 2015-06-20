@@ -1,0 +1,96 @@
+/*GENERAL LINKS*/
+a {
+	text-decoration: none;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	color: $mai-blue;
+}
+
+a.text-link {
+	color: $mai-blue;
+}
+
+a.text-link:hover {
+	background-color: $mai-blue;
+	color: white;
+}
+
+section.resources > header > a {
+	color: white;
+}
+
+section.resources > header > a:hover {
+	color: $green-light;
+	font-weight: bold;
+}
+
+a.btn-neutral {
+	font-weight: normal;
+}
+
+a.btn-neutral:hover {
+	color: black;
+}
+
+div.box > p.removeCard {
+	display: inline-block;
+	float: right;
+	color: silver;
+	width: 10px;
+	height: 10px;
+	line-height: 0;
+}
+
+
+div.box.black > p.removeCard {
+	color: white;
+}
+
+div.box > p.removeCard:hover {
+	cursor: pointer;
+	color: silver;
+}
+
+div.social > a {
+	color: $mai-violet;
+}
+
+
+/*NAV LINKS*/
+a.main-logo {
+	color: $indigo;
+	float: left;
+	display: inline-block;
+	vertical-align: middle;
+	margin-top: $HEADER-NAV-HEIGHT / 2.5;
+}
+
+a:hover.main-logo {
+	color: $indigo;
+}
+
+header.main-header nav > a {
+	color: #E6E6E6;
+}
+
+header.main-header nav > a:hover {
+	color: $mai-yellow;
+}
+
+.horizontal-nav > ul > li > a {
+	color: $indigo;
+	text-align: center;
+}
+
+.horizontal-nav > ul > li > a:hover {
+	color: $indigo;
+}
