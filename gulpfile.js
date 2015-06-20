@@ -38,7 +38,7 @@ gulp.task('compile_script_components', function() {
 })
 
   //task to compile style component
-  gulp.task('compile_style_components', function(name) {
+  gulp.task('compile_style_components', function() {
     return gulp.src('config/styles/components/' + argv.comp + '/*.scss')
     .pipe(sass())
     .pipe(concat('style.css'))
@@ -72,4 +72,4 @@ gulp.task('yields', function() {
 })
 
 
-gulp.task('default');
+gulp.task('default', ['style', 'scripts']);
