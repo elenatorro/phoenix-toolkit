@@ -17,9 +17,9 @@ header.main-header nav > a {
 	padding: 15px;
 }
 
-header.main-header nav > a:hover {
-	background-color: $orange-light;
-	color: white;
+header.main-header nav > a {
+	 @extend .bg-hover-red9;
+	 @extend .font-hover-gray1;
 }
 
 #main-link {
