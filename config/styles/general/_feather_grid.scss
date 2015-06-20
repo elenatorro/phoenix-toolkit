@@ -58,6 +58,13 @@
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
-  .col {  margin: 1% 0 1% 0%; }
+  .col {  margin: 1% 0 1% 0%; };
   .one, .two, .three, .four, .five, .six { width: 100%; }
+}
+
+@media only screen and (max-width: 600px) {
+  .col-table {
+    margin: 1% 0 1% 0%;
+    width: 100%;
+  }
 }
