@@ -31,6 +31,18 @@
     .font-#{$key} {
       color: $bg !important;
     }
+
+    .bg-hover-#{$key}:hover {
+      background-color: $bg !important;
+    }
+
+    .border-hover-#{$key}:hover {
+      border-color: $bg !important;
+    }
+
+    .font-hover-#{$key}:hover {
+      color: $bg !important;
+    }
   }
 }
 
