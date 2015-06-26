@@ -28,11 +28,20 @@ header.main-header nav > a {
 
 
 @media screen and (max-width: 600px) {
+	.page-title {
+		font-size: 2.5em; 
+	}
+
+	.page-text-title {
+		font-size: 2em; 
+	}
+
 	header.main-header nav {
 		display: block;
 		position: relative;
 		text-align: center;
 		width: 100%;
+		margin-bottom: 0px;
 	}
 
 	header.main-header nav > a {
@@ -40,11 +49,5 @@ header.main-header nav > a {
 		padding: 10px 0;
 		width: 100%;
 		background-color: #333333;
-	}
-}
-
-@media screen and (max-width: 600px) {
-	header.main-header nav {
-		margin-bottom: 0px;
 	}
 }

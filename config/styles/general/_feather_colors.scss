@@ -212,17 +212,10 @@ $marine-light: #00297A;
 $dark-gray: #1A1A1A;
 $granate: #990000;
 
-/* MAI theme*/
-$mai-blue:  #339194;
-$mai-red:   #F10C49;
-$mai-violet:#A70267;
-$mai-orange:#FB6B41;
-$mai-yellow:#efb70a;
-
 /* MAIN COLORS */
-$main-light: $mai-blue;
-$main-medium: $blue;
-$main-dark: $mai-orange;
+$main-light: #339194;
+$main-medium: #F10C49;
+$main-dark: #FB6B41;
 
 /*BODY COLORS*/
 $BODY-BACKGROUND-COLOR: white;
@@ -236,27 +229,6 @@ $MAIN-HEADER-LINK-HOVER-COLOR: #858585;
 $MAIN-CONTAINER-BACKGROUND-COLOR: $indigo;
 
 $HEADER-NAV-BACKGROUND-COLOR: $orange-medium;
-
-
-.mai-violet {
-  background-color: $mai-violet;
-}
-
-.mai-red {
-  background-color: $mai-red;
-}
-
-.mai-orange {
-  background-color: $mai-orange;
-}
-
-.mai-yellow {
-  background-color: $mai-yellow;
-}
-
-.mai-blue {
-  background-color: $mai-blue;
-}
 
 .yellow {
   background-color: $yellow;
@@ -288,16 +260,4 @@ $HEADER-NAV-BACKGROUND-COLOR: $orange-medium;
   background-color: white;
   border-color: white;
   color: black;
-}
-
-.orange-dark {
-  background-color: $orange-dark;
-}
-
-.orange-medium {
-  background-color: $orange-medium;
-}
-
-.orange-light {
-  background-color: $orange-light;
 }

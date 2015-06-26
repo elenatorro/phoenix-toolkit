@@ -21,25 +21,9 @@
 /*orange*/
 /*red*/
 /*marine*/
-/* MAI theme*/
 /* MAIN COLORS */
 /*BODY COLORS*/
 /*LINK COLORS*/
-.mai-violet {
-  background-color: #A70267; }
-
-.mai-red {
-  background-color: #F10C49; }
-
-.mai-orange {
-  background-color: #FB6B41; }
-
-.mai-yellow {
-  background-color: #efb70a; }
-
-.mai-blue {
-  background-color: #339194; }
-
 .yellow {
   background-color: #F5D76E;
   border-color: #F5D76E; }
@@ -65,15 +49,6 @@
   background-color: white;
   border-color: white;
   color: black; }
-
-.orange-dark {
-  background-color: #993D00; }
-
-.orange-medium {
-  background-color: #FF6600; }
-
-.orange-light {
-  background-color: #FF8533; }
 
 .bg-gray1 {
   background-color: #FCFCFC !important; }
@@ -2645,6 +2620,10 @@ strong {
 
 .text-shadow {
   text-shadow: 1px 1px 0px #339194; }
+
+.page-title, .page-text-title {
+  max-width: 80%;
+  margin: 0 auto 0 auto; }
 
 table {
   width: 100%;

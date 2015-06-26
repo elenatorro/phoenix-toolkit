@@ -12,15 +12,15 @@ a:visited {
 }
 
 a:hover {
-	color: $mai-blue;
+	color: $main-light;
 }
 
 a.text-link {
-	color: $mai-blue;
+	color: $main-medium;
 }
 
 a.text-link:hover {
-	background-color: $mai-blue;
+	background-color: $main-dark;
 	color: white;
 }
 
@@ -61,7 +61,7 @@ div.box > p.removeCard:hover {
 }
 
 div.social > a {
-	color: $mai-violet;
+	color: $main-dark;
 }
 
 
@@ -72,25 +72,4 @@ a.main-logo {
 	display: inline-block;
 	vertical-align: middle;
 	margin-top: $HEADER-NAV-HEIGHT / 2.5;
-}
-
-a:hover.main-logo {
-	color: $indigo;
-}
-
-header.main-header nav > a {
-	color: #E6E6E6;
-}
-
-header.main-header nav > a:hover {
-	color: $mai-yellow;
-}
-
-.horizontal-nav > ul > li > a {
-	color: $indigo;
-	text-align: center;
-}
-
-.horizontal-nav > ul > li > a:hover {
-	color: $indigo;
 }

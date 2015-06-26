@@ -14,3 +14,8 @@ strong { font-weight: bold; }
 .text-shadow {
   text-shadow: 1px 1px 0px rgba(51,145,148, 1);
 }
+
+.page-title, .page-text-title {
+	max-width: 80%;
+	margin: 0 auto 0 auto;
+}
