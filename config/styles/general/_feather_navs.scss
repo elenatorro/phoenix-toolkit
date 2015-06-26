@@ -1,7 +1,6 @@
 header.main-header nav {
 	background-color: #333333;
 	display: table;
-	height: 10px;
 	margin-bottom: 100px;
 	opacity: 0.9;
 	position: fixed;
@@ -40,12 +39,12 @@ header.main-header nav > a {
 		display: inline-block;
 		padding: 10px 0;
 		width: 100%;
+		background-color: #333333;
 	}
 }
 
 @media screen and (max-width: 600px) {
 	header.main-header nav {
-		height: 168px;
 		margin-bottom: 0px;
 	}
 }
