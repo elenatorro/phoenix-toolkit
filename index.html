@@ -38,81 +38,61 @@
   </header>
   <div class="container" id="components">
     <h2>The Grid</h2>
+    <h3>No padding</h3>
     <section class="grid group">
       <div class="col one">
-        <article class="content-area">One</article>
+        <article class="content-area bg-gray2">One</article>
       </div>
       <div class="col five">
-        <article class="content-area">Five</article>
-      </div>
-    </section>
-
-    <section class="grid group">
-      <div class="col two">
-        <article class="content-area">Two</article>
-      </div>
-      <div class="col four">
-        <article class="content-area">Four</article>
-      </div>
-    </section>
-
-    <section class="grid group">
-      <div class="col three">
-        <article class="content-area">Three</article>
-      </div>
-      <div class="col three">
-        <article class="content-area">Three</article>
-      </div>
-    </section>
-
-    <section class="grid group">
-      <div class="col four">
-        <article class="content-area">Four</article>
+        <article class="content-area bg-gray3">Five</article>
       </div>
       <div class="col two">
-        <article class="content-area">Two</article>
+        <article class="content-area bg-gray4" >Two</article>
       </div>
-    </section>
-
-    <section class="grid group">
+      <div class="col four">
+        <article class="content-area bg-gray2">Four</article>
+      </div>
+      <div class="col three">
+        <article class="content-area bg-gray3">Three</article>
+      </div>
+      <div class="col three">
+        <article class="content-area bg-gray5">Three</article>
+      </div>
+      <div class="col four">
+        <article class="content-area bg-gray5">Four</article>
+      </div>
+      <div class="col two">
+        <article class="content-area bg-gray3">Two</article>
+      </div>
       <div class="col five">
-        <article class="content-area">Five</article>
+        <article class="content-area bg-gray4">Five</article>
       </div>
       <div class="col one">
-        <article class="content-area">One</article>
+        <article class="content-area bg-gray2">One</article>
       </div>
-    </section>
-
-    <section class="grid group">
       <div class="col six">
-        <article class="content-area">Six</article>
+        <article class="content-area bg-gray3">Six</article>
       </div>
-    </section>
-
-    <section class="grid group">
       <div class="col two">
-        <article class="content-area">Two</article>
+        <article class="content-area bg-gray4">Two</article>
       </div>
       <div class="col one">
-        <article class="content-area">One</article>
+        <article class="content-area bg-gray2">One</article>
       </div>
       <div class="col one">
-        <article class="content-area">One</article>
+        <article class="content-area bg-gray5">One</article>
       </div>
       <div class="col two">
-        <article class="content-area">Two</article>
-      </div>
-    </section>
-
-    <section class="grid group">
-      <div class="col two">
-        <article class="content-area">Two</article>
+        <article class="content-area bg-gray2">Two</article>
       </div>
       <div class="col two">
-        <article class="content-area">Two</article>
+        <article class="content-area bg-gray3">Two</article>
       </div>
       <div class="col two">
-        <article class="content-area">Two</article>
+        <article class="content-area bg-gray4">Two</article>
+      </div>
+      <div class="col two">
+        <article class="content-area bg-gray5">Two</article>
       </div>
     </section>
     <section class="grid group">
@@ -128,6 +108,63 @@
   </div>
 </section>
 </xmp></code></pre>
+      </div>
+    </section>
+    <h3>With padding</h3>
+    <section class="grid group">
+      <div class="col one">
+        <article class="content-padding-area">One</article>
+      </div>
+      <div class="col five">
+        <article class="content-padding-area">Five</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
+      </div>
+      <div class="col four">
+        <article class="content-padding-area">Four</article>
+      </div>
+      <div class="col three">
+        <article class="content-padding-area">Three</article>
+      </div>
+      <div class="col three">
+        <article class="content-padding-area">Three</article>
+      </div>
+      <div class="col four">
+        <article class="content-padding-area">Four</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
+      </div>
+      <div class="col five">
+        <article class="content-padding-area">Five</article>
+      </div>
+      <div class="col one">
+        <article class="content-padding-area">One</article>
+      </div>
+      <div class="col six">
+        <article class="content-padding-area">Six</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
+      </div>
+      <div class="col one">
+        <article class="content-padding-area">One</article>
+      </div>
+      <div class="col one">
+        <article class="content-padding-area">One</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
+      </div>
+      <div class="col two">
+        <article class="content-padding-area">Two</article>
       </div>
     </section>
   </div>
@@ -297,6 +334,32 @@
               </tr>
             </tbody>
           </table>
+      </div>
+      <div class="col six col-table">
+        <table>
+          <thead class="font-gray14 b-bottom border-gray4">
+            <tr>
+              <th>Month</th>
+              <th>Savings</th>
+            </tr>
+          </thead>
+          <tfoot class="font-gray12">
+            <tr>
+              <td>Sum</td>
+              <td>$180</td>
+            </tr>
+          </tfoot>
+          <tbody class="font-gray12 b-bottom border-gray3">
+            <tr class="b-bottom border-gray3">
+              <td>January</td>
+              <td>$100</td>
+            </tr>
+            <tr class="b-bottom border-gray3">
+              <td>February</td>
+              <td>$80</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
     </section>
 

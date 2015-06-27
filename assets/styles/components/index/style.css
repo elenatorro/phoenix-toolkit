@@ -2626,7 +2626,8 @@ strong {
   margin: 0 auto 0 auto; }
 
 table {
-  width: 100%;
+  width: 95%;
+  max-width: 100%;
   border: none;
   border-collapse: collapse;
   background-color: transparent;
@@ -2685,11 +2686,7 @@ hr {
 /*  COLUMN SETUP  */
 .col {
   display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%; }
-
-.col:first-child {
-  margin-left: 0; }
+  float: left; }
 
 /*  GROUPING  */
 .group:before, .group:after {
@@ -2708,24 +2705,24 @@ hr {
   width: 100%; }
 
 .five {
-  width: 83.06%; }
+  width: 83.33334%; }
 
 .four {
-  width: 66.13%; }
+  width: 66.6667%; }
 
 .three {
-  width: 49.2%; }
+  width: 50%; }
 
 .two {
-  width: 32.26%; }
+  width: 33.3334%; }
 
 .one {
-  width: 15.33%; }
+  width: 16.6667%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   .col {
-    margin: 1% 0 1% 0%; }
+    margin: 0; }
   .one, .two, .three, .four, .five, .six {
     width: 100%; } }
 
@@ -2969,13 +2966,16 @@ article.main-title {
   display: block;
   text-align: center; }
 
-.content-area {
-  background-color: #E6E6E6;
+.content-area, .content-padding-area {
+  background-color: transparent;
   height: 50px;
   line-height: 50px;
   padding: 3px;
   padding: 5px;
   vertical-align: middle; }
+
+.content-padding-area {
+  margin: 2px; }
 
 .slider {
   height: 400px;
@@ -3082,7 +3082,8 @@ code > xmp {
   filter: blur(5px); }
 
 table {
-  width: 100%;
+  width: 95%;
+  max-width: 100%;
   border: none;
   border-collapse: collapse;
   background-color: transparent;

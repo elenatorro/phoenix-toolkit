@@ -17,12 +17,17 @@ article.main-title {
 }
 
 .content-area {
-  background-color: #E6E6E6;
+  background-color: transparent;
   height: 50px;
   line-height: 50px;
   padding: 3px;
   padding: 5px;
   vertical-align: middle;
+}
+
+.content-padding-area {
+  @extend .content-area;
+  margin: 2px;
 }
 
 .slider {
