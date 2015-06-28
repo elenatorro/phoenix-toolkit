@@ -2626,7 +2626,8 @@ strong {
   margin: 0 auto 0 auto; }
 
 table {
-  width: 100%;
+  width: 95%;
+  max-width: 100%;
   border: none;
   border-collapse: collapse;
   background-color: transparent;
@@ -2642,6 +2643,33 @@ thead {
 table > tbody, thead, tfoot {
   padding: 0px;
   margin: 0px; }
+
+/*GENERAL LISTS*/
+li {
+  margin-bottom: 10px;
+  list-style-type: none; }
+
+ul li:before {
+  margin-right: 10px; }
+
+ul.arrow li:before {
+  content: "\2192 \0020"; }
+
+ul.heart li:before {
+  content: "\2665"; }
+
+/*NAV LIST*/
+nav.horizontal-nav > ul {
+  float: right;
+  right: 30px;
+  margin-right: 20px;
+  display: table;
+  width: 20%; }
+
+nav.horizontal-nav > ul > li {
+  display: table-cell;
+  color: white;
+  font-family: "Helvetica"; }
 
 .text-center {
   text-align: center; }
@@ -2685,11 +2713,7 @@ hr {
 /*  COLUMN SETUP  */
 .col {
   display: block;
-  float: left;
-  margin: 1% 0 1% 1.6%; }
-
-.col:first-child {
-  margin-left: 0; }
+  float: left; }
 
 /*  GROUPING  */
 .group:before, .group:after {
@@ -2708,24 +2732,24 @@ hr {
   width: 100%; }
 
 .five {
-  width: 83.06%; }
+  width: 83.33334%; }
 
 .four {
-  width: 66.13%; }
+  width: 66.6667%; }
 
 .three {
-  width: 49.2%; }
+  width: 50%; }
 
 .two {
-  width: 32.26%; }
+  width: 33.3334%; }
 
 .one {
-  width: 15.33%; }
+  width: 16.6667%; }
 
 /*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   .col {
-    margin: 1% 0 1% 0%; }
+    margin: 0; }
   .one, .two, .three, .four, .five, .six {
     width: 100%; } }
 
