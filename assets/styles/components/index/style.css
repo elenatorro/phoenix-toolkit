@@ -2644,6 +2644,33 @@ table > tbody, thead, tfoot {
   padding: 0px;
   margin: 0px; }
 
+/*GENERAL LISTS*/
+li {
+  margin-bottom: 10px;
+  list-style-type: none; }
+
+ul li:before {
+  margin-right: 10px; }
+
+ul.arrow li:before {
+  content: "\2192 \0020"; }
+
+ul.heart li:before {
+  content: "\2665"; }
+
+/*NAV LIST*/
+nav.horizontal-nav > ul {
+  float: right;
+  right: 30px;
+  margin-right: 20px;
+  display: table;
+  width: 20%; }
+
+nav.horizontal-nav > ul > li {
+  display: table-cell;
+  color: white;
+  font-family: "Helvetica"; }
+
 .text-center {
   text-align: center; }
 
@@ -2901,6 +2928,19 @@ a.main-logo {
   margin-top: 20px; }
 
 /*GENERAL LISTS*/
+li {
+  margin-bottom: 10px;
+  list-style-type: none; }
+
+ul li:before {
+  margin-right: 10px; }
+
+ul.arrow li:before {
+  content: "\2192 \0020"; }
+
+ul.heart li:before {
+  content: "\2665"; }
+
 /*NAV LIST*/
 nav.horizontal-nav > ul {
   float: right;
@@ -2953,14 +2993,15 @@ header.main-header nav > a {
 
 article.main-content {
   background-color: transparent;
-  margin: 0 auto 0 auto;
+  margin: 10 auto 10 auto;
   text-align: center;
   width: 100%; }
 
 .main-container {
   background-color: rgba(51, 145, 148, 0.6);
   text-align: center;
-  color: white; }
+  color: white;
+  padding: 20px; }
 
 article.main-title {
   display: block;

@@ -15,7 +15,7 @@
           <a href="/" id="main-link" class="nav-link">Main</a>
           <a href="#components" class="nav-link">Components</a>
           <a href="#themes" class="nav-link">Themes</a>
-          <a href="https://" class="nav-link">Downloads</a>
+          <a href="https://github.com/elenatorro/Phoenix-Framework" class="nav-link">Downloads</a>
         </nav>
       </header>
     </article>
@@ -25,18 +25,31 @@
           <a href="/"><img src="assets/images/phoenix_light.png" class="normal-logo"/></a>
           <h1 class="page-title">Phoenix Framework</h1>
           <h2 class="page-text-title">CSS modularized simple toolkit for beautiful websites.</h2>
+          <h3 class="page-text-title font-red12">* This framework is still under construction, any feedback is very welcome :)</h3>
         </div>
       </section>
       <section class="grid group">
         <div class="col six">
           <button class="s-big rounded empty border-gray1" id="companies"><a class="font-gray1" href="">I want to know more about it!</a></button>
           <button class="s-big rounded empty border-gray1" id="blogs"><a class="font-gray1" href="">Do you have any tutorial?</a></button>
-          <button class="s-big rounded empty border-gray1" id="tools"><a class="font-gray1" href="">Cool! Let me download it!</a></button>
+          <button class="s-big rounded empty border-gray1" id="tools"><a class="font-gray1" href="https://github.com/elenatorro/Phoenix-Framework">Cool! Let me download it!</a></button>
         </div>
       </section>
     </div>
   </header>
   <div class="container" id="components">
+  <h2>Current Features</h2>
+    <section class="grid group">
+      <div class="col five">
+      <ul class="arrow">
+        <li>Responsive design</li>
+        <li>Custom classes to perform fast changes (background, font and border colors)</li>
+        <li>Responsive grid, 6 levels</li>
+        <li>Modularized in components</li>
+        <li>Very simple design, perfect for light landpages</li>
+      </ul>
+      </div>
+    </section>
     <h2>The Grid</h2>
     <h3>No padding</h3>
     <section class="grid group">
@@ -113,58 +126,73 @@
     <h3>With padding</h3>
     <section class="grid group">
       <div class="col one">
-        <article class="content-padding-area">One</article>
+        <article class="content-padding-area bg-gray5">One</article>
       </div>
       <div class="col five">
-        <article class="content-padding-area">Five</article>
+        <article class="content-padding-area bg-gray5">Five</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
       </div>
       <div class="col four">
-        <article class="content-padding-area">Four</article>
+        <article class="content-padding-area bg-gray5">Four</article>
       </div>
       <div class="col three">
-        <article class="content-padding-area">Three</article>
+        <article class="content-padding-area bg-gray5">Three</article>
       </div>
       <div class="col three">
-        <article class="content-padding-area">Three</article>
+        <article class="content-padding-area bg-gray5">Three</article>
       </div>
       <div class="col four">
-        <article class="content-padding-area">Four</article>
+        <article class="content-padding-area bg-gray5">Four</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
       </div>
       <div class="col five">
-        <article class="content-padding-area">Five</article>
+        <article class="content-padding-area bg-gray5">Five</article>
       </div>
       <div class="col one">
-        <article class="content-padding-area">One</article>
+        <article class="content-padding-area bg-gray5">One</article>
       </div>
       <div class="col six">
-        <article class="content-padding-area">Six</article>
+        <article class="content-padding-area bg-gray5">Six</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
       </div>
       <div class="col one">
-        <article class="content-padding-area">One</article>
+        <article class="content-padding-area bg-gray5">One</article>
       </div>
       <div class="col one">
-        <article class="content-padding-area">One</article>
+        <article class="content-padding-area bg-gray5">One</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
       </div>
       <div class="col two">
-        <article class="content-padding-area">Two</article>
+        <article class="content-padding-area bg-gray5">Two</article>
+      </div>
+    </section>
+        <section class="grid group">
+      <div class="col six">
+        <h4>Code Example:</h4>
+<pre class="language-markup"><code class="language-markup"><xmp>
+<section class="grid group">
+  <div class="col one">
+    <article class="content-padding-area">One</article>
+  </div>
+  <div class="col five">
+    <article class="content-padding-area">Five</article>
+  </div>
+</section>
+</xmp></code></pre>
       </div>
     </section>
   </div>
@@ -337,7 +365,7 @@
       </div>
       <div class="col six col-table">
         <table>
-          <thead class="font-gray14 b-bottom border-gray4">
+          <thead class="font-gray14 b-bottom border-gray10">
             <tr>
               <th>Month</th>
               <th>Savings</th>
@@ -349,7 +377,7 @@
               <td>$180</td>
             </tr>
           </tfoot>
-          <tbody class="font-gray12 b-bottom border-gray3">
+          <tbody class="font-gray12 b-bottom border-gray10">
             <tr class="b-bottom border-gray3">
               <td>January</td>
               <td>$100</td>

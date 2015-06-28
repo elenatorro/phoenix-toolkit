@@ -1,6 +1,6 @@
 article.main-content {
   background-color: transparent;
-  margin: 0 auto 0 auto;
+  margin: 10 auto 10 auto;
   text-align: center;
   width: 100%;
 }
@@ -9,6 +9,7 @@ article.main-content {
   background-color: rgba($main-light,0.6);
   text-align: center;
   color: white;
+  padding: 30px;
 }
 
 article.main-title {

@@ -1,6 +1,20 @@
 /*GENERAL LISTS*/
+li {
+	margin-bottom: 10px;
+	list-style-type: none;
+}
 
+ul li:before {
+	margin-right: 10px;
+}
 
+ul.arrow li:before {
+	content: "\2192 \0020";
+}
+
+ul.heart li:before {
+	content: "\2665";
+}
 /*NAV LIST*/
 nav.horizontal-nav > ul {
 	float: right;
