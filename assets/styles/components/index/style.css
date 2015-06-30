@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Quicksand|Nova+Flat|Open+Sans);
 /*Import from general*/
 /* ---- Colors ---- */
 /* Gray */
@@ -2572,6 +2571,16 @@
 
 /*NAV SIZES*/
 /*SECTION SIZES*/
+@font-face {
+  font-family: 'Quicksand';
+  src: url('../fonts/Quicksand/Quicksand-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */ }
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf') format('truetype');
+  /* Safari, Android, iOS */ }
+
 h1 {
   font-family: 'Quicksand';
   font-size: 5em;
@@ -2624,6 +2633,9 @@ strong {
 .page-title, .page-text-title {
   max-width: 80%;
   margin: 0 auto 0 auto; }
+
+.social-icons {
+  font-size: 4em; }
 
 table {
   width: 95%;
@@ -3001,7 +3013,7 @@ article.main-content {
   background-color: rgba(51, 145, 148, 0.6);
   text-align: center;
   color: white;
-  padding: 20px; }
+  padding: 30px; }
 
 article.main-title {
   display: block;
