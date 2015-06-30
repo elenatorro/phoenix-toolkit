@@ -5,6 +5,11 @@
   padding-top: 50px;
 }
 
+.full-container {
+  margin: 0;
+  width: 100%;
+}
+
 .centered {
   text-align: center;
   margin: 0 auto;
@@ -21,7 +26,6 @@
 .col {
   display: block;
   float:left;
-  // margin: 1% 0 1% 1.6%;
 }
 
 // .col:first-child { margin-left: 0; }
