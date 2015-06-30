@@ -48,7 +48,8 @@ img.inner-image {
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: black;
+  background-color: transparent;
+  z-index: -1;
 }
 
 img.circular {

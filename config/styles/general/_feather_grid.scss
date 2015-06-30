@@ -28,6 +28,10 @@
   float:left;
 }
 
+.separate {
+  margin-bottom: 20px;
+}
+
 // .col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
@@ -71,4 +75,15 @@
     margin: 1% 0 1% 0%;
     width: 100%;
   }
+
+  .col-form {
+    width: 100%;
+  }
 }
+
+@media only screen and (max-width: 735px) {
+  .col-form {
+    width: 100%;
+  }
+}
+
