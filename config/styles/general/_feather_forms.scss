@@ -1,3 +1,84 @@
+form > section {
+  margin-bottom: 10px;
+}
+
+input, select {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+
+section.inline-form {
+  display: table;
+  width: 100%;
+}
+
+input.inline {
+  display: table-column;
+  border: 2px solid silver;
+
+  &.right {
+    border-right: none;
+  }
+
+  &.left {
+    border-left: none;
+  }
+}
+
+button.inline {
+  display: table-column;
+  background-color: silver;
+  padding: 10px;
+  border: 2px solid silver;
+  margin: 0;
+
+  &.left {
+    border-right: none;
+  }
+
+  &.right {
+    border-left: none;
+  }
+}
+
+button, input {
+  &.w10 {
+    max-width: 10%;
+  }
+  &.w20 {
+    max-width: 20%;
+  }
+  &.w30 {
+    max-width: 30%;
+  }
+  &.w40 {
+    max-width: 40%;
+  }
+  &.w50 {
+    max-width: 50%;
+  }
+  &.w60 {
+    max-width: 60%;
+  }
+  &.w70 {
+    max-width: 70%;
+  }
+  &.w80 {
+    max-width: 80%;
+  }
+  &.w90 {
+    max-width: 90%;
+  }
+  &.w100 {
+    max-width: 100%;
+  }
+}
+
 div.search {
   margin: 0 auto 0 auto;
   margin-top: 10px;
@@ -32,10 +113,16 @@ input[type=search] {
 select {
   border: none;
   border-radius: 0;
-  background-color: green;
   padding: 5px;
   color: white;
   height: 50px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+}
+
+option {
+  border-radius: 0;
+  border: none;
 }
 
 @media screen and (max-width: 600px) {
