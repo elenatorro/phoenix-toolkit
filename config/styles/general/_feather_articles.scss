@@ -31,32 +31,25 @@ article.main-title {
   margin: 2px;
 }
 
-.slider {
-  height: 400px;
-  width: 100%;
+.box{
   position: relative;
-  overflow: hidden;
-  }
-
-.slider > img {
-  width: 100%;
-  height: auto;
+}
+.box:before{
+  content: "";
+  display: block;
+  padding-top: 100%;  /* initial ratio of 1:1*/
 }
 
-.slider > img.slider-hide {
-  left: -100%;
-}
-
-.slider > h1 {
+.box > .box-content {
   position: absolute;
-  top: 150px;
+  top: 0;
   left: 0;
-  width: 100%;
-}
+  bottom: 0;
+  right: 0;
 
-//TODO
-//import CSS library for safary transitions.
-
-.slider > img.slider-show {
-  left: 0;
+  > .box-inner-content {
+    text-align: center;
+    margin: 5px;
+    margin-top: 25%;
+  }
 }
