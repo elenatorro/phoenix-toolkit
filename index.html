@@ -3,7 +3,7 @@
 <head>
   <title>Phoenix Framework</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="assets/styles/components/index/style.css">
+  <link rel="stylesheet" href="assets/styles/general/style.css">
   <link rel="stylesheet" href="assets/styles/general/prism.css">
   <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
 </head>
@@ -425,21 +425,167 @@
         </xmp></code></pre>
       </div>
     </section>
-  </div>
-</div>
-  <footer class="bg-gray5">
+
+    <section class="grid group">
+    <h2>Forms</h2>
+      <div class="col two">
+        <form class="inline">
+        <label>Name</label>
+          <section class="inline-form">
+            <input type="text" class="inline w70 right  border-blue6">
+            <button class="inline w30 right  bg-blue3 border-blue6">Click</button>
+          </section>
+        <label>Search</label>
+          <section class="inline-form">
+            <button class="inline w10 left"> > </button>
+            <input type="text" class="inline w90 left">
+          </section>
+          <label>Email</label>
+          <input type="email" class="w100">
+          <label>Car</label>
+          <select class="bg-orange3">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </form>
+      </div>
+    </section>
     <section class="grid group">
       <div class="col six">
-        <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
+        <h4>Code Example:</h4>
+        <pre class="language-markup"><code class="language-markup"><xmp>
+<form class="inline">
+  <label>Name</label>
+    <section class="inline-form">
+      <input type="text" class="inline w70 right  border-blue6">
+      <button class="inline w30 right  bg-blue3 border-blue6">Click</button>
+    </section>
+  <label>Search</label>
+    <section class="inline-form">
+      <button class="inline w10 left"> > </button>
+      <input type="text" class="inline w90 left">
+    </section>
+    <label>Email</label>
+      <input type="email" class="w100">
+      <label>Car</label>
+    <select class="bg-orange3">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </select>
+</form>
+        </xmp></code></pre>
       </div>
+    </section>
+  </div>
+</div>
+
+
+<section class="grid group">
+<h2>  > Full squared boxes</h2>
+  <article class="col two box bg-red5">
+    <section class="box-content">
+      <h2 class="box-inner-content">Box 1</h2>
+    </section>
+  </article>
+  <article class="col two box bg-red8">
+    <section class="box-content">
+      <article class="col three box bg-green3">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+      <article class="col three box bg-green4">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+      <article class="col three box bg-green5">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+      <article class="col three box bg-green6">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+    </section>
+  </article>
+  <article class="col two box bg-yellow4">
+    <section class="box-content">
+      <span class="box-inner-content">
+        <img src="assets/images/samples/sample2.jpg" class="inner-image"/>
+      </span>
+    </section>
+  </article>
+ </section>
+ <div class="container">
+  <section class="grid group">
+    <div class="col six">
+        <h4>Code Example:</h4>
+        <pre class="language-markup"><code class="language-markup"><xmp>
+<section class="grid group">
+  <article class="col two box bg-red5">
+    <section class="box-content">
+      <h2 class="box-inner-content">Box 1</h2>
+    </section>
+  </article>
+  <article class="col two box bg-red8">
+    <section class="box-content">
+      <article class="col three box bg-green3">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+      <article class="col three box bg-green4">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+      <article class="col three box bg-green5">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+      <article class="col three box bg-green6">
+        <section class="box-content">
+          <h2 class="box-inner-content">Box 4</h2>
+        </section>
+      </article>
+    </section>
+  </article>
+  <article class="col two box bg-yellow4">
+    <section class="box-content">
+      <span class="box-inner-content">
+        <img src="assets/images/samples/sample2.jpg" class="inner-image"/>
+      </span>
+    </section>
+  </article>
+ </section>
+        </xmp></code></pre>
+      </div>
+  </section>
+ </div>
+
+
+
+  <footer class="bg-gray5">
+    <section class="grid group">
       <div class="col six text-left">
-      <ul>
-        <li>
-          Code Highlight: <a href="http://prismjs.com/" target="_blank">PrismJS</a>
-        </li>
-        <li>
-        Frontend Framework: <a href="http://github.com/elenatorro/lookjs" target="_blank">LookJS</a></li>
-      </ul>
+        <ul>
+          <li>
+            Code Highlight: <a href="http://prismjs.com/" target="_blank">PrismJS</a>
+          </li>
+          <li>
+          Frontend Framework: <a href="http://github.com/elenatorro/lookjs" target="_blank">LookJS</a></li>
+        </ul>
+      </div>
+      <div class="col six">
+        <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
       </div>
     </section>
   </footer>
