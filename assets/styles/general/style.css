@@ -49,6 +49,9 @@
   border-color: white;
   color: black; }
 
+.bg-transparent {
+  background-color: transparent; }
+
 .bg-gray1 {
   background-color: #FCFCFC !important; }
 
@@ -2736,6 +2739,9 @@ hr {
   display: block;
   float: left; }
 
+.separate {
+  margin-bottom: 20px; }
+
 /*  GROUPING  */
 .group:before, .group:after {
   content: "";
@@ -2777,6 +2783,12 @@ hr {
 @media only screen and (max-width: 600px) {
   .col-table {
     margin: 1% 0 1% 0%;
+    width: 100%; }
+  .col-form {
+    width: 100%; } }
+
+@media only screen and (max-width: 735px) {
+  .col-form {
     width: 100%; } }
 
 button {
@@ -2897,7 +2909,8 @@ img.inner-image {
   left: 0;
   top: 0;
   bottom: 0;
-  background-color: black; }
+  background-color: transparent;
+  z-index: -1; }
 
 img.circular {
   -moz-border-radius: 50%;
@@ -2938,25 +2951,25 @@ button.inline {
     border-left: none; }
 
 button.w10, input.w10 {
-  max-width: 10%; }
+  width: 10%; }
 button.w20, input.w20 {
-  max-width: 20%; }
+  width: 20%; }
 button.w30, input.w30 {
-  max-width: 30%; }
+  width: 30%; }
 button.w40, input.w40 {
-  max-width: 40%; }
+  width: 40%; }
 button.w50, input.w50 {
-  max-width: 50%; }
+  width: 50%; }
 button.w60, input.w60 {
-  max-width: 60%; }
+  width: 60%; }
 button.w70, input.w70 {
-  max-width: 70%; }
+  width: 70%; }
 button.w80, input.w80 {
-  max-width: 80%; }
+  width: 80%; }
 button.w90, input.w90 {
-  max-width: 90%; }
+  width: 90%; }
 button.w100, input.w100 {
-  max-width: 100%; }
+  width: 100%; }
 
 div.search {
   margin: 0 auto 0 auto;
@@ -3131,7 +3144,7 @@ article.main-content {
   width: 100%; }
 
 .main-container {
-  background-color: rgba(51, 145, 148, 0.6);
+  background-color: rgba(51, 145, 148, 0.8);
   text-align: center;
   color: white;
   padding: 30px; }
