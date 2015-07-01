@@ -58,3 +58,10 @@ img.circular {
   border-radius: 50%;
 }
 
+@media only screen and (max-width: 480px) {
+  img.inner-image { 
+      margin: 0;
+      width: 100%;
+  }
+}
+

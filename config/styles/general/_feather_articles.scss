@@ -6,7 +6,7 @@ article.main-content {
 }
 
 .main-container {
-  background-color: rgba($main-light,0.8);
+  background-color: $main-light;
   text-align: center;
   color: white;
   padding: 30px;
@@ -33,7 +33,9 @@ article.main-title {
 
 .box{
   position: relative;
+  font-size: 90%;
 }
+
 .box:before{
   content: "";
   display: block;
@@ -49,7 +51,24 @@ article.main-title {
 
   > .box-inner-content {
     text-align: center;
-    margin: 5px;
-    margin-top: 25%;
+    padding-top: 25%;
   }
+}
+
+@media only screen and (max-width: 480px) {
+  .box:before{
+    padding-top: 0;
+  }
+
+  .box > .box-content {
+    position: relative;
+
+     > .box-inner-content {
+      padding-top: 10%;
+      height: 20%;
+      margin: 0;
+    }
+  }
+
+
 }

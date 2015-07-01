@@ -64,7 +64,6 @@
   width: 16.6667%;
 }
 
-/*  GO FULL WIDTH BELOW 480 PIXELS */
 @media only screen and (max-width: 480px) {
   .col {  margin: 0; };
   .one, .two, .three, .four, .five, .six { width: 100%; }
