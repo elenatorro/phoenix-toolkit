@@ -28,11 +28,13 @@
   float:left;
 }
 
+.padding {
+  padding: 0 10px 0 10px;
+}
+
 .separate {
   margin-bottom: 20px;
 }
-
-// .col:first-child { margin-left: 0; }
 
 /*  GROUPING  */
 .group:before,

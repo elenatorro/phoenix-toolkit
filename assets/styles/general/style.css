@@ -52,6 +52,9 @@
 .bg-transparent {
   background-color: transparent; }
 
+.border-transparent {
+  border: transparent; }
+
 .bg-gray1 {
   background-color: #FCFCFC !important; }
 
@@ -2739,6 +2742,9 @@ hr {
   display: block;
   float: left; }
 
+.padding {
+  padding: 0 10px 0 10px; }
+
 .separate {
   margin-bottom: 20px; }
 
@@ -2924,23 +2930,25 @@ img.circular {
 form > section {
   margin-bottom: 10px; }
 
-input, select {
+input, select, textarea {
   padding: 10px;
-  margin: 5px 0 5px 0; }
-
-label {
-  margin-bottom: 10px; }
+  margin: 5px 0 5px 0;
+  border: 2px solid silver; }
 
 section.inline-form {
   display: table;
   width: 100%; }
 
-input.inline {
+label.inline {
+  display: table-cell;
+  padding-right: 10px; }
+
+input.inline, textarea.inline {
   display: table-column;
   border: 2px solid silver; }
-  input.inline.right {
+  input.inline.right, textarea.inline.right {
     border-right: none; }
-  input.inline.left {
+  input.inline.left, textarea.inline.left {
     border-left: none; }
 
 button.inline {
@@ -2954,52 +2962,26 @@ button.inline {
   button.inline.right {
     border-left: none; }
 
-button.w10, input.w10 {
+label.w10, button.w10, input.w10, textarea.w10 {
   width: 10%; }
-button.w20, input.w20 {
+label.w20, button.w20, input.w20, textarea.w20 {
   width: 20%; }
-button.w30, input.w30 {
+label.w30, button.w30, input.w30, textarea.w30 {
   width: 30%; }
-button.w40, input.w40 {
+label.w40, button.w40, input.w40, textarea.w40 {
   width: 40%; }
-button.w50, input.w50 {
+label.w50, button.w50, input.w50, textarea.w50 {
   width: 50%; }
-button.w60, input.w60 {
+label.w60, button.w60, input.w60, textarea.w60 {
   width: 60%; }
-button.w70, input.w70 {
+label.w70, button.w70, input.w70, textarea.w70 {
   width: 70%; }
-button.w80, input.w80 {
+label.w80, button.w80, input.w80, textarea.w80 {
   width: 80%; }
-button.w90, input.w90 {
+label.w90, button.w90, input.w90, textarea.w90 {
   width: 90%; }
-button.w100, input.w100 {
+label.w100, button.w100, input.w100, textarea.w100 {
   width: 100%; }
-
-div.search {
-  margin: 0 auto 0 auto;
-  margin-top: 10px;
-  display: table;
-  position: static;
-  overflow: hidden;
-  margin-bottom: 30px;
-  width: 40%; }
-
-div.input-search {
-  display: table-cell;
-  line-height: 35px;
-  width: 100%; }
-
-input[type=search] {
-  -webkit-appearance: none;
-  margin: 0;
-  font-size: 1em;
-  background-color: white;
-  outline: none;
-  text-align: left;
-  border: 2px solid #302263;
-  height: 40px;
-  padding: 5px;
-  line-height: 35px; }
 
 select {
   border: none;
@@ -3010,9 +2992,14 @@ select {
   -webkit-appearance: none;
   -webkit-border-radius: 0px; }
 
-option {
-  border-radius: 0;
+textarea {
+  height: 46px;
+  font-size: 1em;
+  font-family: 'Open Sans';
   border: none; }
+
+textarea:focus, input:focus, section:focus {
+  outline: none !important; }
 
 @media screen and (max-width: 600px) {
   div.search {
