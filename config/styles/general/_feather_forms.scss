@@ -2,22 +2,23 @@ form > section {
   margin-bottom: 10px;
 }
 
-input, select {
+input, select, textarea {
   padding: 10px;
   margin: 5px 0 5px 0;
+  border: 2px solid silver;
 }
-
-label {
-  margin-bottom: 10px;
-}
-
 
 section.inline-form {
   display: table;
   width: 100%;
 }
 
-input.inline {
+label.inline {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+input.inline, textarea.inline {
   display: table-column;
   border: 2px solid silver;
 
@@ -46,7 +47,7 @@ button.inline {
   }
 }
 
-button, input {
+label, button, input, textarea {
   &.w10 {
     width: 10%;
   }
@@ -79,37 +80,6 @@ button, input {
   }
 }
 
-div.search {
-  margin: 0 auto 0 auto;
-  margin-top: 10px;
-  display: table;
-  position: static;
-  overflow: hidden;
-  margin-bottom: 30px;
-  width: 40%;
-}
-
-div.input-search {
-  display: table-cell;
-  line-height: 35px;
-  width: 100%;
-}
-
-input[type=search] {
-  -webkit-appearance:none;
-  margin: 0;
-  font-size: 1em;
-  background-color: white;
-
-  outline: none;
-  text-align: left;
-
-  border: 2px solid $violet-dark;
-  height: 40px;
-  padding: 5px;
-  line-height: 35px;
-}
-
 select {
   border: none;
   border-radius: 0;
@@ -120,9 +90,15 @@ select {
   -webkit-border-radius: 0px;
 }
 
-option {
-  border-radius: 0;
+textarea {
+  height: 46px;
+  font-size: 1em;
+  font-family: 'Open Sans';
   border: none;
+}
+
+textarea:focus, input:focus, section:focus {
+  outline: none !important;
 }
 
 @media screen and (max-width: 600px) {
