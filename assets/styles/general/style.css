@@ -2658,14 +2658,16 @@ table {
   display: block; }
 
 td, th, tr {
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
 
 thead {
   text-align: left; }
 
 table > tbody, thead, tfoot {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  width: 100%; }
 
 /*GENERAL LISTS*/
 li {
@@ -2962,26 +2964,28 @@ button.inline {
   button.inline.right {
     border-left: none; }
 
-label.w10, button.w10, input.w10, textarea.w10 {
-  width: 10%; }
-label.w20, button.w20, input.w20, textarea.w20 {
-  width: 20%; }
-label.w30, button.w30, input.w30, textarea.w30 {
-  width: 30%; }
-label.w40, button.w40, input.w40, textarea.w40 {
-  width: 40%; }
-label.w50, button.w50, input.w50, textarea.w50 {
-  width: 50%; }
-label.w60, button.w60, input.w60, textarea.w60 {
-  width: 60%; }
-label.w70, button.w70, input.w70, textarea.w70 {
-  width: 70%; }
-label.w80, button.w80, input.w80, textarea.w80 {
-  width: 80%; }
-label.w90, button.w90, input.w90, textarea.w90 {
-  width: 90%; }
-label.w100, button.w100, input.w100, textarea.w100 {
-  width: 100%; }
+label, button, input, textarea {
+  height: 50; }
+  label.w10, button.w10, input.w10, textarea.w10 {
+    width: 10%; }
+  label.w20, button.w20, input.w20, textarea.w20 {
+    width: 20%; }
+  label.w30, button.w30, input.w30, textarea.w30 {
+    width: 30%; }
+  label.w40, button.w40, input.w40, textarea.w40 {
+    width: 40%; }
+  label.w50, button.w50, input.w50, textarea.w50 {
+    width: 50%; }
+  label.w60, button.w60, input.w60, textarea.w60 {
+    width: 60%; }
+  label.w70, button.w70, input.w70, textarea.w70 {
+    width: 70%; }
+  label.w80, button.w80, input.w80, textarea.w80 {
+    width: 80%; }
+  label.w90, button.w90, input.w90, textarea.w90 {
+    width: 90%; }
+  label.w100, button.w100, input.w100, textarea.w100 {
+    width: 100%; }
 
 select {
   border: none;
@@ -2990,13 +2994,18 @@ select {
   color: white;
   height: 50px;
   -webkit-appearance: none;
-  -webkit-border-radius: 0px; }
+  -webkit-border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none; }
 
 textarea {
   height: 46px;
   font-size: 1em;
   font-family: 'Open Sans';
-  border: none; }
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none; }
 
 textarea:focus, input:focus, section:focus {
   outline: none !important; }
@@ -3277,11 +3286,13 @@ table {
   display: block; }
 
 td, th, tr {
-  padding: 10px; }
+  padding: 10px;
+  width: 100%; }
 
 thead {
   text-align: left; }
 
 table > tbody, thead, tfoot {
   padding: 0px;
-  margin: 0px; }
+  margin: 0px;
+  width: 100%; }
