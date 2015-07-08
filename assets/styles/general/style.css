@@ -2965,7 +2965,7 @@ button.inline {
     border-left: none; }
 
 label, button, input, textarea {
-  height: 50; }
+  min-height: 50; }
   label.w10, button.w10, input.w10, textarea.w10 {
     width: 10%; }
   label.w20, button.w20, input.w20, textarea.w20 {
