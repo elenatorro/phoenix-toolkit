@@ -1,12 +1,12 @@
 {
-  "name": "lookfw",
-  "version": "0.0.0",
-  "description": "HTML, CSS and JS framework for frontend applications",
+  "name": "PhoenixFramework",
+  "version": "0.1.0",
+  "description": "CSS modularized simple toolkit for beautiful websites",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "ElenaTorro",
+  "author": "Elena Torro <elenatorro@gmail.com>",
   "license": "ISC",
   "devDependencies": {
     "gulp-inject": "^1.1.1",
