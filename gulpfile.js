@@ -50,8 +50,13 @@ gulp.task('compile_script_components', function() {
 gulp.task('style', function() {
   return gulp.src('config/styles/*.scss')
   .pipe(sass())
-  .pipe(concat('style.css'))
-  .pipe(gulp.dest('assets/styles/general'));
+  .pipe(concat('phoenixfw.css'))
+  .pipe(gulp.dest('dist/src/'));
+});
+
+gulp.task('fonts', function() {
+  return gulp.src('assets/fonts/**/*')
+  .pipe(gulp.dest('dist/fonts'));
 });
 
 //task to compile and minify javascript
@@ -72,4 +77,4 @@ gulp.task('yields', function() {
 })
 
 
-gulp.task('default', ['style', 'scripts']);
+gulp.task('default', ['style', 'scripts', 'fonts']);
