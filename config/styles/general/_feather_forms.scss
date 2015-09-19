@@ -48,6 +48,7 @@ button.inline {
 }
 
 label, button, input, textarea {
+  min-height: 50;
   &.w10 {
     width: 10%;
   }
@@ -88,6 +89,8 @@ select {
   height: 50px;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 textarea {
@@ -95,6 +98,9 @@ textarea {
   font-size: 1em;
   font-family: 'Open Sans';
   border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 textarea:focus, input:focus, section:focus {

@@ -1,5 +1,4 @@
 header.main-header nav {
-	background-color: #333333;
 	display: table;
 	margin-bottom: 100px;
 	opacity: 0.9;
@@ -9,17 +8,28 @@ header.main-header nav {
 	z-index: 100;
 }
 
-header.main-header nav > a {
+header.main-header nav > ul > li {
 	color: white;
 	display: inline-block;
-	margin: 0px;
-	padding: 15px;
-	background-color: #333333;
+	margin: auto;
+	padding-top: 15px;
 }
 
-header.main-header nav > a {
-	 @extend .bg-hover-red9;
-	 @extend .font-hover-gray1;
+header.main-header nav > ul > li > a {
+	padding: 15px;
+	margin: auto;
+	border: none;
+	color: white !important;
+	vertical-align: middle;
+}
+
+header.main-header nav > ul > li > a:hover {
+	 @extend .bg-hover-main;
+	 @extend .font-hover-main;
+}
+
+header.main-header nav > ul > li > a:visited {
+	 color: white;
 }
 
 #main-link {
@@ -44,10 +54,9 @@ header.main-header nav > a {
 		margin-bottom: 0px;
 	}
 
-	header.main-header nav > a {
+	header.main-header nav > ul {
 		display: inline-block;
-		padding: 10px 0;
+		padding: 0;
 		width: 100%;
-		background-color: #333333;
 	}
 }

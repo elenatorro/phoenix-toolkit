@@ -1,156 +1,155 @@
 /* ---- Colors ---- */
-/* Gray */
 $colors: (
- gray1 #FCFCFC,
- gray2 #F8F8F8,
- gray3  #F0F0F0,
- gray4  #EBEBEB,
- gray5  #E6E6E6,
- gray6  #CFCFCF,
- gray7  #B8B8B8,
- gray8  #A1A1A1,
- gray9  #8A8A8A,
- gray10 #737373,
- gray11 #5C5C5C,
- gray12 #454545,
- gray13 #2E2E2E,
- gray14 #171717,
+ gray1: #FCFCFC,
+ gray2: #F8F8F8,
+ gray3:  #F0F0F0,
+ gray4:  #EBEBEB,
+ gray5:  #E6E6E6,
+ gray6:  #CFCFCF,
+ gray7:  #B8B8B8,
+ gray8:  #A1A1A1,
+ gray9:  #8A8A8A,
+ gray10: #737373,
+ gray11: #5C5C5C,
+ gray12: #454545,
+ gray13: #2E2E2E,
+ gray14: #171717,
 
- yellow1  #FFFFCC,
- yellow2  #FFFF99,
- yellow3  #FFFF66,
- yellow4  #FFFF4D,
- yellow5  #FFFF19,
- yellow6  #E6E616,
- yellow7  #CCCC14,
+ yellow1:  #FFFFCC,
+ yellow2:  #FFFF99,
+ yellow3:  #FFFF66,
+ yellow4:  #FFFF4D,
+ yellow5:  #FFFF19,
+ yellow6:  #E6E616,
+ yellow7:  #CCCC14,
 
- pastel1  #F2F2AA,
- pastel2  #FFFF99,
- pastel3  #EDED89,
- pastel4  #E6E68A,
- pastel5  #78784A,
- pastel6  #60603C,
- pastel7  #48482D,
+ pastel1:  #F2F2AA,
+ pastel2:  #FFFF99,
+ pastel3:  #EDED89,
+ pastel4:  #E6E68A,
+ pastel5:  #78784A,
+ pastel6:  #60603C,
+ pastel7:  #48482D,
 
- red1     #F8B2B2,
- red2     #F59999,
- red3     #F28080,
- red4     #F06666,
- red5     #EE4D4D,
- red6     #EB3333,
- red7     #E60000,
- red8     #CF0000,
- red9     #B80000,
- red10    #8A0000,
- red11    #730000,
- red12    #5C0000,
- red13    #450000,
- red14    #2E0000,
+ red1:     #F8B2B2,
+ red2:     #F59999,
+ red3:     #F28080,
+ red4:     #F06666,
+ red5:     #EE4D4D,
+ red6:     #EB3333,
+ red7:     #E60000,
+ red8:     #CF0000,
+ red9:     #B80000,
+ red10:    #8A0000,
+ red11:    #730000,
+ red12:    #5C0000,
+ red13:    #450000,
+ red14:    #2E0000,
 
- blue1    #D6F5FF,
- blue2    #C2F0FF,
- blue3    #ADEBFF,
- blue4    #99E6FF,
- blue5    #70DBFF,
- blue6    #47D1FF,
- blue7    #2EB8E6,
- blue8    #29A3CC,
- blue9    #248FB2,
- blue10    #1F7A99,
- blue11   #1A6680,
- blue12   #145266,
- blue13   #0F3D4C,
- blue14   #0A2933,
+ blue1:    #D6F5FF,
+ blue2:    #C2F0FF,
+ blue3:    #ADEBFF,
+ blue4:    #99E6FF,
+ blue5:    #70DBFF,
+ blue6:    #47D1FF,
+ blue7:    #2EB8E6,
+ blue8:    #29A3CC,
+ blue9:    #248FB2,
+ blue10:    #1F7A99,
+ blue11:   #1A6680,
+ blue12:   #145266,
+ blue13:   #0F3D4C,
+ blue14:   #0A2933,
 
- green1    #C2F0C2,
- green2    #ADEBAD,
- green3    #99E699,
- green4    #85E085,
- green5    #5CD65C,
- green6    #47D147,
- green7    #2EB82E,
- green8    #29A329,
- green9    #248F24,
- green10   #1F7A1F,
- green11   #1A661A,
- green12   #145214,
- green13   #0F3D0F,
- green14   #0A290A,
+ green1:    #C2F0C2,
+ green2:    #ADEBAD,
+ green3:    #99E699,
+ green4:    #85E085,
+ green5:    #5CD65C,
+ green6:    #47D147,
+ green7:    #2EB82E,
+ green8:    #29A329,
+ green9:    #248F24,
+ green10:   #1F7A1F,
+ green11:   #1A661A,
+ green12:   #145214,
+ green13:   #0F3D0F,
+ green14:   #0A290A,
 
- purple1    #E0B2F0,
- purple2    #D699EB,
- purple3    #CC80E6,
- purple4    #C266E0,
- purple5    #B84DDB,
- purple6    #AD33D6,
- purple7    #A319D1,
- purple8    #8A00B8,
- purple9    #6B008F,
- purple10   #5C007A,
- purple11   #4C0066,
- purple12   #3D0052,
- purple13   #2E003D,
- purple14   #1F0029,
+ purple1:    #E0B2F0,
+ purple2:    #D699EB,
+ purple3:    #CC80E6,
+ purple4:    #C266E0,
+ purple5:    #B84DDB,
+ purple6:    #AD33D6,
+ purple7:    #A319D1,
+ purple8:    #8A00B8,
+ purple9:    #6B008F,
+ purple10:   #5C007A,
+ purple11:   #4C0066,
+ purple12:   #3D0052,
+ purple13:   #2E003D,
+ purple14:   #1F0029,
 
- orange1    #FFD1B2,
- orange2    #FFB280,
- orange3    #FFA366,
- orange4    #FF944D,
- orange5    #FF8533,
- orange6    #FF7519,
- orange7    #FF6600,
- orange8    #CC5200,
- orange9    #B24700,
- orange10   #993D00,
- orange11   #803300,
- orange12   #662900,
- orange13   #4C1F00,
- orange14   #331400,
+ orange1:    #FFD1B2,
+ orange2:    #FFB280,
+ orange3:    #FFA366,
+ orange4:    #FF944D,
+ orange5:    #FF8533,
+ orange6:    #FF7519,
+ orange7:    #FF6600,
+ orange8:    #CC5200,
+ orange9:    #B24700,
+ orange10:   #993D00,
+ orange11:   #803300,
+ orange12:   #662900,
+ orange13:   #4C1F00,
+ orange14:   #331400,
 
- pink1    #FFC2E0,
- pink2    #FF99CC,
- pink3    #FF70B8,
- pink4    #FF5CAD,
- pink5    #FF47A3,
- pink6    #FF3399,
- pink7    #E62E8A,
- pink8    #CC297A,
- pink9    #B2246B,
- pink10   #991F5C,
- pink11   #801A4C,
- pink12   #66143D,
- pink13   #4C0F2E,
- pink14   #330A1F,
+ pink1:    #FFC2E0,
+ pink2:    #FF99CC,
+ pink3:    #FF70B8,
+ pink4:    #FF5CAD,
+ pink5:    #FF47A3,
+ pink6:    #FF3399,
+ pink7:    #E62E8A,
+ pink8:    #CC297A,
+ pink9:    #B2246B,
+ pink10:   #991F5C,
+ pink11:   #801A4C,
+ pink12:   #66143D,
+ pink13:   #4C0F2E,
+ pink14:   #330A1F,
 
- lime1    #E0FFC2,
- lime2    #CCFF99,
- lime3    #B8FF70,
- lime4    #ADFF5C,
- lime5    #99FF33,
- lime6    #8AE62E,
- lime7    #7ACC29,
- lime8    #6BB224,
- lime9    #5C991F,
- lime10   #4C801A,
- lime11   #3D6614,
- lime12   #2E4C0F,
- lime13   #14330A,
- lime14   #0A1A05,
+ lime1:    #E0FFC2,
+ lime2:    #CCFF99,
+ lime3:    #B8FF70,
+ lime4:    #ADFF5C,
+ lime5:    #99FF33,
+ lime6:    #8AE62E,
+ lime7:    #7ACC29,
+ lime8:    #6BB224,
+ lime9:    #5C991F,
+ lime10:   #4C801A,
+ lime11:   #3D6614,
+ lime12:   #2E4C0F,
+ lime13:   #14330A,
+ lime14:   #0A1A05,
 
- sea1    #B2F0E0,
- sea2    #99EBD6,
- sea3    #66E0C2,
- sea4    #4DDBB8,
- sea5    #33D6AD,
- sea6    #00CC99,
- sea7    #00A37A,
- sea8    #008F6B,
- sea9    #007A5C,
- sea10   #00664C,
- sea11   #00523D,
- sea12   #003D2E,
- sea13   #00291F,
- sea14   #00140F
+ sea1:    #B2F0E0,
+ sea2:    #99EBD6,
+ sea3:    #66E0C2,
+ sea4:    #4DDBB8,
+ sea5:    #33D6AD,
+ sea6:    #00CC99,
+ sea7:    #00A37A,
+ sea8:    #008F6B,
+ sea9:    #007A5C,
+ sea10:   #00664C,
+ sea11:   #00523D,
+ sea12:   #003D2E,
+ sea13:   #00291F,
+ sea14:   #00140F
 );
 
 /*Amber*/
@@ -172,96 +171,6 @@ $colors: (
 /* Lime */
 /* Brown */
 
-/*BASIC COLORS*/
-$blue: #52B3D9;
-$green: #66CC99;
-$red: #F62459;
-$pink-dark: #CE0A31;
-$yellow: #F5D76E;
-
-/*purple*/
-$indigo: #6600FF;
-$violet-light: #7b5dbc;
-$violet-medium: #4b3d80;
-$violet-dark: #302263;
-
-/*green*/
-$green-dark: #5CA18E;
-$green-light: #9AC6B7;
-$green-blueish: #A2DAD1;
-$brown-light: #CCDFC1;
-$brown-dark: #BDC2A2;
-$green-medium: #CCEACA;
-
-/*orange*/
-$orange-dark: #993D00;
-$orange-light: #FF8533;
-$orange-medium: #FF6600;
-
-/*red*/
-$red-light: #DB4D4D;
-$red-dark: #520000;
-$red-medium: #CC0000;
-
-/*marine*/
-$marine-dark: #000F2E;
-$marine-medium: #001F5C;
-$marine-light: #00297A;
-
-
-$dark-gray: #1A1A1A;
-$granate: #990000;
-
-/* MAIN COLORS */
-$main-light: #339194;
-$main-medium: #F10C49;
-$main-dark: #FB6B41;
-
-/*BODY COLORS*/
-$BODY-BACKGROUND-COLOR: white;
-
-/*LINK COLORS*/
-$LINK-COLOR: $orange-light;
-$LINK-HOVER-COLOR: $green-medium;
-
-$MAIN-HEADER-LINK-COLOR: #FFFFFF;
-$MAIN-HEADER-LINK-HOVER-COLOR: #858585;
-$MAIN-CONTAINER-BACKGROUND-COLOR: $indigo;
-
-$HEADER-NAV-BACKGROUND-COLOR: $orange-medium;
-
-.yellow {
-  background-color: $yellow;
-  border-color: $yellow;
-}
-
-.blue {
-  background-color: $blue;
-  border-color: $blue;
-}
-
-.red {
-  background-color: $red;
-  border-color: $red;
-}
-
-.green {
-  background-color: $green;
-  border-color: $green;
-}
-
-.black {
-  background-color: $dark-gray;
-  border-color: $dark-gray;
-  color: white;
-}
-
-.white {
-  background-color: white;
-  border-color: white;
-  color: black;
-}
-
 .bg-transparent {
   background-color: transparent;
 }
@@ -269,3 +178,4 @@ $HEADER-NAV-BACKGROUND-COLOR: $orange-medium;
 .border-transparent {
   border: transparent;
 }
+

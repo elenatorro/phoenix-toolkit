@@ -1,3 +1,7 @@
+img {
+  display: block;
+  max-width: 100%;
+}
 img.border-logo {
   border-bottom: 10px solid $main-dark;
   border-left: 10px solid $main-medium;
@@ -14,6 +18,7 @@ img.normal-logo {
   margin-top: 35px;
   min-width: 150px;
   width: 10%;
+  margin: 0 auto 0 auto;
 }
 
 img.mini-logo {
@@ -31,7 +36,7 @@ img.mini-circular {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid $violet-light;
+  border: 5px solid $main-light;
   display: inline-block;
   float: left;
   height: 50px;
@@ -41,15 +46,41 @@ img.mini-circular {
 }
 
 img.inner-image {
-  height: 100%;
+  width: 100%;
+  overflow: hidden;
   position: absolute;
   padding: 0;
-  margin: 0;
+  margin: auto;
   left: 0;
   top: 0;
   bottom: 0;
+  display: block;
   background-color: transparent;
   z-index: -1;
+}
+
+.cover-image {
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-origin: center;
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img.featured-image {
+  width: 90%;
+  margin: 0 auto 0 auto;
+}
+
+img.author-image {
+  width: 90%;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 0 auto;
+  margin-top: 5%;
 }
 
 img.circular {
@@ -60,8 +91,13 @@ img.circular {
 
 @media only screen and (max-width: 480px) {
   img.inner-image { 
-      margin: 0;
+      margin-top: 20px;
       width: 100%;
+  }
+
+  img.author-image {
+    width: 40%;
+    top: 10px;
   }
 }
 
