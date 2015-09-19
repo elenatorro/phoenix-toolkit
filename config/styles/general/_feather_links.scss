@@ -1,22 +1,19 @@
 /*GENERAL LINKS*/
 a {
 	text-decoration: none;
+	color: $main-medium;
 }
 
 a:active {
-	text-decoration: none;
+	color: $main-medium;
 }
 
 a:visited {
-	text-decoration: none;
+	color: $main-medium;
 }
 
 a:hover {
-	color: $main-light;
-}
-
-a.text-link {
-	color: $main-medium;
+	color: $main-dark;
 }
 
 a.text-link:hover {
@@ -24,12 +21,32 @@ a.text-link:hover {
 	color: white;
 }
 
+.tags > a {
+	@extend .bg-main;
+	padding: 1px 8px;
+	border-radius: 10px;
+	display: inline-block;
+	margin: 1px;
+	margin-top: 5px;
+	color: black !important;
+}
+
+.social-icon {
+	color: white !important;
+	margin: 0;
+	margin-top: 5px;
+}
+
+.social-icon:hover {
+	color: $main-dark !important;
+}
+
 section.resources > header > a {
 	color: white;
 }
 
 section.resources > header > a:hover {
-	color: $green-light;
+	color: $main-light;
 	font-weight: bold;
 }
 
@@ -67,9 +84,8 @@ div.social > a {
 
 /*NAV LINKS*/
 a.main-logo {
-	color: $indigo;
+	color: $main-medium;
 	float: left;
 	display: inline-block;
 	vertical-align: middle;
-	margin-top: $HEADER-NAV-HEIGHT / 2.5;
 }

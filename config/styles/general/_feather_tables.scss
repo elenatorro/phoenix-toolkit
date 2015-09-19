@@ -10,6 +10,7 @@ table {
 
 td, th, tr {
   padding: 10px;
+  width: 100%;
 }
 
 thead {
@@ -19,4 +20,5 @@ thead {
 table > tbody, thead, tfoot {
   padding: 0px;
   margin: 0px;
+  width: 100%;
 }

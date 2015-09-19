@@ -1,20 +1,7 @@
-article.main-content {
-  background-color: transparent;
-  margin: 10 auto 10 auto;
-  text-align: center;
-  width: 100%;
-}
-
 .main-container {
-  background-color: $main-light;
   text-align: center;
   color: white;
-  padding: 30px;
-}
-
-article.main-title {
-  display: block;
-  text-align: center;
+  padding: 60px 0 40px 0;
 }
 
 .content-area {
@@ -31,42 +18,3 @@ article.main-title {
   margin: 2px;
 }
 
-.box{
-  position: relative;
-  font-size: 90%;
-}
-
-.box:before{
-  content: "";
-  display: block;
-  padding-top: 100%;  /* initial ratio of 1:1*/
-}
-
-.box > .box-content {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-
-  > .box-inner-content {
-    text-align: center;
-    padding-top: 25%;
-  }
-}
-
-@media only screen and (max-width: 480px) {
-  .box:before{
-    padding-top: 0;
-  }
-
-  .box > .box-content {
-    position: relative;
-
-     > .box-inner-content {
-      padding-top: 10%;
-      height: 20%;
-      margin: 0;
-    }
-  }
-}

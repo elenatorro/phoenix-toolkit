@@ -48,7 +48,7 @@ gulp.task('compile_script_components', function() {
 
 //task to compile general sass to css
 gulp.task('style', function() {
-  return gulp.src('config/styles/*.scss')
+  return gulp.src('config/styles/main.scss')
   .pipe(sass())
   .pipe(concat('phoenixfw.css'))
   .pipe(gulp.dest('dist/src/'));

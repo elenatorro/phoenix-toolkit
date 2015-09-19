@@ -8,8 +8,34 @@
 @import "general/feather_lists";
 @import "general/feather_texts";
 @import "general/feather_general";
-@import "general/feather_grid";
+@import "general/feather_boxes";
 
+$main-light: map-get($colors, blue7);
+$main-medium: map-get($colors, blue10);
+$main-dark: map-get($colors, blue12);
+
+.bg-main {
+	@extend .bg-blue7;
+}
+
+.bg-hover-main {
+	@extend .bg-blue9;
+}
+
+.font-hover-main {
+	@extend .bg-blue4;
+}
+
+.font-main {
+	@extend .font-blue2;
+}
+
+.border-main {
+	@extend .border-blue9;
+}
+
+
+@import "general/feather_grid";
 @import "general/feather_buttons";
 @import "general/feather_footers";
 @import "general/feather_headers";
@@ -19,6 +45,7 @@
 @import "general/feather_lists";
 @import "general/feather_navs";
 @import "general/feather_articles";
+@import "general/feather_boxes";
 @import "general/feather_sections";
 @import "general/feather_codes";
 @import "general/feather_effects";

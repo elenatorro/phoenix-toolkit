@@ -1,3 +1,21 @@
+.background-color-transition {
+  transition-property: background-color;
+  transition-duration: 1s;
+  -webkit-transition-property: background-color;
+  -webkit-transition-duration: 1s;
+  -o-transition-property: background-color;
+  -o-transition-duration: 1s;
+}
+
+.background-size-transition {
+  transition-property: background-size;
+  transition-duration: 2s;
+  -webkit-transition-property: background-size;
+  -webkit-transition-duration: 2s;
+  -o-transition-property: background-size;
+  -o-transition-duration: 2s;
+}
+
 @mixin rotate($degree) {
   -webkit-transform: rotate($degree);
   -moz-transform: rotate($degree);
