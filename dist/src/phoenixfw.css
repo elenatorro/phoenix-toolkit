@@ -3220,11 +3220,11 @@ header.main-header nav {
 header.main-header nav > ul > li {
   color: white;
   display: inline-block;
-  margin: auto;
-  padding-top: 15px; }
+  margin: auto; }
 
 header.main-header nav > ul > li > a {
   padding: 15px;
+  display: block;
   margin: auto;
   border: none;
   color: white !important;
