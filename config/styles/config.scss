@@ -1,0 +1,23 @@
+$main-light: map-get($colors, blue7);
+$main-medium: map-get($colors, blue10);
+$main-dark: map-get($colors, blue12);
+
+.bg-main {
+	@extend .bg-blue7;
+}
+
+.bg-hover-main {
+	@extend .bg-blue9;
+}
+
+.font-hover-main {
+	@extend .bg-blue4;
+}
+
+.font-main {
+	@extend .font-blue2;
+}
+
+.border-main {
+	@extend .border-blue9;
+}

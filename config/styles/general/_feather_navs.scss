@@ -3,6 +3,8 @@ header.main-header nav {
 	text-align: right;
 	float: right;
 	position: fixed;
+	opacity: 0.9;
+	z-index: 100;
 }
 
 header.main-header nav > ul {
@@ -17,8 +19,6 @@ header.main-header nav > ul {
   
   -webkit-flex-flow: row wrap;
   justify-content: flex-end;
-	opacity: 0.9;
-	z-index: 100;
 }
 
 header.main-header nav > ul > li > a {
@@ -54,6 +54,7 @@ header.main-header nav > ul > li > a:visited {
 
 	header.main-header nav {
 		position: static;
+		margin-bottom: 10px;
 	}
 
 	header.main-header nav > ul {
