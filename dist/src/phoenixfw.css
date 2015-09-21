@@ -2727,7 +2727,6 @@ hr {
   bottom: 0;
   right: 0;
   z-index: 2;
-  overflow-y: scroll;
   text-align: center; }
   .box-content > a {
     position: absolute;
@@ -3302,7 +3301,6 @@ header.main-header nav > ul > li > a:visited {
   bottom: 0;
   right: 0;
   z-index: 2;
-  overflow-y: scroll;
   text-align: center; }
   .box-content > a {
     position: absolute;
