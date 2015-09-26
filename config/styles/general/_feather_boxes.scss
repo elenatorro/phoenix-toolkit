@@ -2,7 +2,7 @@
   @extend .bg-main;
   position: relative;
   text-align: center;
-  font-size: 90%;
+  font-size: 70%;
 }
 
 .box:before{
@@ -28,7 +28,7 @@
 }
 
 
-.box-content {
+.box > .box-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -63,7 +63,7 @@
   }
 }
 
-.box > .box-content:hover {
+.box:hover {
   background-color: rgba(#000000, 0.5);
 
    > .box-inner-content, .tags {
@@ -87,7 +87,7 @@
 
 .box-title {
   color: white !important;
-  font-size: 90%;
+  font-size: 70%;
   padding: 10px;
 }
 
@@ -95,10 +95,11 @@
   color: black;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .box {
     height: 200px;
   }
+
   .box:before{
     padding-top: 0;
   }
@@ -108,9 +109,6 @@
   }
 
   .box > .box-content {
-    position: relative;
-    height: 200px;
-
      > .box-inner-content {
       margin-top: 10%;
     }

@@ -2541,7 +2541,7 @@
 
 /*NAV SIZES*/
 /*SECTION SIZES*/
-.background-color-transition, .box-content {
+.background-color-transition, .box > .box-content, .box-container > .box-content {
   transition-property: background-color;
   transition-duration: 1s;
   -webkit-transition-property: background-color;
@@ -2702,7 +2702,7 @@ hr {
 .box, .box-container {
   position: relative;
   text-align: center;
-  font-size: 90%; }
+  font-size: 70%; }
 
 .box:before, .box-container:before {
   content: "";
@@ -2720,7 +2720,7 @@ hr {
   bottom: 0;
   right: 0; }
 
-.box-content {
+.box > .box-content, .box-container > .box-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -2728,7 +2728,7 @@ hr {
   right: 0;
   z-index: 2;
   text-align: center; }
-  .box-content > a {
+  .box > .box-content > a, .box-container > .box-content > a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -2744,17 +2744,17 @@ hr {
     /* Fix to make div clickable in IE */
     filter: alpha(opacity=1);
     /* Fix to make div clickable in IE */ }
-  .box-content > .box-inner-content {
+  .box > .box-content > .box-inner-content, .box-container > .box-content > .box-inner-content {
     margin: 0 auto 0 auto;
     width: 90%; }
-  .box-content > .post-content {
+  .box > .box-content > .post-content, .box-container > .box-content > .post-content {
     margin-top: 25%;
     width: 60%;
     background-color: rgba(0, 0, 0, 0.5); }
 
-.box > .box-content:hover, .box-container > .box-content:hover {
+.box:hover, .box-container:hover {
   background-color: rgba(0, 0, 0, 0.5); }
-  .box > .box-content:hover > .box-inner-content, .box-container > .box-content:hover > .box-inner-content, .box > .box-content:hover .tags, .box-container > .box-content:hover .tags {
+  .box:hover > .box-inner-content, .box-container:hover > .box-inner-content, .box:hover .tags, .box-container:hover .tags {
     opacity: 1; }
 
 .box > .box-footer-content, .box-container > .box-footer-content {
@@ -2769,24 +2769,21 @@ hr {
 
 .box-title {
   color: white !important;
-  font-size: 90%;
+  font-size: 70%;
   padding: 10px; }
 
 .box-title:visited {
   color: black; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .box, .box-container {
     height: 200px; }
   .box:before, .box-container:before {
     padding-top: 0; }
   .box-title {
     font-size: 20px; }
-  .box > .box-content, .box-container > .box-content {
-    position: relative;
-    height: 200px; }
-    .box > .box-content > .box-inner-content, .box-container > .box-content > .box-inner-content {
-      margin-top: 10%; } }
+  .box > .box-content > .box-inner-content, .box-container > .box-content > .box-inner-content {
+    margin-top: 10%; } }
 
 .container {
   padding: 25px 5%; }
@@ -3276,7 +3273,7 @@ header.main-header nav > ul > li > a:visited {
 .box, .box-container {
   position: relative;
   text-align: center;
-  font-size: 90%; }
+  font-size: 70%; }
 
 .box:before, .box-container:before {
   content: "";
@@ -3294,7 +3291,7 @@ header.main-header nav > ul > li > a:visited {
   bottom: 0;
   right: 0; }
 
-.box-content {
+.box > .box-content, .box-container > .box-content {
   position: absolute;
   top: 0;
   left: 0;
@@ -3302,7 +3299,7 @@ header.main-header nav > ul > li > a:visited {
   right: 0;
   z-index: 2;
   text-align: center; }
-  .box-content > a {
+  .box > .box-content > a, .box-container > .box-content > a {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -3318,17 +3315,17 @@ header.main-header nav > ul > li > a:visited {
     /* Fix to make div clickable in IE */
     filter: alpha(opacity=1);
     /* Fix to make div clickable in IE */ }
-  .box-content > .box-inner-content {
+  .box > .box-content > .box-inner-content, .box-container > .box-content > .box-inner-content {
     margin: 0 auto 0 auto;
     width: 90%; }
-  .box-content > .post-content {
+  .box > .box-content > .post-content, .box-container > .box-content > .post-content {
     margin-top: 25%;
     width: 60%;
     background-color: rgba(0, 0, 0, 0.5); }
 
-.box > .box-content:hover, .box-container > .box-content:hover {
+.box:hover, .box-container:hover {
   background-color: rgba(0, 0, 0, 0.5); }
-  .box > .box-content:hover > .box-inner-content, .box-container > .box-content:hover > .box-inner-content, .box > .box-content:hover .tags, .box-container > .box-content:hover .tags {
+  .box:hover > .box-inner-content, .box-container:hover > .box-inner-content, .box:hover .tags, .box-container:hover .tags {
     opacity: 1; }
 
 .box > .box-footer-content, .box-container > .box-footer-content {
@@ -3343,24 +3340,21 @@ header.main-header nav > ul > li > a:visited {
 
 .box-title {
   color: white !important;
-  font-size: 90%;
+  font-size: 70%;
   padding: 10px; }
 
 .box-title:visited {
   color: black; }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 400px) {
   .box, .box-container {
     height: 200px; }
   .box:before, .box-container:before {
     padding-top: 0; }
   .box-title {
     font-size: 20px; }
-  .box > .box-content, .box-container > .box-content {
-    position: relative;
-    height: 200px; }
-    .box > .box-content > .box-inner-content, .box-container > .box-content > .box-inner-content {
-      margin-top: 10%; } }
+  .box > .box-content > .box-inner-content, .box-container > .box-content > .box-inner-content {
+    margin-top: 10%; } }
 
 /*Feather Sections*/
 section {

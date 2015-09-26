@@ -1,6 +1,6 @@
 {
   "name": "PhoenixFramework",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "CSS modularized simple toolkit for beautiful websites",
   "main": "gulpfile.js",
   "scripts": {
