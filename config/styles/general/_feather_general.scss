@@ -18,10 +18,38 @@ hr {
     padding: 0;
 }
 
-@mixin parallax($image_url) {
+.cover-background {
   background-attachment: fixed;
-  background-image: url($image_url);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; }
+
+.hidden {
+  visibility: hidden;}
+
+.main-content {
+  background-color: transparent;
+  margin: 0 auto 0 auto;
+  text-align: center;
+  width: 100%; }
+
+.main-container {
+  background-color: $main-medium;
+  text-align: center;
+  color: white; }
+
+  &.full-height-container {
+    height: 100%;
+  }
+  
+  .main-container > .grid.group > .col {
+    margin-top: 15%; }
+
+.main-title {
+  display: block;
+  text-align: center; }
+
+@mixin parallax($image_url) {
+  @extend .cover-background;
+  background-image: url($image_url);
 }
