@@ -96,8 +96,16 @@
 }
 
 @media all and (max-width: 400px) {
-  .box {
-    height: 200px;
+  .box-container {
+    height: 0px;
+  }
+
+  .box.box-container > .box-content {
+    position: static;
+  }
+
+  .box-content > .box {
+    height: 100%;
   }
 
   .box:before{

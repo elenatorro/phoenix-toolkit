@@ -70,7 +70,6 @@ nav.horizontal-nav > ul > li {
 header.main-header nav {
   background-color: $main-dark;
   display: table;
-  margin-bottom: 100px;
   opacity: 0.9;
   position: fixed;
   text-align: right;
@@ -91,39 +90,6 @@ header.main-header nav > a:hover {
 #main-link {
 	float: left;
 }
-
-
-// @media all and (max-width: 600px) {
-// 	.page-title {
-// 		font-size: 2.5em; 
-// 	}
-
-// 	.page-text-title {
-// 		font-size: 2em; 
-// 	}
-
-// 	header.main-header nav {
-// 		position: static;
-// 		margin-bottom: 10px;
-// 	}
-
-// 	header.main-header nav > ul {
-// 	    -webkit-flex-flow: column wrap;
-// 	    flex-flow: column wrap;
-// 	    padding: 0;
-// 	}
-
-// 	header.main-header nav > ul > li > a {
-// 		text-align: center; 
-//     	padding: 10px;
-//     	border-top: 1px solid rgba(255,255,255,0.3); 
-//     	border-bottom: 1px solid rgba(0,0,0,0.1); 
-// 	}
-
-// 	header.main-header nav > ul > li:last-of-type  a {
-// 		border-bottom: none;
-// 	}
-// }
 
 @media screen and (max-width: 600px) {
   .page-title {
