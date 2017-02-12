@@ -1,0 +1,27 @@
+$pf-border-default-color: $pf-main-light;
+$pf-border-size:          5px;
+$pf-border-default:       $pf-border-size solid $pf-border-default-color;
+
+.border-bottom {
+  border-bottom: $pf-border-default;
+}
+
+.border-top {
+  border-top: $pf-border-default;
+}
+
+.border-left {
+  border-left: $pf-border-default;
+}
+
+.border-right {
+  border-right: $pf-border-default;
+}
+
+.border-all {
+  border: $pf-border-default;
+}
+
+.border-transparent {
+  border: transparent;
+}

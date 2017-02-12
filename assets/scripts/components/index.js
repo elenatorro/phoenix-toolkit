@@ -3,21 +3,21 @@ function ColorPalette(container) {
 }
 
 ColorPalette.prototype.addColor = function(color, number) {
-  return {'tag': 'article', 'text' : color + number, 'attr': {'class': 'content-area bg-' + color + number}};
-}
+  return {tag: 'article', text: color + number, attr: {class: 'pf-content-area bg-' + color + number}};
+};
 
 ColorPalette.prototype.addPalette = function(palette,color, number) {
 	var colorPalette = this;
 	var column = Look.create(
-		{'tag': 'div', 'attr': {'class': 'col one'}}, palette);
+		{tag: 'div', attr: {class: 'col one'}}, palette);
 	var i = 1;
 	for (i;i <= number; i++) {
 		Look.create(ColorPalette.prototype.addColor(color, i), column);
 	}
-}
+};
 
-var colorPalette = new ColorPalette('components-colors')
-Look.create({'tag': 'h2', 'text': 'Colors'}, colorPalette.container);
+var colorPalette = new ColorPalette('components-colors');
+Look.create({tag: 'h2', text: 'Colors'}, colorPalette.container);
 
 var palette1 = Look.create({'tag': 'section', 'attr': {'class': 'grid group'}}, colorPalette.container);
 colorPalette.addPalette(palette1, 'gray', 14);

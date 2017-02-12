@@ -1,0 +1,25 @@
+.pf-link,
+a {
+    text-decoration: underline;
+    color: $pf-main-medium;
+}
+
+.pf-link:active,
+a:active {
+    color: $pf-main-medium;
+}
+
+.pf-link:visited,
+a:visited {
+    color: $pf-main-medium;
+}
+
+.pf-link:hover,
+a:hover {
+    color: $pf-main-dark;
+}
+
+.pf-link-text:hover {
+    background-color: $pf-main-dark;
+    color: white;
+}

@@ -1,27 +1,28 @@
-/*Import from general*/
-@import "general/feather_colors";
-@import "general/feather_colors_background";
-@import "general/feather_sizes";
-@import "general/feather_transformations";
-@import "general/feather_fonts";
-@import "general/feather_tables";
-@import "general/feather_lists";
-@import "general/feather_texts";
-@import "general/feather_general";
+@import "modifiers/colors";
 @import "config";
-@import "general/feather_boxes";
-@import "general/feather_grid";
-@import "general/feather_buttons";
-@import "general/feather_footers";
-@import "general/feather_headers";
-@import "general/feather_imgs";
-@import "general/feather_forms";
-@import "general/feather_links";
-@import "general/feather_lists";
-@import "general/feather_navs";
-@import "general/feather_articles";
-@import "general/feather_boxes";
-@import "general/feather_sections";
-@import "general/feather_codes";
-@import "general/feather_effects";
-@import "general/feather_tables";
+
+@import "modifiers/borders";
+@import "modifiers/sizes";
+@import "modifiers/texts";
+
+@import "global/font-families";
+@import "global/font-sizes";
+@import "global/links";
+@import "global/media-queries";
+@import "global/spacing";
+
+@import "components/button";
+@import "components/code";
+@import "components/container";
+@import "components/footer";
+@import "components/form.media";
+@import "components/form";
+@import "components/grid.media";
+@import "components/grid";
+@import "components/header";
+@import "components/img.media";
+@import "components/img";
+@import "components/list";
+@import "components/nav-bar.media";
+@import "components/nav-bar";
+@import "components/table";

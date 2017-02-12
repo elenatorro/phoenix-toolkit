@@ -1,0 +1,21 @@
+$s-small-width:  100px;
+$s-medium-width: 150px;
+$s-big-width:    200px;
+
+.s-small {
+  max-width: $s-small-width;
+  min-width: $s-small-width;
+  padding:   5px;
+}
+
+.s-medium {
+  max-width: $s-medium-width;
+  min-width: $s-medium-width;
+  padding: 10px;
+}
+
+.s-big {
+  max-width: $s-big-width;
+  min-width: $s-big-width;
+  padding: 15px;
+}

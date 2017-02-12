@@ -1,19 +1,20 @@
-img {
+.pf-img {
   display: block;
   max-width: 100%;
 }
-img.border-logo {
-  border-bottom: 10px solid $main-dark;
-  border-left: 10px solid $main-medium;
+
+.pf-img-bordered {//FIXME use variables
+  border-bottom: 10px solid $pf-main-dark;
+  border-left: 10px solid $pf-main-medium;
   border-radius: 50%;
-  border-right: 10px solid $main-medium;
-  border-top: 10px solid $main-dark;
+  border-right: 10px solid $pf-main-medium;
+  border-top: 10px solid $pf-main-dark;
   margin-top: 35px;
   min-width: 150px;
   width: 10%;
 }
 
-img.normal-logo {
+.pf-img-normal {
   border-radius: 50%;
   margin-top: 35px;
   min-width: 150px;
@@ -21,22 +22,22 @@ img.normal-logo {
   margin: 0 auto 0 auto;
 }
 
-img.mini-logo {
+.pf-img-mini {
   display: inline-block;
   position: relative;
   width: 30px;
 }
 
-img.img-resource {
+.pf-img-resource {
   vertical-align: middle;
   width: 150px;
 }
 
-img.mini-circular {
+.pf-img-mini-circular {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
-  border: 5px solid $main-light;
+  border: 5px solid $pf-main-light;
   display: inline-block;
   float: left;
   height: 50px;
@@ -45,7 +46,7 @@ img.mini-circular {
   width: 50px;
 }
 
-img.inner-image {
+.pf-img-inner {
   width: 100%;
   overflow: hidden;
   position: absolute;
@@ -59,45 +60,23 @@ img.inner-image {
   z-index: -1;
 }
 
-.cover-image {
+.pf-img-cover {
   background-position: cover;
   background-repeat: no-repeat;
   background-origin: center;
   background-position: center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
 }
 
-img.featured-image {
+.pf-img-featured {
   width: 90%;
   margin: 0 auto 0 auto;
 }
 
-img.author-image {
-  width: 90%;
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto 0 auto;
-  margin-top: 5%;
-}
-
-img.circular {
+.pf-img-circular {
   -moz-border-radius: 50%;
   -webkit-border-radius: 50%;
   border-radius: 50%;
 }
-
-@media only screen and (max-width: 480px) {
-  img.inner-image { 
-      margin-top: 20px;
-      width: 100%;
-  }
-
-  img.author-image {
-    width: 40%;
-    top: 10px;
-  }
-}
-

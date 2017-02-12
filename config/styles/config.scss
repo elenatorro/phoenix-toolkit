@@ -1,6 +1,6 @@
-$main-light: map-get($colors, blue7);
-$main-medium: map-get($colors, blue10);
-$main-dark: map-get($colors, blue12);
+$pf-main-light: map-get($colors, blue7);
+$pf-main-medium: map-get($colors, blue10);
+$pf-main-dark: map-get($colors, blue12);
 
 .bg-main {
 	@extend .bg-blue7;

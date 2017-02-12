@@ -1,0 +1,38 @@
+.pf-content-main {
+  padding: $pf-global-spacing 0;
+  text-align: center;
+  color: white;
+}
+
+.pf-content-area {
+  background-color: transparent;
+  height: $pf-global-spacing;
+  line-height: $pf-global-spacing;
+  padding: $pf-global-text-spacing;
+  vertical-align: middle;
+}
+
+.pf-content-padding-area {
+  @extend .pf-content-area; // FIXME do not use extend
+  box-sizing: content-box;
+  margin: $pf-global-text-spacing;
+}
+
+.container {
+  padding: 25px 5%;
+}
+
+.inner-container {
+  padding: 10px 5%;
+}
+
+.full-container {
+  margin: 0;
+  width: 100%;
+}
+
+.centered {
+  text-align: center;
+  margin: 0 auto;
+  float: inherit;
+}
