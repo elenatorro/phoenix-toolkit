@@ -1,0 +1,14 @@
+$pf-arrow-symbol: "\2192 \0020";
+$pf-heart-symbol: "\2665";
+
+li {
+    list-style-type: none;
+}
+
+ul.pf-list-arrow li:before {
+    content: $pf-arrow-symbol;
+}
+
+ul.pf-list-heart li:before {
+    content: $pf-heart-symbol;
+}

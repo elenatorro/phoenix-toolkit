@@ -1,26 +1,30 @@
-form > section {
-  margin-bottom: 10px;
+.pf-form > .pf-content {
+  margin-bottom: $pf-global-text-spacing;
 }
 
-input, select, textarea {
-  padding: 10px;
-  margin: 5px 0 5px 0;
-  border: 2px solid silver;
+.pf-input,
+.pf-select,
+.pf-textarea {
+  padding: $pf-global-text-spacing;
+  margin: $pf-global-text-spacing 0 $pf-global-text-spacing 0;
+  border: 5px solid $pf-main-light;
+  box-sizing: border-box;
 }
 
-section.inline-form {
+.pf-inline-form {
   display: table;
   width: 100%;
 }
 
-label.inline {
+.pf-inline {
   display: table-cell;
   padding-right: 10px;
 }
 
-input.inline, textarea.inline {
+.pf-input.pf-inline,
+.pf-textarea.pf-inline {
   display: table-column;
-  border: 2px solid silver;
+  border: 5px solid $pf-main-light;
 
   &.right {
     border-right: none;
@@ -31,11 +35,10 @@ input.inline, textarea.inline {
   }
 }
 
-button.inline {
+.pf-form-button.pf-inline {
   display: table-column;
-  background-color: silver;
-  padding: 10px;
-  border: 2px solid silver;
+  padding: $pf-global-text-spacing;
+  border: 5px solid $pf-main-light;
   margin: 0;
 
   &.left {
@@ -47,68 +50,73 @@ button.inline {
   }
 }
 
-label, button, input, textarea {
-  min-height: 50;
+.pf-label,
+.pf-form-button,
+.pf-input,
+.pf-textarea {
+  min-height: $pf-global-spacing;
+
   &.w10 {
     width: 10%;
   }
+
   &.w20 {
     width: 20%;
   }
+
   &.w30 {
     width: 30%;
   }
+
   &.w40 {
     width: 40%;
   }
+
   &.w50 {
     width: 50%;
   }
+
   &.w60 {
     width: 60%;
   }
+
   &.w70 {
     width: 70%;
   }
+
   &.w80 {
     width: 80%;
   }
+
   &.w90 {
     width: 90%;
   }
+
   &.w100 {
     width: 100%;
   }
 }
 
-select {
+.pf-select {
   border: none;
   border-radius: 0;
-  padding: 5px;
-  color: white;
-  height: 50px;
+  padding: $pf-global-text-spacing;
+  height: $pf-global-spacing;
   -webkit-appearance: none;
   -webkit-border-radius: 0px;
   -moz-appearance: none;
   appearance: none;
 }
 
-textarea {
-  height: 46px;
-  font-size: 1em;
-  font-family: 'Open Sans';
-  border: none;
+.pf-textarea {
+  height: $pf-global-spacing;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
 }
 
-textarea:focus, input:focus, section:focus {
+.pf-textarea:focus,
+.pf-input:focus,
+.pf-section:focus {
   outline: none !important;
-}
-
-@media screen and (max-width: 600px) {
-  div.search {
-    width: 80%;
-  }
 }

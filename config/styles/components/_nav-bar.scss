@@ -1,0 +1,38 @@
+.pf-nav {
+    width: 100%;
+    text-align: right;
+    float: right;
+    position: fixed;
+    opacity: 0.9;
+    z-index: 100; // FIXME
+}
+
+.pf-nav-link-list {
+    list-style: none;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
+}
+
+.pf-nav-link {
+    border: none;
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+
+    &:hover {
+        @extend .bg-hover-main;
+        @extend .font-hover-main;
+    }
+
+    &:visited {
+        color: white;
+    }
+}

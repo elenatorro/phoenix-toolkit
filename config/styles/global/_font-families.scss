@@ -1,0 +1,19 @@
+$pf-primary-font: 'Open Sans';
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/Open_Sans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 0px rgba(51,145,148, 1);
+}
+
+.page-title, .page-text-title {
+	max-width: 80%;
+	margin: 0 auto 0 auto;
+}
+
+.social-icons {
+	font-size: 4em;
+}

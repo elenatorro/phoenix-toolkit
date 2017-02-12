@@ -1,404 +1,405 @@
 <!DOCTYPE html5>
 <html5>
-<head>
-  <title>Phoenix Framework</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="dist/src/phoenixfw.css">
-  <link rel="stylesheet" href="assets/styles/general/prism.css">
-  <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
-</head>
-<body id="page-body">
-  <header class="main-header bg-blue7">
-    <section class="main-title">
-      <header class="main-title">
-        <nav id="top-bar" class="bg-blue7">
-          <ul class="nav">
-            <li><a href="index.html">Main</a></li>
-            <li><a href="#components">Components</a></li>
-            <li><a href="views/about.html">About</a></li>
-            <li><a href="views/templates.html">Templates</a></li>
-            <li><a href="views/downloads.html">Downloads</a></li>
-          </ul>
-        </nav>
-      </header>
-    </section>
-    </header>
-    <div class="main-container bg-blue7">
-      <section class="grid group">
-        <div class="col six">
-          <a href="/"><img src="assets/images/phoenix_light.png" class="normal-logo"/></a>
-          <h1 class="page-title">Phoenix Framework</h1>
-          <h2 class="page-text-title">CSS modularized simple toolkit for beautiful websites.</h2>
-          <h3 class="page-text-title font-blue10">* This framework is still under construction, any feedback is very welcome :)</h3>
-        </div>
-      </section>
-      <section class="grid group">
-        <div class="col six">
-          <button class="s-big bg-transparent b-bottom border-gray1" id="companies"><a class="font-gray1" href="views/about.html">I want to know more about it!</a></button>
-          <button class="s-big bg-transparent b-bottom border-gray1" id="blogs"><a class="font-gray1" href="views/tutorials.html">Do you have any tutorial?</a></button>
-          <button class="s-big bg-transparent b-bottom border-gray1" id="tools"><a class="font-gray1" href="https://github.com/elenatorro/Phoenix-Framework">Cool! Let me download it!</a></button>
-        </div>
-      </section>
-    </div>
-  <div class="container separate" id="components">
-  <h2>Current Features</h2>
-    <section class="grid group separate">
-      <div class="col five">
-      <ul class="arrow">
-        <li>Responsive design</li>
-        <li>Custom classes to perform fast changes (background, font and border colors)</li>
-        <li>Responsive grid, 6 levels</li>
-        <li>Modularized in components</li>
-        <li>Very simple design, perfect for light landpages</li>
-      </ul>
-      </div>
-    </section>
-    <h2>The Grid</h2>
-    <h3>No padding</h3>
-    <section class="grid group separate">
-      <div class="col one">
-        <article class="content-area bg-gray2">One</article>
-      </div>
-      <div class="col five">
-        <article class="content-area bg-gray3">Five</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray4" >Two</article>
-      </div>
-      <div class="col four">
-        <article class="content-area bg-gray2">Four</article>
-      </div>
-      <div class="col three">
-        <article class="content-area bg-gray3">Three</article>
-      </div>
-      <div class="col three">
-        <article class="content-area bg-gray5">Three</article>
-      </div>
-      <div class="col four">
-        <article class="content-area bg-gray5">Four</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray3">Two</article>
-      </div>
-      <div class="col five">
-        <article class="content-area bg-gray4">Five</article>
-      </div>
-      <div class="col one">
-        <article class="content-area bg-gray2">One</article>
-      </div>
-      <div class="col six">
-        <article class="content-area bg-gray3">Six</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray4">Two</article>
-      </div>
-      <div class="col one">
-        <article class="content-area bg-gray2">One</article>
-      </div>
-      <div class="col one">
-        <article class="content-area bg-gray5">One</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray2">Two</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray3">Two</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray4">Two</article>
-      </div>
-      <div class="col two">
-        <article class="content-area bg-gray5">Two</article>
-      </div>
-    </section>
-    <section class="grid group separate">
-      <div class="col six">
-        <h4>Code Example:</h4>
-<pre class="language-markup"><code class="language-markup"><xmp>
+    <head>
+        <title>Phoenix Framework</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <link rel="stylesheet" href="dist/src/phoenixfw.css">
+        <link rel="stylesheet" href="assets/styles/general/prism.css">
+        <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
+    </head>
+
+    <body id="page-body">
+        <header class="main-header bg-blue7">
+            <section class="main-title">
+                <header class="main-title">
+                    <nav id="top-bar" class="pf-nav bg-blue7">
+                        <ul class="pf-nav-link-list">
+                            <li><a class="pf-nav-link" href="index.html">Main</a></li>
+                            <li><a class="pf-nav-link" href="#components">Components</a></li>
+                            <li><a class="pf-nav-link" href="views/about.html">About</a></li>
+                            <li><a class="pf-nav-link" href="views/templates.html">Templates</a></li>
+                            <li><a class="pf-nav-link" href="views/downloads.html">Downloads</a></li>
+                        </ul>
+                    </nav>
+                </header>
+            </section>
+            <div class="pf-content-main">
+                <section class="grid group">
+                    <div class="col six">
+                        <a href="/"><img src="assets/images/phoenix_light.png" class="pf-img pf-img-normal" /></a>
+                        <h1 class="page-title">Phoenix Framework</h1>
+                        <h2 class="page-text-title">CSS modularized simple toolkit for beautiful websites.</h2>
+                        <h3 class="page-text-title font-blue10">* This framework is still under construction, any feedback is very welcome :)</h3>
+                    </div>
+                </section>
+                <section class="grid group">
+                    <div class="col six">
+                        <button class="pf-button s-big bg-transparent border-bottom border-gray1" id="companies"><a class="font-gray1" href="views/about.html">I want to know more about it!</a></button>
+                        <button class="pf-button s-big bg-transparent border-bottom border-gray1" id="blogs"><a class="font-gray1" href="views/tutorials.html">Do you have any tutorial?</a></button>
+                        <button class="pf-button s-big bg-transparent border-bottom border-gray1" id="tools"><a class="font-gray1" href="https://github.com/elenatorro/Phoenix-Framework">Cool! Let me download it!</a></button>
+                    </div>
+                </section>
+            </div>
+        </header>
+        <div class="container separate" id="components">
+            <h2>Current Features</h2>
+            <section class="grid group separate">
+                <div class="col five">
+                    <ul class="pf-list-arrow">
+                        <li>Responsive design</li>
+                        <li>Custom classes to perform fast changes (background, font and border colors)</li>
+                        <li>Responsive grid, 6 levels</li>
+                        <li>Modularized in components</li>
+                        <li>Very simple design, perfect for light landpages</li>
+                    </ul>
+                </div>
+            </section>
+            <h2>The Grid</h2>
+            <h3>No padding</h3>
+            <section class="grid group separate">
+                <div class="col one">
+                    <article class="pf-content-area bg-gray2">One</article>
+                </div>
+                <div class="col five">
+                    <article class="pf-content-area bg-gray3">Five</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray4">Two</article>
+                </div>
+                <div class="col four">
+                    <article class="pf-content-area bg-gray2">Four</article>
+                </div>
+                <div class="col three">
+                    <article class="pf-content-area bg-gray3">Three</article>
+                </div>
+                <div class="col three">
+                    <article class="pf-content-area bg-gray5">Three</article>
+                </div>
+                <div class="col four">
+                    <article class="pf-content-area bg-gray5">Four</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray3">Two</article>
+                </div>
+                <div class="col five">
+                    <article class="pf-content-area bg-gray4">Five</article>
+                </div>
+                <div class="col one">
+                    <article class="pf-content-area bg-gray2">One</article>
+                </div>
+                <div class="col six">
+                    <article class="pf-content-area bg-gray3">Six</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray4">Two</article>
+                </div>
+                <div class="col one">
+                    <article class="pf-content-area bg-gray2">One</article>
+                </div>
+                <div class="col one">
+                    <article class="pf-content-area bg-gray5">One</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray2">Two</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray3">Two</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray4">Two</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-area bg-gray5">Two</article>
+                </div>
+            </section>
+            <section class="grid group separate">
+                <div class="col six">
+                    <h4>Code Example:</h4>
+                    <pre class="language-markup"><code class="language-markup"><xmp>
 <section class="grid group">
   <div class="col one">
-    <article class="content-area">One</article>
+    <article class="pf-content-area">One</article>
   </div>
   <div class="col five">
-    <article class="content-area">Five</article>
+    <article class="pf-content-area">Five</article>
   </div>
 </section>
 </xmp></code></pre>
-      </div>
-    </section>
-    <h3>With padding</h3>
-    <section class="grid group separate">
-      <div class="col one">
-        <article class="content-padding-area bg-gray5">One</article>
-      </div>
-      <div class="col five">
-        <article class="content-padding-area bg-gray5">Five</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-      <div class="col four">
-        <article class="content-padding-area bg-gray5">Four</article>
-      </div>
-      <div class="col three">
-        <article class="content-padding-area bg-gray5">Three</article>
-      </div>
-      <div class="col three">
-        <article class="content-padding-area bg-gray5">Three</article>
-      </div>
-      <div class="col four">
-        <article class="content-padding-area bg-gray5">Four</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-      <div class="col five">
-        <article class="content-padding-area bg-gray5">Five</article>
-      </div>
-      <div class="col one">
-        <article class="content-padding-area bg-gray5">One</article>
-      </div>
-      <div class="col six">
-        <article class="content-padding-area bg-gray5">Six</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-      <div class="col one">
-        <article class="content-padding-area bg-gray5">One</article>
-      </div>
-      <div class="col one">
-        <article class="content-padding-area bg-gray5">One</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-      <div class="col two">
-        <article class="content-padding-area bg-gray5">Two</article>
-      </div>
-    </section>
-        <section class="grid group separate">
-      <div class="col six">
-        <h4>Code Example:</h4>
-<pre class="language-markup"><code class="language-markup"><xmp>
+                </div>
+            </section>
+            <h3>With padding</h3>
+            <section class="grid group separate">
+                <div class="col one">
+                    <article class="pf-content-padding-area bg-gray5">One</article>
+                </div>
+                <div class="col five">
+                    <article class="pf-content-padding-area bg-gray5">Five</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+                <div class="col four">
+                    <article class="pf-content-padding-area bg-gray5">Four</article>
+                </div>
+                <div class="col three">
+                    <article class="pf-content-padding-area bg-gray5">Three</article>
+                </div>
+                <div class="col three">
+                    <article class="pf-content-padding-area bg-gray5">Three</article>
+                </div>
+                <div class="col four">
+                    <article class="pf-content-padding-area bg-gray5">Four</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+                <div class="col five">
+                    <article class="pf-content-padding-area bg-gray5">Five</article>
+                </div>
+                <div class="col one">
+                    <article class="pf-content-padding-area bg-gray5">One</article>
+                </div>
+                <div class="col six">
+                    <article class="pf-content-padding-area bg-gray5">Six</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+                <div class="col one">
+                    <article class="pf-content-padding-area bg-gray5">One</article>
+                </div>
+                <div class="col one">
+                    <article class="pf-content-padding-area bg-gray5">One</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+                <div class="col two">
+                    <article class="pf-content-padding-area bg-gray5">Two</article>
+                </div>
+            </section>
+            <section class="grid group separate">
+                <div class="col six">
+                    <h4>Code Example:</h4>
+                    <pre class="language-markup"><code class="language-markup"><xmp>
 <section class="grid group">
   <div class="col one">
-    <article class="content-padding-area">One</article>
+    <article class="pf-content-padding-area">One</article>
   </div>
   <div class="col five">
-    <article class="content-padding-area">Five</article>
+    <article class="pf-content-padding-area">Five</article>
   </div>
 </section>
 </xmp></code></pre>
-      </div>
-    </section>
-  </div>
+                </div>
+            </section>
+        </div>
 
-  <div class="container" id="components-buttons">
-    <h2>Buttons</h2>
-    <section class="grid group separate">
-      <div class="col one">
-        <article>Rounded Buttons</article>
-      </div>
-      <div class="col five">
-        <button class="s-small rounded bg-blue4">Button</button>
-        <button class="s-medium rounded bg-blue4">Button</button>
-        <button class="s-big rounded bg-blue4">Button</button>
-      </div>
-    </section>
+        <div class="container" id="components-buttons">
+            <h2>Buttons</h2>
+            <section class="grid group separate">
+                <div class="col one">
+                    <article>Rounded Buttons</article>
+                </div>
+                <div class="col five">
+                    <button class="pf-button s-small rounded bg-blue4">Button</button>
+                    <button class="pf-button s-medium rounded bg-blue4">Button</button>
+                    <button class="pf-button s-big rounded bg-blue4">Button</button>
+                </div>
+            </section>
 
-    <section class="grid group separate">
-      <div class="col one">
-        <article>Squared Buttons</article>
-      </div>
-      <div class="col five">
-        <button class="s-small filled bg-orange8">Button</button>
-        <button class="s-medium filled bg-orange8">Button</button>
-        <button class="s-big filled bg-orange8">Button</button>
-      </div>
-    </section>
+            <section class="grid group separate">
+                <div class="col one">
+                    <article>Squared Buttons</article>
+                </div>
+                <div class="col five">
+                    <button class="pf-button s-small filled bg-orange8">Button</button>
+                    <button class="pf-button s-medium filled bg-orange8">Button</button>
+                    <button class="pf-button s-big filled bg-orange8">Button</button>
+                </div>
+            </section>
 
-    <section class="grid group separate">
-      <div class="col one">
-        <article>Empty Buttons</article>
-      </div>
-      <div class="col five">
-        <button class="s-small empty border-green5 font-green5">Button</button>
-        <button class="s-medium empty border-green5 font-green5">Button</button>
-        <button class="s-big empty border-green5 font-green5">Button</button>
-        <button class="s-small empty rounded border-green5 font-green5">Button</button>
-        <button class="s-medium empty rounded border-green5 font-green5">Button</button>
-        <button class="s-big empty rounded border-green5 font-green5">Button</button>
-      </div>
-    </section>
+            <section class="grid group separate">
+                <div class="col one">
+                    <article>Empty Buttons</article>
+                </div>
+                <div class="col five">
+                    <button class="pf-button s-small empty border-green5 font-green5">Button</button>
+                    <button class="pf-button s-medium empty border-green5 font-green5">Button</button>
+                    <button class="pf-button s-big empty border-green5 font-green5">Button</button>
+                    <button class="pf-button s-small empty rounded border-green5 font-green5">Button</button>
+                    <button class="pf-button s-medium empty rounded border-green5 font-green5">Button</button>
+                    <button class="pf-button s-big empty rounded border-green5 font-green5">Button</button>
+                </div>
+            </section>
 
-    <section class="grid group separate">
-      <div class="col one">
-        <article>Bordered Buttons</article>
-      </div>
-      <div class="col five">
-        <button class="s-medium filled b-bottom bg-sea6 border-sea10">Button</button>
-        <button class="s-medium filled b-left bg-purple7 border-purple10">Button</button>
-        <button class="s-medium filled b-right bg-green6 border-green10">Button</button>
-        <button class="s-medium filled b-top bg-pastel6 border-pastel7">Button</button>
-        <button class="s-medium filled b-top b-bottom bg-red6 border-red10">Button</button>
-        <button class="s-medium filled b-right b-left bg-blue7 border-blue10">Button</button>
-        <button class="s-medium filled b-right b-left rounded bg-orange3 border-orange5">Button</button>
-        <button class="s-medium filled b-top b-bottom rounded bg-pink5 border-pink7">Button</button>
-      </div>
-    </section>
+            <section class="grid group separate">
+                <div class="col one">
+                    <article>Bordered Buttons</article>
+                </div>
+                <div class="col five">
+                    <button class="pf-button s-medium filled border-bottom bg-sea6 border-sea10">Button</button>
+                    <button class="pf-button s-medium filled border-left bg-purple7 border-purple10">Button</button>
+                    <button class="pf-button s-medium filled border-right bg-green6 border-green10">Button</button>
+                    <button class="pf-button s-medium filled border-top bg-pastel6 border-pastel7">Button</button>
+                    <button class="pf-button s-medium filled border-top border-bottom bg-red6 border-red10">Button</button>
+                    <button class="pf-button s-medium filled border-right border-left bg-blue7 border-blue10">Button</button>
+                    <button class="pf-button s-medium filled border-right border-left rounded bg-orange3 border-orange5">Button</button>
+                    <button class="pf-button s-medium filled border-top border-bottom rounded bg-pink5 border-pink7">Button</button>
+                </div>
+            </section>
 
-    <section class="grid group separate">
-      <div class="col six">
-        <h4>Code Example:</h4>
-<pre class="language-markup"><code class="language-markup"><xmp>
-  <button class="s-big filled bg-red9">Button</button>
-  <button class="s-medium filled b-bottom bg-red6 border-red10">Button</button>
-  <button class="s-big empty rounded border-green7 font-green7">Button</button>
+            <section class="grid group separate">
+                <div class="col six">
+                    <h4>Code Example:</h4>
+                    <pre class="language-markup"><code class="language-markup"><xmp>
+  <button class="pf-button s-big filled bg-red9">Button</button>
+  <button class="pf-button s-medium filled border-bottom bg-red6 border-red10">Button</button>
+  <button class="pf-button s-big empty rounded border-green7 font-green7">Button</button>
 </xmp></code></pre>
-      </div>
-    </section>
-</div>
+                </div>
+            </section>
+        </div>
 
-  <div class="container" id="components-colors">
-    <h2>Color Palette</h2>
-    <section class="grid group separate">
-      <div class="col six">
-        <h4>Code Example:</h4>
-<pre class="language-markup"><code class="language-markup"><xmp>  <section class="grid group">
+        <div class="container" id="components-colors">
+            <h2>Color Palette</h2>
+            <section class="grid group separate">
+                <div class="col six">
+                    <h4>Code Example:</h4>
+                    <pre class="language-markup"><code class="language-markup"><xmp>  <section class="grid group">
     <div class="col one">
-      <article class="content-area bg-blue9">pink9</article>
-      <article class="content-area bg-pink10">pink10</article>
-      <article class="content-area bg-red11">pink11</article>
-      <article class="content-area bg-yellow12">pink12</article>
-      <article class="content-area bg-lime13">pink13</article>
-      <article class="content-area bg-gray14">pink14</article>
+      <article class="pf-content-area bg-blue9">pink9</article>
+      <article class="pf-content-area bg-pink10">pink10</article>
+      <article class="pf-content-area bg-red11">pink11</article>
+      <article class="pf-content-area bg-yellow12">pink12</article>
+      <article class="pf-content-area bg-lime13">pink13</article>
+      <article class="pf-content-area bg-gray14">pink14</article>
     </div>
   </section>
 </xmp></code></pre>
-      </div>
-    </section>
-  </div>
-    <div class="container" id="components-tables">
-      <h2>Tables</h2>
-      <section class="grid group separate">
-        <div class="col two col-table separate">
-          <table>
-            <thead class="b-bottom bg-orange2 border-orange6">
-              <tr>
-                <th>Month</th>
-                <th>Savings</th>
-              </tr>
-            </thead>
-            <tfoot class="bg-gray6">
-              <tr>
-                <td>Sum</td>
-                <td>$180</td>
-              </tr>
-            </tfoot>
-            <tbody class="bg-gray3">
-              <tr>
-                <td>January</td>
-                <td>$100</td>
-              </tr>
-              <tr>
-                <td>February</td>
-                <td>$80</td>
-              </tr>
-            </tbody>
-          </table>
+                </div>
+            </section>
         </div>
-        <div class="col two col-table separate">
-          <table>
-            <thead>
-              <tr>
-                <th class="b-left bg-orange2 border-orange6">Month</th>
-                <th class="b-left bg-green2 border-green6">Savings</th>
-              </tr>
-            </thead>
-            <tfoot class="bg-gray6">
-              <tr>
-                <td class="b-left border-orange9">Sum</td>
-                <td class="b-left border-green9">$180</td>
-              </tr>
-            </tfoot>
-            <tbody>
-              <tr>
-                <td class="bg-gray3 b-left border-orange6">January</td>
-                <td class="bg-gray3 b-left border-green6">$100</td>
-              </tr>
-              <tr>
-                <td class="bg-gray3 b-left border-orange6">February</td>
-                <td class="bg-gray3 b-left border-green6">$80</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <div class="col two col-table separate">
-          <table>
-            <thead class="font-blue7">
-              <tr>
-                <th>Month</th>
-                <th>Savings</th>
-              </tr>
-            </thead>
-            <tfoot class="font-blue10">
-              <tr>
-                <td>Sum</td>
-                <td>$180</td>
-              </tr>
-            </tfoot>
-            <tbody class="empty border-blue7 font-blue7">
-              <tr>
-                <td>January</td>
-                <td>$100</td>
-              </tr>
-              <tr>
-                <td>February</td>
-                <td>$80</td>
-              </tr>
-            </tbody>
-          </table>
-      </div>
-      <div class="col six col-table">
-        <table>
-          <thead class="font-gray14 b-bottom border-gray10">
-            <tr>
-              <th>Month</th>
-              <th>Savings</th>
-            </tr>
-          </thead>
-          <tfoot class="font-gray12">
-            <tr>
-              <td>Sum</td>
-              <td>$180</td>
-            </tr>
-          </tfoot>
-          <tbody class="font-gray12 b-bottom border-gray10">
-            <tr class="b-bottom border-gray3">
-              <td>January</td>
-              <td>$100</td>
-            </tr>
-            <tr class="b-bottom border-gray3">
-              <td>February</td>
-              <td>$80</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
+        <div class="container" id="components-tables">
+            <h2>Tables</h2>
+            <section class="grid group separate">
+                <div class="col two col-table separate">
+                    <table class="pf-table">
+                        <thead class="border-bottom bg-orange2 border-orange6">
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="bg-gray6">
+                            <tr>
+                                <td>Sum</td>
+                                <td>$180</td>
+                            </tr>
+                        </tfoot>
+                        <tbody class="bg-gray3">
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col two col-table separate">
+                    <table class="pf-table">
+                        <thead>
+                            <tr>
+                                <th class="border-left bg-orange2 border-orange6">Month</th>
+                                <th class="border-left bg-green2 border-green6">Savings</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="bg-gray6">
+                            <tr>
+                                <td class="border-left border-orange9">Sum</td>
+                                <td class="border-left border-green9">$180</td>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td class="bg-gray3 border-left border-orange6">January</td>
+                                <td class="bg-gray3 border-left border-green6">$100</td>
+                            </tr>
+                            <tr>
+                                <td class="bg-gray3 border-left border-orange6">February</td>
+                                <td class="bg-gray3 border-left border-green6">$80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col two col-table separate">
+                    <table class="pf-table">
+                        <thead class="font-blue7">
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="font-blue10">
+                            <tr>
+                                <td>Sum</td>
+                                <td>$180</td>
+                            </tr>
+                        </tfoot>
+                        <tbody class="empty border-blue7 font-blue7">
+                            <tr>
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr>
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col six col-table">
+                    <table class="pf-table">
+                        <thead class="font-gray14 border-bottom border-gray10">
+                            <tr>
+                                <th>Month</th>
+                                <th>Savings</th>
+                            </tr>
+                        </thead>
+                        <tfoot class="font-gray12">
+                            <tr>
+                                <td>Sum</td>
+                                <td>$180</td>
+                            </tr>
+                        </tfoot>
+                        <tbody class="font-gray12 border-bottom border-gray10">
+                            <tr class="border-bottom border-gray3">
+                                <td>January</td>
+                                <td>$100</td>
+                            </tr>
+                            <tr class="border-bottom border-gray3">
+                                <td>February</td>
+                                <td>$80</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
 
-    <section class="grid group separate">
-      <div class="col six">
-        <h4>Code Example:</h4>
-        <h5>Don't forget to add the class <strong>col-table</strong> to the div column.</h5>
-        <pre class="language-markup"><code class="language-markup"><xmp>
+            <section class="grid group separate">
+                <div class="col six">
+                    <h4>Code Example:</h4>
+                    <h5>Don't forget to add the class <strong>col-table</strong> to the div column.</h5>
+                    <pre class="language-markup"><code class="language-markup"><xmp>
 <div class="col two col-table">
   <table>
     <thead class="font-blue7">
@@ -426,61 +427,61 @@
   </table>
 </div>
         </xmp></code></pre>
-      </div>
-    </section>
+                </div>
+            </section>
 
-    <section class="grid group separate">
-    <h2>Forms</h2>
-      <div class="col three col-form">
-        <form class="inline"> 
-          <section class="inline-form">
-            <label class="label inline w20">Name</label>
-            <input type="text" class="inline w80 right border-blue6" placeholder="Example: Elena">
-            <button class="inline w20 right bg-blue3 border-blue6">Click</button>
-          </section>
-        <label>Search</label>
-          <section class="inline-form">
-            <button class="inline w10 left border-yellow4 bg-yellow4"> ></button>
-            <input type="text" class="inline w90 left border-yellow4 bg-yellow2">
-          </section>
-          <label>Email</label>
-          <input type="email" class="b-bottom border-pink2 w100" placeholder="Example: yourname@email.com">
-          <label>Social Network</label>
-          <select class="bg-purple3">
-            <option value="twitter">Twitter</option>
-            <option value="facebook">Facebook</option>
-            <option value="linkedin">LinkedIn</option>
-            <option value="github">GitHub</option>
-          </select>
-        </form>
-        <form class="inline">
-        <label>Text area</label>
-        <textarea class="w100 b-bottom border-sea3" placeholder="Write here..."></textarea>
-        </form>
-      </div>
-      <div class="col three">
-          <h3 class="text-center">Phoenix Framework offers multiple form combinations you can use easily</h3>
-      </div>
+            <section class="grid group separate">
+                <h2>Forms</h2>
+                <div class="col three col-form">
+                    <form class="pf-form pf-inline">
+                        <section class="pf-inline-form">
+                            <label class="pf-label pf-inline w20">Name</label>
+                            <input type="text" class="pf-input pf-inline w70 right border-blue6" placeholder="Example: Elena">
+                            <button class="pf-button pf-form-button pf-inline w30 right bg-blue3 border-blue6">Click</button>
+                        </section>
+                        <label class="pf-label"></label>
+                        <section class="pf-inline-form">
+                            <button class="pf-button pf-form-button pf-inline w20 left border-red8 bg-red4"> Click </button>
+                            <input type="text" class="pf-input pf-inline w80 left border-bottom border-red8 bg-red2">
+                        </section>
+                        <label class="pf-label">Email</label>
+                        <input type="email" class="pf-input border-bottom border-green5 w100" placeholder="Example: yourname@email.com">
+                        <label class="pf-label">Social Network</label>
+                        <select class="pf-select bg-orange6">
+                          <option value="twitter">Twitter</option>
+                          <option value="facebook">Facebook</option>
+                          <option value="linkedin">LinkedIn</option>
+                          <option value="github">GitHub</option>
+                        </select>
+                    </form>
+                    <form class="pf-form">
+                        <label class="pf-label">Text area</label>
+                        <textarea class="pf-textarea w100 border-bottom border-sea3" placeholder="Write here..."></textarea>
+                    </form>
+                </div>
+                <div class="col three">
+                    <h3 class="text-center">Phoenix Framework offers multiple form combinations you can use easily</h3>
+                </div>
+            </section>
+            <section class="grid group separate">
+                <div class="col six">
+                    <h4>Code Example:</h4>
+                    <pre class="language-markup"><code class="language-markup"><xmp>
+<form class="pf-form pf-inline">
+  <label class="pf-label">Name</label>
+    <section class="pf-inline-form">
+      <input type="text" class="pf-input pf-inline w70 right  border-blue6">
+      <button class="pf-button pf-form-button pf-inline w30 right bg-blue3 border-blue6">Click</button>
     </section>
-    <section class="grid group separate">
-      <div class="col six">
-        <h4>Code Example:</h4>
-        <pre class="language-markup"><code class="language-markup"><xmp>
-<form class="inline">
-  <label>Name</label>
-    <section class="inline-form">
-      <input type="text" class="inline w70 right  border-blue6">
-      <button class="inline w30 right  bg-blue3 border-blue6">Click</button>
+  <label class="pf-label">Search</label>
+    <section class="pf-inline-form">
+      <button class="pf-button pf-form-button pf-inline w30 left"> Click </button>
+      <input type="text" class="pf-input pf-inline w70 left">
     </section>
-  <label>Search</label>
-    <section class="inline-form">
-      <button class="inline w10 left"> > </button>
-      <input type="text" class="inline w90 left">
-    </section>
-    <label>Email</label>
-      <input type="email" class="w100">
-      <label>Car</label>
-    <select class="bg-orange3">
+    <label class="pf-label">Email</label>
+      <input type="email" class="pf-input pf-input w100">
+      <label class="pf-label">Car</label>
+    <select class="pf-select bg-orange3">
       <option value="volvo">Volvo</option>
       <option value="saab">Saab</option>
       <option value="mercedes">Mercedes</option>
@@ -488,117 +489,28 @@
     </select>
 </form>
         </xmp></code></pre>
-      </div>
-    </section>
-  </div>
-</div>
+                </div>
+            </section>
+        </div>
 
-<div class="container">
-  <h2>  > Full squared boxes</h2>
-</div>
-<br/>
-<section class="grid group separate">
-  <article class="col two box bg-orange6">
-    <section class="box-content">
-      <h2 class="box-inner-content">Box 1</h2>
-    </section>
-  </article>  
-  <article class="col two box bg-lime6">
-    <section class="box-content">
-      <h2 class="box-inner-content">Box 2</h2>
-    </section>
-  </article> 
-  <article class="col two box box-container">
-    <section class="box-content">
-      <article class="col three box bg-green3">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-      <article class="col three box bg-green4">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-      <article class="col three box bg-green5">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-      <article class="col three box bg-green6">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-    </section>
-  </article>
- </section>
- <div class="container">
-  <section class="grid group separate">
-    <div class="col six">
-        <h4>Code Example:</h4>
-        <pre class="language-markup"><code class="language-markup"><xmp>
-<section class="grid group separate">
-  <article class="col two box bg-red5">
-    <section class="box-content">
-      <h2 class="box-inner-content">Box 1</h2>
-    </section>
-  </article>
-  <article class="col two box">
-    <section class="box-content">
-      <article class="col three box bg-green3">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-      <article class="col three box bg-green4">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-      <article class="col three box bg-green5">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-      <article class="col three box bg-green6">
-        <section class="box-content">
-          <h2 class="box-inner-content">Box 4</h2>
-        </section>
-      </article>
-    </section>
-  </article>
-  <article class="col two box bg-yellow4">
-    <section class="box-content">
-      <span class="box-inner-content">
-        <img src="assets/images/samples/sample2.jpg" class="inner-image"/>
-      </span>
-    </section>
-  </article>
- </section>
-        </xmp></code></pre>
-      </div>
-  </section>
- </div>
-
-  <footer class="bg-blue7 font-blue12">
-    <section class="grid group separate">
-      <div class="col six text-left">
-        <ul>
-          <li>
-            Code Highlight: <a href="http://prismjs.com/" target="_blank">PrismJS</a>
-          </li>
-          <li>
-          Frontend Framework: <a href="http://github.com/elenatorro/lookjs" target="_blank">LookJS</a></li>
-        </ul>
-      </div>
-      <div class="col six">
-        <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
-      </div>
-    </section>
-  </footer>
-  <script src="assets/scripts/general/prism.js"></script>
-  <script src="assets/scripts/general/Look.min.js"></script>
-  <script src="assets/scripts/components/index.js"></script>
-</body>
+        <footer class="pf-footer bg-blue7 font-blue12">
+            <section class="grid group separate">
+                <div class="col six text-left">
+                    <ul>
+                        <li>
+                            Code Highlight: <a href="http://prismjs.com/" target="_blank">PrismJS</a>
+                        </li>
+                        <li>
+                            Frontend Framework: <a href="http://github.com/elenatorro/lookjs" target="_blank">LookJS</a></li>
+                    </ul>
+                </div>
+                <div class="col six">
+                    <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
+                </div>
+            </section>
+        </footer>
+        <script src="assets/scripts/general/prism.js"></script>
+        <script src="assets/scripts/general/Look.min.js"></script>
+        <script src="assets/scripts/components/index.js"></script>
+    </body>
 </html5>
