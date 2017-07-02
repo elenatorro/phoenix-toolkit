@@ -1,0 +1,37 @@
+.pk-bdr-transparent {
+  border: $pk-bdr-width solid transparent;
+}
+
+@mixin border-generator() {
+  @each $border in $borders {
+    $key: nth($border, 1);
+    $bdr-width: nth($border, 2);
+
+    .pk-bdr-#{$key}-b {
+      border-bottom-width: $bdr-width;
+      border-bottom-style: solid;
+    }
+
+    .pk-bdr-#{$key}-t {
+      border-top-width: $bdr-width;
+      border-top-style: solid;
+    }
+
+    .pk-bdr-#{$key}-l {
+      border-left-width: $bdr-width;
+      border-left-style: solid;
+    }
+
+    .pk-bdr-#{$key}-r {
+      border-right-width: $bdr-width;
+      border-right-style: solid;
+    }
+
+    .pk-bdr-#{$key}-all {
+      border-width: $bdr-width;
+      border-style: solid;
+    }
+  }
+}
+
+@include border-generator();

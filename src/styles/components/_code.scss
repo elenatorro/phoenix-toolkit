@@ -1,0 +1,13 @@
+$pk-code-color: map-get($colors, gray14);
+$pk-code-bg-color: map-get($colors, gray2);
+$pk-code-font-size: $pk-global-font-size * 1.25;
+
+.pk-pre {
+  font-family: monospace, monospace;
+  font-size: $pk-code-font-size;
+  line-height: 1.5;
+  margin: 0;
+  overflow-x: auto;
+  padding: $pk-global-spacing;
+  width: auto;
+}

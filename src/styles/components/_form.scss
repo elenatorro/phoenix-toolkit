@@ -1,0 +1,94 @@
+.pk-form {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+
+.pk-input,
+.pk-slct,
+.pk-txtarea {
+  border-width: $pk-bdr-width;
+  border-style: solid;
+  box-sizing: border-box;
+  padding: $pk-global-spacing;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.pk-input:focus,
+.pk-sctn:focus,
+.pk-txtarea:focus {
+  box-shadow: 0 0 1px 1px silver;
+  outline-style: none;
+}
+
+.pk-lbl {
+  padding: $pk-global-spacing 0;
+}
+
+.pk-form-group-inl {
+  align-items: flex-start;
+  display: flex;
+  position: relative;
+  margin: $pk-global-spacing 0;
+  width: 100%;
+  position: relative;
+}
+
+.pk-form-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: $pk-global-spacing 0;
+  width: 100%;
+  position: relative;
+}
+
+.pk-input.pk-inl,
+.pk-txtarea.pk-inl {
+  border-width: $pk-bdr-width;
+  border-style: solid;
+}
+
+.pk-form-btn {
+  padding: $pk-global-spacing;
+  border-width: $pk-bdr-width;
+  border-style: solid;
+  margin: 0;
+}
+
+.pk-form-btn:focus {
+  outline-style: none;
+  box-shadow: 0 0 1px 1px silver;
+}
+
+.pk-sbmt-r {
+  justify-content: flex-end;
+}
+
+.pk-sbmt-l {
+  justify-content: flex-start;
+}
+
+.pk-slct {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+  appearance: none;
+  border-radius: 0;
+  border: none;
+  padding: $pk-global-spacing;
+  width: 100%;
+}
+
+.pk-slct-arrow {
+  width: 100%;
+}
+
+.pk-slct-arrow:after {
+  color: inherit;
+  content: '▾';
+  position: absolute;
+  right: $pk-global-spacing;
+}

@@ -1,0 +1,13 @@
+@media screen and (max-width: $pk-global-media-min-width) {
+  .pk-pdd-s-all {
+    padding: $pk-global-spacing-media;
+  }
+
+  .pk-pdd-m {
+    padding: $pk-global-spacing-media;
+  }
+
+  .pk-pdd-l {
+    padding: $pk-global-spacing-media * 2;
+  }
+}

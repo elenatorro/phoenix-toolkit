@@ -1,0 +1,27 @@
+.pk-tbl {
+  background-color: transparent;
+  border-collapse: collapse;
+  border: none;
+  box-sizing: border-box;
+  overflow-x: auto;
+  width: 100%;
+
+
+  thead, tbody {
+    text-align: left;
+  }
+
+  tbody,
+  thead,
+  tfoot {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+  }
+}
+
+.pk-tbl-pdd {
+  td, th, tr {
+    padding: $pk-global-spacing;
+  }
+}

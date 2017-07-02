@@ -1,0 +1,23 @@
+.pk-i {
+  position: relative;
+  padding: 0 .75em;
+
+  &:after {
+    position: absolute;
+    width: 1em;
+    height: 1em;
+    left: 0;
+  }
+}
+
+.pk-i-arrow-right {
+  &:after {
+    content: $pk-arrow-symbol;
+  }
+}
+
+.pk-i-heart {
+  &:after {
+    content: $pk-heart-symbol;
+  }
+}

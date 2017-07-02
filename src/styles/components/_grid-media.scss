@@ -1,0 +1,29 @@
+@media only screen and (max-width: $pk-global-media-max-width) {
+  .pk-col {
+    margin: 0;
+  };
+
+  .pk-5,
+  .pk-4,
+  .pk-1,
+  .pk-6,
+  .pk-3,
+  .pk-2 {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .pk-col-tbl {
+    margin: 1% 0;
+    width: 100%;
+  }
+
+  .pk-col-form {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .pk-col-form {
+    width: 100%;
+  }
+}

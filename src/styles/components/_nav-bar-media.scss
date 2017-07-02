@@ -1,0 +1,21 @@
+@media all and (max-width: $pk-global-media-max-width) {
+  .pk-nav {
+    margin-bottom: $pk-global-spacing;
+    position: static;
+  }
+
+  .pk-nav-link-list {
+    flex-flow: column wrap;
+    padding: 0;
+  }
+
+  .pk-nav-link {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    padding: 10px;
+    text-align: center;
+  }
+
+  .pk-nav-link-list:last-of-type {
+    border-bottom: none;
+  }
+}

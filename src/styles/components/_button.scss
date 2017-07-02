@@ -1,0 +1,43 @@
+.pk-btn {
+  border: none;
+  display: inline-block;
+  font-size: $pk-global-font-size;
+  text-align: center;
+}
+
+.pk-btn:focus {
+  outline-style: none;
+  box-shadow: 0 0 1px 1px silver;
+}
+
+.pk-btn:active {
+  opacity: 0.9;
+}
+
+.pk-btn-empty {
+  background-color: transparent;
+  border-width: $pk-bdr-btn-width;
+  border-style: solid;
+}
+
+.pk-btn-rnd {
+  border-radius: 100px;
+}
+
+.pk-btn-s {
+  max-width: $pk-sz-s-width;
+  min-width: $pk-sz-s-width;
+  padding:   $pk-global-spacing;
+}
+
+.pk-btn-m {
+  max-width: $pk-sz-m-width;
+  min-width: $pk-sz-m-width;
+  padding: $pk-global-spacing;
+}
+
+.pk-btn-l {
+  max-width: $pk-sz-big-width;
+  min-width: $pk-sz-big-width;
+  padding: $pk-global-spacing;
+}

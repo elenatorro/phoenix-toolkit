@@ -1,0 +1,11 @@
+li {
+  list-style-type: none;
+}
+
+.pk-list-arrow li:before {
+  content: $pk-arrow-symbol;
+}
+
+.pk-list-heart li:before {
+  content: $pk-heart-symbol;
+}

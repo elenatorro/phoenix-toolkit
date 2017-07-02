@@ -1,21 +1,32 @@
 {
-  "name": "PhoenixFramework",
+  "name": "phoenix-toolkit",
   "version": "0.1.3",
   "description": "CSS modularized simple toolkit for beautiful websites",
-  "main": "gulpfile.js",
+  "main": "dist/src/phoenix-toolkit.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elena Torro <elenatorro@gmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "babel-plugin-transform-node-env-inline": "0.0.2",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
     "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-inject": "^1.5.0",
-    "gulp-jshint": "^1.11.2",
+    "gulp-babel": "^6.1.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-handlebars": "^4.0.0",
+    "gulp-livereload": "^3.8.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^2.0.4",
-    "gulp-uglify": "^1.4.1",
-    "yargs": "^1.3.3"
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-uglify": "^2.1.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
   }
 }

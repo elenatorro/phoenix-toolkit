@@ -1,0 +1,18 @@
+@media screen and (max-width: $pk-global-media-max-width) {
+  .pk-form-group-inl {
+    flex-wrap: wrap;
+  }
+
+  .pk-w10,
+  .pk-w20,
+  .pk-w30,
+  .pk-w40,
+  .pk-w50,
+  .pk-w60,
+  .pk-w70,
+  .pk-w80,
+  .pk-w90,
+  .pk-w100 {
+    width: 100%;
+  }
+}

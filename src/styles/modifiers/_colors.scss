@@ -1,0 +1,37 @@
+.pk-bg-transparent {
+  background-color: transparent;
+}
+
+@mixin color-generator() {
+  @each $color in $colors {
+    $i:   index($colors, $color);
+    $key: nth($color, 1);
+    $bg:  nth($color, 2);
+
+    .pk-bg-#{$key} {
+      background-color: $bg;
+    }
+
+    .pk-bdr-#{$key} {
+      border-color: $bg;
+    }
+
+    .pk-f-#{$key} {
+      color: $bg;
+    }
+
+    .pk-bg-hv-#{$key}:hover {
+      background-color: $bg;
+    }
+
+    .pk-bdr-hv-#{$key}:hover {
+      border-color: $bg;
+    }
+
+    .pk-f-hv-#{$key}:hover {
+      color: $bg;
+    }
+  }
+}
+
+@include color-generator();

@@ -1,420 +1,477 @@
 <!DOCTYPE html5>
 <html5>
-    <head>
-        <title>Phoenix Framework</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <link rel="stylesheet" href="dist/src/phoenixfw.css">
-        <link rel="stylesheet" href="assets/styles/general/prism.css">
-        <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
-    </head>
 
-    <body id="page-body">
-        <header class="main-header bg-blue7">
-            <section class="main-title">
-                <header class="main-title">
-                    <nav id="top-bar" class="pf-nav bg-blue7">
-                        <ul class="pf-nav-link-list">
-                            <li><a class="pf-nav-link" href="index.html">Main</a></li>
-                            <li><a class="pf-nav-link" href="#components">Components</a></li>
-                            <li><a class="pf-nav-link" href="views/about.html">About</a></li>
-                            <li><a class="pf-nav-link" href="views/templates.html">Templates</a></li>
-                            <li><a class="pf-nav-link" href="views/downloads.html">Downloads</a></li>
-                        </ul>
-                    </nav>
-                </header>
-            </section>
-            <div class="pf-content-main">
-                <section class="grid group">
-                    <div class="col six">
-                        <a href="/"><img src="assets/images/phoenix_light.png" class="pf-img pf-img-normal" /></a>
-                        <h1 class="page-title">Phoenix Framework</h1>
-                        <h2 class="page-text-title">CSS modularized simple toolkit for beautiful websites.</h2>
-                        <h3 class="page-text-title font-blue10">* This framework is still under construction, any feedback is very welcome :)</h3>
-                    </div>
+  <head>
+    <title>Phoenix Toolkit</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="dist/src/phoenix-toolkit.css">
+    <link rel="icon" type="image/png" href="/assets/images/phoenix_light.png">
+  </head>
+
+  <body id="page-body">
+    <header class="pk-grid pk-bg-blue400 pk-centered">
+      <nav class="pk-row pk-nav pk-nav-fxd pk-bg-blue400">
+        <ul class="pk-nav-link-list pk-nav-link-list-r pk-col pk-col-row pk-6">
+          <li><a class="pk-nav-link pk-bg-hv-orange700" href="index.html">Main</a></li>
+          <li><a class="pk-nav-link pk-bg-hv-orange700" href="#set-up">Set up</a></li>
+          <li><a class="pk-nav-link pk-bg-hv-orange700" href="#examples">Examples</a></li>
+          <li><a class="pk-nav-link pk-bg-hv-orange700" href="#glossary">Glossary</a></li>
+          <li><a class="pk-nav-link pk-bg-hv-orange700" href="#classes">Classes</a></li>
+          <li><a class="pk-nav-link pk-bg-hv-orange700" href="https://github.com/elenatorro/phoenix-toolkit">GitHub</a></li>
+        </ul>
+      </nav>
+      <section class="pk-grid pk-pdd-l-all pk-f-white pk-centered">
+        <section class="pk-col">
+          <h1>Phoenix Toolkit</h1>
+          <h2 class="pk-mg-m-tb">CSS modularized toolkit for beautiful and simple websites.</h2>
+          <a href="https://raw.githubusercontent.com/elenatorro/phoenix-toolkit/master/dist/src/phoenix-toolkit.min.css" target="_blank" class="pk-btn pk-btn-m pk-btn-rnd pk-bg-purple400 pk-bg-hv-purple700 pk-f-white pk-mg-m-all pk-centered">Download v0.1.0</a>
+        </section>
+      </section>
+    </header>
+
+    <section class="pk-pdd-l-all" id="set-up">
+      <h2 class="pk-pdd-l-tb">Set up</h2>
+
+      <section class="pk-grid pk-mg-l-tb">
+        <section class="pk-col pk-4">
+          <p>CDN</p>
+          <section class="pk-pdd-s-tb">
+            <pre class="pk-pre pk-f-black pk-bg-blue100"><code>&lt;link rel="stylesheet" href="https://raw.githubusercontent.com/elenatorro/phoenix-toolkit/master/dist/src/phoenix-toolkit.min.css"/&gt;</code></pre>
+          </section>
+        </section>
+        <section class="pk-col pk-4">
+          <p>npm</p>
+          <section class="pk-pdd-s-tb">
+            <pre class="pk-pre pk-f-black pk-bg-blue100"><code>npm install --save phoenix-toolkit</code></pre>
+          </section>
+        </section>
+        <section class="pk-col pk-4">
+          <p>GitHub</p>
+          <section class="pk-pdd-s-tb">
+            <pre class="pk-pre pk-f-black pk-bg-blue100"><code>git clone git@github.com:elenatorro/phoenix-toolkit.git
+cd phoenix-toolkit
+npm install & gulp</code></pre>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section id="features">
+      <h2 class="pk-pdd-m-lr pk-mg-l-tb">Features</h2>
+
+      <section class="pk-grid pk-mg-l-tb">
+        <section class="pk-row">
+          <section class="pk-col pk-2 pk-pdd-l-all pk-bg-red400">
+            <h3>6 Grid System</h3>
+            <p>Enough for your needs.</p>
+          </section>
+
+          <section class="pk-col pk-2 pk-pdd-l-all pk-bg-orange400">
+            <h3>Functional Syntax</h3>
+            <p>Build templates faster.</p>
+          </section>
+
+          <section class="pk-col pk-2 pk-pdd-l-all pk-bg-purple400">
+            <h3>Color Palette</h3>
+            <p>Materialize Colors.</p>
+          </section>
+        </section>
+
+        <section class="pk-row">
+          <section class="pk-col pk-2 pk-pdd-l-all pk-bg-teal400">
+            <h3>Responsive</h3>
+            <p>Works on different screen sizes.</p>
+          </section>
+
+          <section class="pk-col pk-2 pk-pdd-l-all pk-bg-lime400">
+            <h3>Clean</h3>
+            <p>Reduce noise in your templates.</p>
+          </section>
+
+          <section class="pk-col pk-2 pk-pdd-l-all pk-bg-light-blue400">
+            <h3>Spacing</h3>
+            <p>Create balanced interfaces.</p>
+          </section>
+        </section>
+      </section>
+
+    </section>
+
+    <section class="pk-pdd-l-all" id="examples">
+      <section class="pk-grid">
+        <h2 class="pk-pdd-l-tb">The Grid</h2>
+        <section class="pk-row">
+          <section class="pk-col pk-3 pk-pdd-s-lr">
+            <section class="pk-grid">
+
+              <section class="pk-row">
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey200">
+                  <p>.pk-1</p>
                 </section>
-                <section class="grid group">
-                    <div class="col six">
-                        <button class="pf-button s-big bg-transparent border-bottom border-gray1" id="companies"><a class="font-gray1" href="views/about.html">I want to know more about it!</a></button>
-                        <button class="pf-button s-big bg-transparent border-bottom border-gray1" id="blogs"><a class="font-gray1" href="views/tutorials.html">Do you have any tutorial?</a></button>
-                        <button class="pf-button s-big bg-transparent border-bottom border-gray1" id="tools"><a class="font-gray1" href="https://github.com/elenatorro/Phoenix-Framework">Cool! Let me download it!</a></button>
-                    </div>
+                <section class="pk-col pk-5 pk-pdd-s-all pk-bg-grey300">
+                  <p>.pk-5</p>
                 </section>
-            </div>
-        </header>
-        <div class="container separate" id="components">
-            <h2>Current Features</h2>
-            <section class="grid group separate">
-                <div class="col five">
-                    <ul class="pf-list-arrow">
-                        <li>Responsive design</li>
-                        <li>Custom classes to perform fast changes (background, font and border colors)</li>
-                        <li>Responsive grid, 6 levels</li>
-                        <li>Modularized in components</li>
-                        <li>Very simple design, perfect for light landpages</li>
-                    </ul>
-                </div>
-            </section>
-            <h2>The Grid</h2>
-            <h3>No padding</h3>
-            <section class="grid group separate">
-                <div class="col one">
-                    <article class="pf-content-area bg-gray2">One</article>
-                </div>
-                <div class="col five">
-                    <article class="pf-content-area bg-gray3">Five</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray4">Two</article>
-                </div>
-                <div class="col four">
-                    <article class="pf-content-area bg-gray2">Four</article>
-                </div>
-                <div class="col three">
-                    <article class="pf-content-area bg-gray3">Three</article>
-                </div>
-                <div class="col three">
-                    <article class="pf-content-area bg-gray5">Three</article>
-                </div>
-                <div class="col four">
-                    <article class="pf-content-area bg-gray5">Four</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray3">Two</article>
-                </div>
-                <div class="col five">
-                    <article class="pf-content-area bg-gray4">Five</article>
-                </div>
-                <div class="col one">
-                    <article class="pf-content-area bg-gray2">One</article>
-                </div>
-                <div class="col six">
-                    <article class="pf-content-area bg-gray3">Six</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray4">Two</article>
-                </div>
-                <div class="col one">
-                    <article class="pf-content-area bg-gray2">One</article>
-                </div>
-                <div class="col one">
-                    <article class="pf-content-area bg-gray5">One</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray2">Two</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray3">Two</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray4">Two</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-area bg-gray5">Two</article>
-                </div>
-            </section>
-            <section class="grid group separate">
-                <div class="col six">
-                    <h4>Code Example:</h4>
-                    <pre class="language-markup"><code class="language-markup"><xmp>
-<section class="grid group">
-  <div class="col one">
-    <article class="pf-content-area">One</article>
-  </div>
-  <div class="col five">
-    <article class="pf-content-area">Five</article>
-  </div>
-</section>
-</xmp></code></pre>
-                </div>
-            </section>
-            <h3>With padding</h3>
-            <section class="grid group separate">
-                <div class="col one">
-                    <article class="pf-content-padding-area bg-gray5">One</article>
-                </div>
-                <div class="col five">
-                    <article class="pf-content-padding-area bg-gray5">Five</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-                <div class="col four">
-                    <article class="pf-content-padding-area bg-gray5">Four</article>
-                </div>
-                <div class="col three">
-                    <article class="pf-content-padding-area bg-gray5">Three</article>
-                </div>
-                <div class="col three">
-                    <article class="pf-content-padding-area bg-gray5">Three</article>
-                </div>
-                <div class="col four">
-                    <article class="pf-content-padding-area bg-gray5">Four</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-                <div class="col five">
-                    <article class="pf-content-padding-area bg-gray5">Five</article>
-                </div>
-                <div class="col one">
-                    <article class="pf-content-padding-area bg-gray5">One</article>
-                </div>
-                <div class="col six">
-                    <article class="pf-content-padding-area bg-gray5">Six</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-                <div class="col one">
-                    <article class="pf-content-padding-area bg-gray5">One</article>
-                </div>
-                <div class="col one">
-                    <article class="pf-content-padding-area bg-gray5">One</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-                <div class="col two">
-                    <article class="pf-content-padding-area bg-gray5">Two</article>
-                </div>
-            </section>
-            <section class="grid group separate">
-                <div class="col six">
-                    <h4>Code Example:</h4>
-                    <pre class="language-markup"><code class="language-markup"><xmp>
-<section class="grid group">
-  <div class="col one">
-    <article class="pf-content-padding-area">One</article>
-  </div>
-  <div class="col five">
-    <article class="pf-content-padding-area">Five</article>
-  </div>
-</section>
-</xmp></code></pre>
-                </div>
-            </section>
-        </div>
+              </section>
 
-        <div class="container" id="components-buttons">
-            <h2>Buttons</h2>
-            <section class="grid group separate">
-                <div class="col one">
-                    <article>Rounded Buttons</article>
-                </div>
-                <div class="col five">
-                    <button class="pf-button s-small rounded bg-blue4">Button</button>
-                    <button class="pf-button s-medium rounded bg-blue4">Button</button>
-                    <button class="pf-button s-big rounded bg-blue4">Button</button>
-                </div>
-            </section>
+              <section class="pk-row">
+                <section class="pk-col pk-2 pk-pdd-s-all pk-bg-grey400">
+                  <p>.pk-2</p>
+                </section>
+                <section class="pk-col pk-4 pk-pdd-s-all pk-bg-grey500">
+                  <p>.pk-4</p>
+                </section>
+              </section>
 
-            <section class="grid group separate">
-                <div class="col one">
-                    <article>Squared Buttons</article>
-                </div>
-                <div class="col five">
-                    <button class="pf-button s-small filled bg-orange8">Button</button>
-                    <button class="pf-button s-medium filled bg-orange8">Button</button>
-                    <button class="pf-button s-big filled bg-orange8">Button</button>
-                </div>
-            </section>
+              <section class="pk-row">
+                <section class="pk-col pk-3 pk-pdd-s-all pk-bg-grey200">
+                  <p>.pk-3</p>
+                </section>
+                <section class="pk-col pk-3 pk-pdd-s-all pk-bg-grey400">
+                  <p>.pk-3</p>
+                </section>
+              </section>
 
-            <section class="grid group separate">
-                <div class="col one">
-                    <article>Empty Buttons</article>
-                </div>
-                <div class="col five">
-                    <button class="pf-button s-small empty border-green5 font-green5">Button</button>
-                    <button class="pf-button s-medium empty border-green5 font-green5">Button</button>
-                    <button class="pf-button s-big empty border-green5 font-green5">Button</button>
-                    <button class="pf-button s-small empty rounded border-green5 font-green5">Button</button>
-                    <button class="pf-button s-medium empty rounded border-green5 font-green5">Button</button>
-                    <button class="pf-button s-big empty rounded border-green5 font-green5">Button</button>
-                </div>
-            </section>
+              <section class="pk-row">
+                <section class="pk-col pk-2 pk-pdd-s-all pk-bg-grey500">
+                  <p>.pk-2</p>
+                </section>
+                <section class="pk-col pk-2 pk-pdd-s-all pk-bg-grey300">
+                  <p>.pk-2</p>
+                </section>
+                <section class="pk-col pk-2 pk-pdd-s-all pk-bg-grey200">
+                  <p>.pk-2</p>
+                </section>
+              </section>
 
-            <section class="grid group separate">
-                <div class="col one">
-                    <article>Bordered Buttons</article>
-                </div>
-                <div class="col five">
-                    <button class="pf-button s-medium filled border-bottom bg-sea6 border-sea10">Button</button>
-                    <button class="pf-button s-medium filled border-left bg-purple7 border-purple10">Button</button>
-                    <button class="pf-button s-medium filled border-right bg-green6 border-green10">Button</button>
-                    <button class="pf-button s-medium filled border-top bg-pastel6 border-pastel7">Button</button>
-                    <button class="pf-button s-medium filled border-top border-bottom bg-red6 border-red10">Button</button>
-                    <button class="pf-button s-medium filled border-right border-left bg-blue7 border-blue10">Button</button>
-                    <button class="pf-button s-medium filled border-right border-left rounded bg-orange3 border-orange5">Button</button>
-                    <button class="pf-button s-medium filled border-top border-bottom rounded bg-pink5 border-pink7">Button</button>
-                </div>
-            </section>
+              <section class="pk-row">
+                <section class="pk-col pk-4 pk-pdd-s-all pk-bg-grey400">
+                  <p>.pk-4</p>
+                </section>
+                <section class="pk-col pk-2 pk-pdd-s-all pk-bg-grey100">
+                  <p>.pk-2</p>
+                </section>
+              </section>
 
-            <section class="grid group separate">
-                <div class="col six">
-                    <h4>Code Example:</h4>
-                    <pre class="language-markup"><code class="language-markup"><xmp>
-  <button class="pf-button s-big filled bg-red9">Button</button>
-  <button class="pf-button s-medium filled border-bottom bg-red6 border-red10">Button</button>
-  <button class="pf-button s-big empty rounded border-green7 font-green7">Button</button>
-</xmp></code></pre>
-                </div>
-            </section>
-        </div>
+              <section class="pk-row">
+                <section class="pk-col pk-5 pk-pdd-s-all pk-bg-grey300">
+                  <p>.pk-5</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey200">
+                  <p>.pk-1</p>
+                </section>
+              </section>
 
-        <div class="container" id="components-colors">
-            <h2>Color Palette</h2>
-            <section class="grid group separate">
-                <div class="col six">
-                    <h4>Code Example:</h4>
-                    <pre class="language-markup"><code class="language-markup"><xmp>  <section class="grid group">
-    <div class="col one">
-      <article class="pf-content-area bg-blue9">pink9</article>
-      <article class="pf-content-area bg-pink10">pink10</article>
-      <article class="pf-content-area bg-red11">pink11</article>
-      <article class="pf-content-area bg-yellow12">pink12</article>
-      <article class="pf-content-area bg-lime13">pink13</article>
-      <article class="pf-content-area bg-gray14">pink14</article>
-    </div>
+              <section class="pk-row">
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey100">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey200">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey300">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey400">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey500">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey100">
+                  <p>.pk-1</p>
+                </section>
+              </section>
+
+              <section class="pk-row">
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey100">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey200">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-2 pk-pdd-s-all pk-bg-grey500">
+                  <p>.pk-2</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey300">
+                  <p>.pk-1</p>
+                </section>
+                <section class="pk-col pk-1 pk-pdd-s-all pk-bg-grey400">
+                  <p>.pk-1</p>
+                </section>
+              </section>
+            </section>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><section class="pk-grid">
+ <section class="pk-row">
+  <section class="pk-col pk-1">
+    Column 1
   </section>
-</xmp></code></pre>
-                </div>
+  <section class="pk-col pk-5">
+    Column 5
+  </section>
+ </section>
+</section></xmp></code></pre>
+          </section>
+        </section>
+      </section>
+
+    </section>
+
+    <section class="pk-pdd-l-all">
+      <h2>Buttons</h2>
+      <section class="pk-grid pk-pdd-l-lr">
+
+        <section class="pk-row pk-mg-l-tb">
+          <section class="pk-col pk-3">
+            <p>Rounded Buttons</p>
+            <button class="pk-btn pk-btn-s pk-btn-rnd pk-bg-blue300 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-btn-rnd pk-bg-blue300 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-l pk-btn-rnd pk-bg-blue300 pk-mg-m-tb">Button</button>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><button class="pk-btn pk-btn-s pk-btn-rnd pk-bg-blue300">
+  Button
+</button>
+
+<button class="pk-btn pk-btn-m pk-btn-rnd pk-bg-blue300">
+  Button
+</button>
+
+<button class="pk-btn pk-btn-l pk-btn-rnd pk-bg-blue300">
+  Button
+</button></xmp></code></pre>
+          </section>
+        </section>
+
+        <section class="pk-row pk-mg-l-tb">
+          <section class="pk-col pk-3">
+            <p>Squared Buttons</p>
+            <button class="pk-btn pk-btn-s pk-fill pk-bg-orange800 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-fill pk-bg-orange800 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-l pk-fill pk-bg-orange800 pk-mg-m-tb">Button</button>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><button class="pk-btn pk-btn-s pk-fill pk-bg-orange800">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-fill pk-bg-orange800">
+  Button
+</button>
+<button class="pk-btn pk-btn-l pk-fill pk-bg-orange800">
+  Button
+</button></xmp></code></pre>
+          </section>
+        </section>
+
+        <section class="pk-row pk-mg-l-tb">
+          <section class="pk-col pk-3">
+            <p>Empty Buttons</p>
+            <button class="pk-btn pk-btn-s pk-btn-empty pk-bdr-green500 pk-f-green500 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-btn-empty pk-bdr-green500 pk-f-green500 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-l pk-btn-empty pk-bdr-green500 pk-f-green500 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-s pk-btn-empty pk-btn-rnd pk-bdr-green500 pk-f-green500 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-btn-empty pk-btn-rnd pk-bdr-green500 pk-f-green500 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-l pk-btn-empty pk-btn-rnd pk-bdr-green500 pk-f-green500 pk-mg-m-tb">Button</button>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><button class="pk-btn pk-btn-s pk-btn-empty pk-bdr-green500 pk-f-green500">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-btn-empty pk-bdr-green500 pk-f-green500">
+  Button
+</button>
+<button class="pk-btn pk-btn-l pk-btn-empty pk-bdr-green500 pk-f-green500">
+  Button
+</button>
+<button class="pk-btn pk-btn-s pk-btn-empty pk-btn-rnd pk-bdr-green500 pk-f-green500">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-btn-empty pk-btn-rnd pk-bdr-green500 pk-f-green500">
+  Button
+</button>
+<button class="pk-btn pk-btn-l pk-btn-empty pk-btn-rnd pk-bdr-green500 pk-f-green500">
+  Button
+</button></xmp></code></pre>
+          </section>
+        </section>
+
+        <section class="pk-row pk-mg-l-tb">
+          <section class="pk-col pk-3">
+            <p>Bordered Buttons</p>
+            <button class="pk-btn pk-btn-m pk-bg-teal600 pk-bdr-teal800 pk-mg-m-tb pk-bdr-l-l">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-l pk-bg-purple200 pk-bdr-purple700 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-r  pk-bg-green400 pk-bdr-green600 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-t pk-bg-amber500 pk-bdr-amber700 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-t pk-bdr-l-b pk-bg-red600 pk-bdr-red800 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-r  pk-bdr-l-l pk-bg-blue600 pk-bdr-blue900 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-r  pk-bdr-l-l pk-btn-rnd pk-bg-orange300 pk-bdr-orange600 pk-mg-m-tb">Button</button>
+            <button class="pk-btn pk-btn-m pk-bdr-l-t pk-bdr-l-b pk-btn-rnd pk-bg-pink500 pk-bdr-pink700 pk-mg-m-tb">Button</button>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><button class="pk-btn pk-btn-m pk-bg-teal600 pk-bdr-teal800 pk-bdr-l-l">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-l pk-bg-purple200 pk-bdr-purple700">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-r  pk-bg-green400 pk-bdr-green600">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-t pk-bg-amber500 pk-bdr-amber700">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-t pk-bdr-l-b pk-bg-red600 pk-bdr-red800">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-r  pk-bdr-l-l pk-bg-blue600 pk-bdr-blue900">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-r  pk-bdr-l-l pk-btn-rnd pk-bg-orange300 pk-bdr-orange600">
+  Button
+</button>
+<button class="pk-btn pk-btn-m pk-bdr-l-t pk-bdr-l-b pk-btn-rnd pk-bg-pink500 pk-bdr-pink700">
+  Button
+</button></xmp></code></pre>
+          </section>
+        </section>
+
+
+      </section>
+    </section>
+
+    <section class="pk-pdd-l-all">
+      <h2>Color Palette</h2>
+
+      <section class="pk-grid">
+        <section class="pk-col pk-3 pk-pdd-s-lr" id="components-colors"></section>
+        <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+          <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+          <pre class="pk-pre"><code><xmp><section class="pk-grid">
+    <section class="pk-col pk-1">
+       <section class="pk-bg-blue900">blue900</section>
+       <section class="pk-bg-pink200">pink200</section>
+       <section class="pk-bg-red100">red100</section>
+       <section class="pk-bg-yellow700">yellow700</section>
+       <section class="pk-bg-teal300">teal300</section>
+       <section class="pk-bg-purpleA700">purpleA700</section>
+    </section>
+  </section>
+  </xmp></code></pre>
+        </section>
+      </section>
+    </section>
+
+    <section class="pk-pdd-l-all">
+      <h2>Tables</h2>
+
+      <section class="pk-grid">
+
+        <section class="pk-row">
+
+          <section class="pk-col pk-3 pk-pdd-s-lr">
+            <section class="pk-col-tbl">
+              <table class="pk-tbl">
+                <thead class="pk-f-blue700">
+                  <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                  </tr>
+                </thead>
+                <tfoot class="pk-f-blue600">
+                  <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                  </tr>
+                </tfoot>
+                <tbody class="pk-f-blue700">
+                  <tr>
+                    <td>January</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr>
+                    <td>February</td>
+                    <td>$80</td>
+                  </tr>
+                </tbody>
+              </table>
             </section>
-        </div>
-        <div class="container" id="components-tables">
-            <h2>Tables</h2>
-            <section class="grid group separate">
-                <div class="col two col-table separate">
-                    <table class="pf-table">
-                        <thead class="border-bottom bg-orange2 border-orange6">
-                            <tr>
-                                <th>Month</th>
-                                <th>Savings</th>
-                            </tr>
-                        </thead>
-                        <tfoot class="bg-gray6">
-                            <tr>
-                                <td>Sum</td>
-                                <td>$180</td>
-                            </tr>
-                        </tfoot>
-                        <tbody class="bg-gray3">
-                            <tr>
-                                <td>January</td>
-                                <td>$100</td>
-                            </tr>
-                            <tr>
-                                <td>February</td>
-                                <td>$80</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col two col-table separate">
-                    <table class="pf-table">
-                        <thead>
-                            <tr>
-                                <th class="border-left bg-orange2 border-orange6">Month</th>
-                                <th class="border-left bg-green2 border-green6">Savings</th>
-                            </tr>
-                        </thead>
-                        <tfoot class="bg-gray6">
-                            <tr>
-                                <td class="border-left border-orange9">Sum</td>
-                                <td class="border-left border-green9">$180</td>
-                            </tr>
-                        </tfoot>
-                        <tbody>
-                            <tr>
-                                <td class="bg-gray3 border-left border-orange6">January</td>
-                                <td class="bg-gray3 border-left border-green6">$100</td>
-                            </tr>
-                            <tr>
-                                <td class="bg-gray3 border-left border-orange6">February</td>
-                                <td class="bg-gray3 border-left border-green6">$80</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col two col-table separate">
-                    <table class="pf-table">
-                        <thead class="font-blue7">
-                            <tr>
-                                <th>Month</th>
-                                <th>Savings</th>
-                            </tr>
-                        </thead>
-                        <tfoot class="font-blue10">
-                            <tr>
-                                <td>Sum</td>
-                                <td>$180</td>
-                            </tr>
-                        </tfoot>
-                        <tbody class="empty border-blue7 font-blue7">
-                            <tr>
-                                <td>January</td>
-                                <td>$100</td>
-                            </tr>
-                            <tr>
-                                <td>February</td>
-                                <td>$80</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-                <div class="col six col-table">
-                    <table class="pf-table">
-                        <thead class="font-gray14 border-bottom border-gray10">
-                            <tr>
-                                <th>Month</th>
-                                <th>Savings</th>
-                            </tr>
-                        </thead>
-                        <tfoot class="font-gray12">
-                            <tr>
-                                <td>Sum</td>
-                                <td>$180</td>
-                            </tr>
-                        </tfoot>
-                        <tbody class="font-gray12 border-bottom border-gray10">
-                            <tr class="border-bottom border-gray3">
-                                <td>January</td>
-                                <td>$100</td>
-                            </tr>
-                            <tr class="border-bottom border-gray3">
-                                <td>February</td>
-                                <td>$80</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
+            <section class="pk-col-tbl pk-pdd-l-tb">
+              <table class="pk-tbl pk-tbl-pdd">
+                <thead>
+                  <tr>
+                    <th class="pk-bdr-s-l pk-bg-purple200 pk-bdr-purple700">Month</th>
+                    <th class="pk-bdr-s-l pk-bg-purple300 pk-bdr-purple700">Savings</th>
+                  </tr>
+                </thead>
+                <tfoot class="pk-bg-purple600">
+                  <tr>
+                    <td class="pk-bdr-s-l pk-bdr-purple900 pk-bg-grey200">Sum</td>
+                    <td class="pk-bdr-s-l pk-bdr-purple900 pk-bg-grey200">$180</td>
+                  </tr>
+                </tfoot>
+                <tbody>
+                  <tr>
+                    <td class="pk-bg-grey300 pk-bdr-s-l pk-bdr-purple900">January</td>
+                    <td class="pk-bg-grey300 pk-bdr-s-l pk-bdr-purple900">$100</td>
+                  </tr>
+                  <tr>
+                    <td class="pk-bg-grey300 pk-bdr-s-l pk-bdr-purple900">February</td>
+                    <td class="pk-bg-grey300 pk-bdr-s-l pk-bdr-purple900">$80</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+            <section class="pk-col-tbl">
+              <table class="pk-tbl">
+                <thead class="pk-f-grey800 pk-bdr-s-b pk-bdr-grey500">
+                  <tr>
+                    <th>Month</th>
+                    <th>Savings</th>
+                  </tr>
+                </thead>
+                <tfoot class="pk-f-grey12">
+                  <tr>
+                    <td>Sum</td>
+                    <td>$180</td>
+                  </tr>
+                </tfoot>
+                <tbody class="pk-f-grey800 pk-bdr-s-b pk-bdr-grey500">
+                  <tr class="pk-bdr-s-b pk-bdr-grey300">
+                    <td>January</td>
+                    <td>$100</td>
+                  </tr>
+                  <tr class="pk-bdr-s-b pk-bdr-grey300">
+                    <td>February</td>
+                    <td>$80</td>
+                  </tr>
+                </tbody>
+              </table>
             </section>
 
-            <section class="grid group separate">
-                <div class="col six">
-                    <h4>Code Example:</h4>
-                    <h5>Don't forget to add the class <strong>col-table</strong> to the div column.</h5>
-                    <pre class="language-markup"><code class="language-markup"><xmp>
-<div class="col two col-table">
-  <table>
-    <thead class="font-blue7">
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><section class="pk-col-tbl">
+  <table class="pk-tbl">
+    <thead class="pk-f-blue700">
       <tr>
         <th>Month</th>
         <th>Savings</th>
       </tr>
     </thead>
-    <tfoot class="font-blue10">
+    <tfoot class="pk-f-blue600">
       <tr>
         <td>Sum</td>
         <td>$180</td>
       </tr>
     </tfoot>
-    <tbody class="empty border-blue7 font-blue7">
+    <tbody class="pk-f-blue700">
       <tr>
         <td>January</td>
         <td>$100</td>
@@ -425,92 +482,376 @@
       </tr>
     </tbody>
   </table>
-</div>
-        </xmp></code></pre>
-                </div>
-            </section>
+</section></xmp></code></pre>
+          </section>
+        </section>
+      </section>
 
-            <section class="grid group separate">
-                <h2>Forms</h2>
-                <div class="col three col-form">
-                    <form class="pf-form pf-inline">
-                        <section class="pf-inline-form">
-                            <label class="pf-label pf-inline w20">Name</label>
-                            <input type="text" class="pf-input pf-inline w70 right border-blue6" placeholder="Example: Elena">
-                            <button class="pf-button pf-form-button pf-inline w30 right bg-blue3 border-blue6">Click</button>
-                        </section>
-                        <label class="pf-label"></label>
-                        <section class="pf-inline-form">
-                            <button class="pf-button pf-form-button pf-inline w20 left border-red8 bg-red4"> Click </button>
-                            <input type="text" class="pf-input pf-inline w80 left border-bottom border-red8 bg-red2">
-                        </section>
-                        <label class="pf-label">Email</label>
-                        <input type="email" class="pf-input border-bottom border-green5 w100" placeholder="Example: yourname@email.com">
-                        <label class="pf-label">Social Network</label>
-                        <select class="pf-select bg-orange6">
-                          <option value="twitter">Twitter</option>
-                          <option value="facebook">Facebook</option>
-                          <option value="linkedin">LinkedIn</option>
-                          <option value="github">GitHub</option>
-                        </select>
-                    </form>
-                    <form class="pf-form">
-                        <label class="pf-label">Text area</label>
-                        <textarea class="pf-textarea w100 border-bottom border-sea3" placeholder="Write here..."></textarea>
-                    </form>
-                </div>
-                <div class="col three">
-                    <h3 class="text-center">Phoenix Framework offers multiple form combinations you can use easily</h3>
-                </div>
-            </section>
-            <section class="grid group separate">
-                <div class="col six">
-                    <h4>Code Example:</h4>
-                    <pre class="language-markup"><code class="language-markup"><xmp>
-<form class="pf-form pf-inline">
-  <label class="pf-label">Name</label>
-    <section class="pf-inline-form">
-      <input type="text" class="pf-input pf-inline w70 right  border-blue6">
-      <button class="pf-button pf-form-button pf-inline w30 right bg-blue3 border-blue6">Click</button>
-    </section>
-  <label class="pf-label">Search</label>
-    <section class="pf-inline-form">
-      <button class="pf-button pf-form-button pf-inline w30 left"> Click </button>
-      <input type="text" class="pf-input pf-inline w70 left">
-    </section>
-    <label class="pf-label">Email</label>
-      <input type="email" class="pf-input pf-input w100">
-      <label class="pf-label">Car</label>
-    <select class="pf-select bg-orange3">
-      <option value="volvo">Volvo</option>
-      <option value="saab">Saab</option>
-      <option value="mercedes">Mercedes</option>
-      <option value="audi">Audi</option>
-    </select>
-</form>
-        </xmp></code></pre>
-                </div>
-            </section>
-        </div>
+      <section class="pk-grid pk-mg-l-tb">
+        <section class="pk-col pk-6">
+          <h2>Navigation Bar</h2>
+        </section>
 
-        <footer class="pf-footer bg-blue7 font-blue12">
-            <section class="grid group separate">
-                <div class="col six text-left">
-                    <ul>
-                        <li>
-                            Code Highlight: <a href="http://prismjs.com/" target="_blank">PrismJS</a>
-                        </li>
-                        <li>
-                            Frontend Framework: <a href="http://github.com/elenatorro/lookjs" target="_blank">LookJS</a></li>
-                    </ul>
-                </div>
-                <div class="col six">
-                    <a href="http://elenatorro.com">2015 Elena Torr&oacute;</a>
-                </div>
+        <section class="pk-row pk-pdd-l-tb">
+          <section class="pk-col pk-3">
+            <section class="pk-grid pk-pdd-m-lr">
+              <nav class="pk-row pk-nav pk-bg-blue400">
+                <ul class="pk-nav-link-list pk-col pk-col-row pk-6">
+                  <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 1</a></li>
+                  <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 2</a></li>
+                  <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 3</a></li>
+                  <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 4</a></li>
+                  <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 5</a></li>
+                </ul>
+              </nav>
             </section>
-        </footer>
-        <script src="assets/scripts/general/prism.js"></script>
-        <script src="assets/scripts/general/Look.min.js"></script>
-        <script src="assets/scripts/components/index.js"></script>
-    </body>
+          </section>
+
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><section class="pk-grid">
+  <nav class="pk-row pk-nav pk-bg-blue400">
+    <ul class="pk-nav-link-list pk-col pk-col-row pk-6">
+      <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 1</a></li>
+      <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 2</a></li>
+      <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 3</a></li>
+      <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 4</a></li>
+      <li><a class="pk-nav-link pk-bg-hv-orange700" href="#">Link 5</a></li>
+    </ul>
+  </nav>
+</section></xmp></code></pre>
+          </section>
+        </section>
+      </section>
+
+      <section class="pk-grid pk-mg-l-tb">
+        <section class="pk-col pk-6">
+          <h2>Forms</h2>
+        </section>
+
+        <section class="pk-row pk-pdd-l-tb">
+          <section class="pk-col pk-3">
+            <form class="pk-form pk-inl pk-pdd-m-all">
+              <section class="pk-form-group-inl">
+                <label class="pk-lbl pk-inl pk-w20 pk-f-blue600">Name</label>
+                <input type="text" class="pk-input pk-inl pk-w80 pk-bdr-blue600" placeholder="Write your name">
+              </section>
+              <section class="pk-form-group-inl">
+                <label class="pk-lbl pk-inl pk-w20 pk-f-blue600">Password</label>
+                <input type="password" class="pk-input pk-inl pk-w80 pk-bdr-blue600" placeholder="Write your password">
+              </section>
+              <section class="pk-form-group-inl pk-sbmt-r">
+                <input type="submit" class="pk-btn pk-btn-m pk-sbmt-button pk-w30 pk-bg-blue300 pk-bdr-blue600" value="Init Session" />
+              </section>
+            </form>
+          </section>
+
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><form class="pk-form pk-inl pk-pdd-m-all">
+  <section class="pk-form-group-inl">
+    <label class="pk-lbl pk-inl pk-w20 pk-f-blue600">Name</label>
+    <input type="text" class="pk-input pk-inl pk-w80 pk-bdr-blue600" placeholder="Write your name">
+  </section>
+  <section class="pk-form-group-inl">
+    <label class="pk-lbl pk-inl pk-w20 pk-f-blue600">Password</label>
+    <input type="password" class="pk-input pk-inl pk-w80 pk-bdr-blue600" placeholder="Write your password">
+  </section>
+  <section class="pk-form-group-inl pk-sbmt-r">
+    <input type="submit" class="pk-btn pk-btn-m pk-sbmt-button pk-w30 pk-bg-blue300 pk-bdr-blue600" value="Init Session" />
+  </section>
+</form></xmp></code></pre>
+          </section>
+        </section>
+
+        <section class="pk-row pk-pdd-l-tb">
+          <section class="pk-col pk-3">
+            <form class="pk-form pk-pdd-m-all">
+              <label class="pk-lbl pk-f-blue800">Textarea</label>
+              <textarea class="pk-txtarea pk-w100 pk-bdr-s-b pk-bdr-blue300" placeholder="Write here..."></textarea>
+              <button class="pk-btn pk-sbmt-button pk-btn-rnd pk-bg-blue800 pk-f-white pk-btn-l pk-w50 pk-pdd-s-all pk-mg-s-tb">Send</button>
+            </form>
+          </section>
+
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><form class="pk-form pk-pdd-m-all">
+  <label class="pk-lbl pk-f-blue800">Textarea</label>
+  <textarea class="pk-txtarea pk-w100 pk-bdr-s-b pk-bdr-blue300" placeholder="Write here..."></textarea>
+  <button class="pk-btn pk-sbmt-button pk-btn-rnd pk-bg-blue800 pk-f-white pk-btn-l pk-w50 pk-pdd-s-all pk-mg-s-tb">Send</button>
+</form></xmp></code></pre>
+          </section>
+        </section>
+
+        <section class="pk-row pk-pdd-l-tb">
+          <section class="pk-col pk-3 pk-pdd-s-lr">
+            <form class="pk-form pk-inl pk-pdd-l-all pk-bg-blue300">
+              <section class="pk-form-group pk-w80">
+                <label class="pk-lbl">Social Network</label>
+                <section class="pk-slct-arrow pk-f-white"></section>
+                <select class="pk-slct pk-bg-blue600 pk-f-white">
+                  <option value="twitter">Twitter</option>
+                  <option value="facebook">Facebook</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="github">GitHub</option>
+                 </select>
+              </section>
+            </form>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><form class="pk-form pk-inl pk-pdd-l-all pk-bg-blue300">
+  <section class="pk-form-group pk-w80">
+    <label class="pk-lbl">Social Network</label>
+    <section class="pk-slct-arrow pk-f-white"></section>
+    <select class="pk-slct pk-bg-blue600 pk-f-white">
+      <option value="twitter">Twitter</option>
+      <option value="facebook">Facebook</option>
+      <option value="linkedin">LinkedIn</option>
+      <option value="github">GitHub</option>
+     </select>
+  </section>
+</form></xmp></code></pre>
+          </section>
+        </section>
+
+        <section class="pk-row pk-pdd-l-tb">
+          <section class="pk-col pk-3 pk-pdd-s-lr">
+            <form class="pk-form pk-inl pk-pdd-m-all pk-bg-blue100">
+              <section class="pk-form-group-inl pk-pdd-m-all">
+                <label class="pk-lbl pk-inl pk-w20">Search</label>
+                <input type="text" class="pk-input pk-inl pk-w50 pk-bdr-blue600" placeholder="Example: Elena">
+                <button class="pk-form-btn pk-inl pk-w30 pk-bg-blue300 pk-bdr-blue600 pk-form-group-inl-right">Click</button>
+              </section>
+              <section class="pk-form-group-inl pk-pdd-m-all">
+                <button class="pk-form-btn pk-inl pk-w20 pk-bdr-blue800 pk-bg-blue400 pk-form-group-inl-left"> Search </button>
+                <input type="text" class="pk-input pk-inl pk-w80 pk-bdr-s-b pk-bdr-blue800 pk-bg-blue200">
+              </section>
+              <section class="pk-form-group pk-pdd-m-all pk-w100">
+                <label class="pk-lbl pk-f-blue900">Search</label>
+                <input type="email" class="pk-input pk-bdr-s-b pk-bdr-blue900 pk-w100" placeholder="hello, world...">
+              </section>
+            </form>
+          </section>
+          <section class="pk-col pk-3 pk-pdd-l-all pk-bdr-s-all pk-bdr-grey300 pk-bg-grey100">
+            <p><span class="pk-i pk-i-arrow-right"></span>Code</p>
+            <pre class="pk-pre"><code><xmp><form class="pk-form pk-inl pk-pdd-m-all pk-bg-blue100">
+  <section class="pk-form-group-inl pk-pdd-m-all">
+    <label class="pk-lbl pk-inl pk-w20">Search</label>
+    <input type="text" class="pk-input pk-inl pk-w50 pk-bdr-blue600" placeholder="Example: Elena">
+    <button class="pk-form-btn pk-inl pk-w30 pk-bg-blue300 pk-bdr-blue600 pk-form-group-inl-right">Click</button>
+  </section>
+  <section class="pk-form-group-inl pk-pdd-m-all">
+    <button class="pk-form-btn pk-inl pk-w20 pk-bdr-blue800 pk-bg-blue400 pk-form-group-inl-left"> Search </button>
+    <input type="text" class="pk-input pk-inl pk-w80 pk-bdr-s-b pk-bdr-blue800 pk-bg-blue200">
+  </section>
+  <section class="pk-form-group pk-pdd-m-all pk-w100">
+    <label class="pk-lbl pk-f-blue900">Search</label>
+    <input type="email" class="pk-input pk-bdr-s-b pk-bdr-blue900 pk-w100" placeholder="hello, world...">
+  </section>
+</form></xmp></code></pre>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="pk-grid pk-pdd-l-all" id="glossary">
+      <section class="pk-col pk-6">
+        <h2 class="pk-pdd-m-tb">Glossary</h2>
+
+        <section class="pk-grid">
+          <section class="pk-col pk-2 pk-pdd-l-all">
+            <p>Sides & Positions:</p>
+
+            <section class="pk-col-tbl">
+              <table class="pk-tbl">
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>top</td>
+                  <td>t</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>right</td>
+                  <td>r</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>left</td>
+                  <td>l</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>left + right</td>
+                  <td>lr</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>top + bottom</td>
+                  <td>tb</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>top + bottom</td>
+                  <td>all</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>center</td>
+                  <td>c</td>
+                </tr>
+              </table>
+            </section>
+          </section>
+
+          <section class="pk-col pk-2 pk-pdd-l-all">
+            <p>Sizes:</p>
+
+            <section class="pk-col-tbl">
+              <table class="pk-tbl">
+                <tbody>
+                  <tr class="pk-bdr-s-b pk-bdr-grey300">
+                    <td>small</td>
+                    <td>s</td>
+                  </tr>
+                  <tr class="pk-bdr-s-b pk-bdr-grey300">
+                    <td>medium</td>
+                    <td>m</td>
+                  </tr>
+                  <tr class="pk-bdr-s-b pk-bdr-grey300">
+                    <td>large</td>
+                    <td>l</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
+          </section>
+
+          <section class="pk-col pk-2 pk-pdd-l-all">
+            <p>Properties:</p>
+
+            <section class="pk-col-tbl">
+              <table class="pk-tbl">
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>border</td>
+                  <td>bdr</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>background</td>
+                  <td>bg</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>color</td>
+                  <td>f</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>margin</td>
+                  <td>mg</td>
+                </tr>
+                <tr class="pk-bdr-s-b pk-bdr-grey300">
+                  <td>padding</td>
+                  <td>pdd</td>
+                </tr>
+              </table>
+            </section>
+          </section>
+        </section>
+      </section>
+    </section>
+
+    <section class="pk-grid pk-pdd-l-tb" id="classes">
+      <h2 class="pk-mg-s-lr pk-pdd-l-tb">Classes</h2>
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Buttons</h3>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn"></button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn pk-btn-rnd"></button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn pk-btn-empty"></button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn pk-btn-s"></button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn pk-btn-m"></button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn pk-btn-l"></button></xmp></code></pre>
+        </section>
+      </section>
+
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Code</h3>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><pre class="pk-pre"><code></code></pre></xmp></code></pre>
+        </section>
+      </section>
+
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Form</h3>
+
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><form class="pk-form"></form></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><input class="pk-input"/></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><textarea class="pk-txtarea"></textarea></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><label class="pk-lbl"></label></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-form-group">Label + input group</section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-form-group-inl">Label + input group inline</section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button class="pk-btn pk-form-btn"></button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button type="submit" class="pk-btn pk-sbmt-r">Right Submit Button</button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><button type="submit" class="pk-btn pk-sbmt-l">Left Submit Button</button></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><div class="pk-slct-arrow"></div><select class="pk-slct"></select></xmp></code></pre>
+        </section>
+      </section>
+
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Grid</h3>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-grid"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-row"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col pk-1"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col pk-2"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col pk-3"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col pk-4"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col pk-5"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col pk-6"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col-row"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col-row"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w10"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w20"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w30"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w40"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w50"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w60"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w70"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w80"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w90"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-w100"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-centered"></section></xmp></code></pre>
+        </section>
+      </section>
+
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Links</h3>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><a href="#" class="pk-link"></a></xmp></code></pre>
+        </section>
+      </section>
+
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Navigation Bars</h3>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><nav class="pk-nav"></nav></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><ul class="pk-nav-link-list"></ul></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><ul class="pk-nav-link-list pk-nav-link-list-l"></ul></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><ul class="pk-nav-link-list pk-nav-link-list-r"></ul></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><a class="pk-nav-link"></a></xmp></code></pre>
+        </section>
+      </section>
+
+      <section class="pk-row">
+        <section class="pk-col pk-6 pk-pdd-m-all">
+          <h3>Tables</h3>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><section class="pk-col-tbl"></section></xmp></code></pre>
+          <pre class="pk-pre pk-bg-grey100 pk-bdr-s-all pk-bdr-grey300 pk-mg-s-tb"><code><xmp><table class="pk-tbl"></table></xmp></code></pre>
+        </section>
+      </section>
+
+    </section>
+
+    <footer class="pk-grid pk-pdd-l-all pk-f-blue600">
+      <section class="pk-col-row pk-centered">
+        <p>Created with <span class="pk-i pk-i-heart pk-f-red700"></span>by <a href="https://twitter.com/eletorro">Elena Torr&oacute;</a></p>
+      </section>
+    </footer>
+    <script src="assets/scripts/general/Look.min.js"></script>
+    <script src="assets/scripts/components/index.js"></script>
+  </body>
 </html5>
