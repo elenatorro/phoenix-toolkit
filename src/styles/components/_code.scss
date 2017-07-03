@@ -9,5 +9,11 @@ $pk-code-font-size: $pk-global-font-size * 1.25;
   margin: 0;
   overflow-x: auto;
   padding: $pk-global-spacing;
-  width: auto;
+  position: relative;
+
+  code, xmp {
+    width: 100px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0);
+  }
 }

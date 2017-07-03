@@ -112,7 +112,11 @@ p {
   margin: 0;
   overflow-x: auto;
   padding: 0.5em;
-  width: auto; }
+  position: relative; }
+  .pk-pre code, .pk-pre xmp {
+    width: 100px;
+    -webkit-overflow-scrolling: touch;
+    -webkit-transform: translate3d(0, 0, 0); }
 
 .pk-form {
   display: flex;
